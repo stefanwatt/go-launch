@@ -1,0 +1,14 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "go-launch",
+  "outputfilename": "go-launch",
+  "frontend:install": "npm install",
+  "frontend:build": "npm run build",
+  "frontend:dev:watcher": "npm run dev",
+  "frontend:dev:serverUrl": "auto",
+  "wailsjsdir": "./frontend/src/lib",
+  "author": {
+    "name": "Stefan Watt",
+    "email": "stefan.watt@gmail.com"
+  }
+}
