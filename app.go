@@ -3,9 +3,7 @@ package main
 import (
 	"code.rocketnine.space/tslocum/desktop"
 	"context"
-	"os"
 	"os/exec"
-	"path/filepath"
 	"strings"
 )
 
@@ -52,58 +50,13 @@ func (a *App) LaunchApp(Exec string) {
 	hideLauncher()
 }
 
-func findMatchingIcon(entryName string) string {
-	iconsDir := "/home/stefan/Projects/wails-test/frontend/static/app-icons/"
-	// Normalize entry name to lower case for case-insensitive comparison
-	entryName = strings.ToLower(entryName)
-
-	var partialMatches []string
-	exactMatch := ""
-
-	filepath.Walk(iconsDir, func(path string, info os.FileInfo, err error) error {
-		if err != nil {
-			return err
-		}
-
-		if !info.IsDir() {
-			fileName := strings.TrimSuffix(info.Name(), filepath.Ext(info.Name()))
-			fileNameLower := strings.ToLower(fileName)
-
-			// Check for an exact match
-			if fileNameLower == entryName || fileNameLower == entryName+"-icon" {
-				exactMatch = path
-				return filepath.SkipDir // Found an exact match, no need to continue walking the directory
-			}
-
-			// Check if the file name contains the entry name
-			if strings.Contains(fileNameLower, entryName) {
-				partialMatches = append(partialMatches, path)
-			}
-		}
-		return nil
-	})
-
-	if exactMatch != "" {
-		return exactMatch
-	}
-
-	if len(partialMatches) > 0 {
-		// Here you can implement a strategy to choose the best match from partialMatches
-		// For simplicity, we return the first partial match
-		return partialMatches[0]
-	}
-
-	// No match found, return an empty string or a default icon path
-	return ""
-}
-
 func (a *App) GetDesktopEntries() []*desktop.Entry {
 	dataDirs := desktop.DataDirs()
 	desktopEntries2d, _ := desktop.Scan(dataDirs)
-	flatEntries := flatten(desktopEntries2d)
+	flatEntries := flatten[*desktop.Entry](desktopEntries2d)
 	for _, entry := range flatEntries {
 		if entry.Icon != "" && !strings.HasPrefix(entry.Icon, "/") {
-			iconPath := findMatchingIcon(entry.Name)
+			iconPath := ""
 			if iconPath != "" {
 				entry.Icon = iconPath
 			}
