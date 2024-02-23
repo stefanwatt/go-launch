@@ -25,16 +25,16 @@
 	on:click={() => {
 		LaunchApp(desktopEntry.Exec);
 	}}
-	style="background-color: {selected ? '#aad1fa' : 'rgb(203, 213, 225)'}"
-	class="flex h-32 w-60 cursor-pointer items-center rounded-md px-2 text-slate-800"
+	style={selected ? 'background-color: #aad1fa; color: #1e293b' : 'background-color: transparent'}
+	class="flex h-full w-full cursor-pointer items-center rounded-2xl px-2 text-slate-100"
 >
 	<div class="w-full">
 		<div class="flex justify-center">
-			<img class="h-20 w-20" src={`app-icons/${desktopEntry.Icon}`} alt="icon" />
+			<img class="h-16 w-16" src={`app-icons/${desktopEntry.Icon}`} alt="icon" />
 		</div>
-		<div class="flex justify-center">
-			<div class="flex items-center px-2">
-				{desktopEntry.Name}
+		<div class="mt-4 flex h-4 justify-center">
+			<div class="flex items-center justify-center px-2">
+				{desktopEntry.Name.slice(0, 22)}
 			</div>
 		</div>
 	</div>

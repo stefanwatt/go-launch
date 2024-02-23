@@ -1,0 +1,11 @@
+[for others]
+- write nix flake
+- write readme with configuration necessary in WM etc.
+- make it possible to externalize ui
+- make it scriptable (e.g. with lua)
+
+[for me]
+- fix centering
+- make UI sexier
+- fix keyboard navigation
+- add "apps" like calculator/translator
