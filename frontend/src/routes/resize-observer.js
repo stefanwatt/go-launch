@@ -4,7 +4,7 @@ export function setup() {
 	const ro = new ResizeObserver((entries) => {
 		for (let entry of entries) {
 			const cr = entry.contentRect;
-			console.log('resize window', cr.width, cr.height);
+			if (!cr?.width || !cr?.height || !cr.width > 0 || !cr.height > 0) return;
 			WindowSetSize(cr.width, cr.height);
 		}
 	});

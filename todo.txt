@@ -6,6 +6,4 @@
 
 [for me]
 - fix centering
-- make UI sexier
-- fix keyboard navigation
 - add "apps" like calculator/translator

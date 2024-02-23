@@ -5,6 +5,8 @@
 	import { setup } from './resize-observer';
 	import { onKeyPress, onInputKeypress } from './keyboard';
 	import {
+		promptInput,
+		keyboardNavigationInput,
 		selectionPosition,
 		selectedEntry,
 		desktopEntries,
@@ -18,13 +20,27 @@
 		$desktopEntries = await GetDesktopEntries();
 	});
 
-	window.addEventListener('keyup', (e) => {
-		onKeyPress(e);
+	/** @param {HTMLInputElement} node */
+	function setupKeyboadrNavigation(node) {
+		onKeyPress(node);
+	}
+
+	selectionPosition.subscribe((pos) => {
+		if ($promptInput && !pos && document.activeElement !== $promptInput) $promptInput.focus();
+		else if ($keyboardNavigationInput && document.activeElement !== $keyboardNavigationInput)
+			$keyboardNavigationInput.focus();
 	});
 </script>
 
+<input
+	bind:this={$keyboardNavigationInput}
+	use:setupKeyboadrNavigation
+	type="text"
+	class="absolute h-0 w-0 overflow-hidden"
+/>
 <div id="main" class="h-full">
 	<div
+		id="input-container"
 		class="flex flex-row justify-center rounded-b-lg border-b border-fuchsia-200 bg-transparent px-12"
 	>
 		<!-- svelte-ignore a11y-autofocus -->
@@ -33,8 +49,9 @@
 				<SearchIcon></SearchIcon>
 			</div>
 			<input
+				bind:this={$promptInput}
 				autofocus
-				on:keydown={onInputKeypress}
+				on:keyup={onInputKeypress}
 				bind:value={$searchTerm}
 				class="h-20 w-full rounded-full border-none bg-transparent text-2xl text-slate-100 outline-none active:border-none"
 				placeholder="Search...."
@@ -69,3 +86,9 @@
 		</div>
 	{/if}
 </div>
+
+<style>
+	#input-container {
+		border-bottom: solid 2px hsl(233deg 25% 40% / 20%);
+	}
+</style>
