@@ -1,11 +1,1 @@
-frontend/.DS_Store
-frontend/node_modules
-frontend/build
-frontend/static/app-icons
-frontend/.svelte-kit
-frontend/package
-frontend/.env
-frontend/.env.*
-frontend/!.env.example
-frontend/vite.config.js.timestamp-*
-frontend/vite.config.ts.timestamp-*
+build
