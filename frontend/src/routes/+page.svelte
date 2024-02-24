@@ -9,7 +9,6 @@
 		keyboardNavigationInput,
 		selectionPosition,
 		selectedEntry,
-		desktopEntries,
 		searchTerm,
 		searchResults
 	} from './store';
@@ -17,7 +16,6 @@
 
 	onMount(async () => {
 		setup();
-		$desktopEntries = await GetDesktopEntries();
 	});
 
 	/** @param {HTMLInputElement} node */

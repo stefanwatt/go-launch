@@ -1,3 +1,4 @@
+import hotkeys from 'hotkeys-js';
 import { LaunchApp, HideLauncher } from '$lib/wailsjs/go/main/App';
 import { get } from 'svelte/store';
 import {
@@ -10,6 +11,19 @@ import {
 
 /** @param {HTMLInputElement} node */
 export function onKeyPress(node) {
+	let ctrlDown = false;
+	window.addEventListener('keydown', (event) => {
+		if (event.key === 'Control') return (ctrlDown = true);
+		if (event.key === 'k' && ctrlDown) {
+			event.preventDefault();
+			selectionPosition.set(null);
+			const input = get(promptInput);
+			input.focus();
+		}
+	});
+	window.addEventListener('keyup', (event) => {
+		if (event.key === 'Control') ctrlDown = false;
+	});
 	node.addEventListener('keyup', (event) => {
 		const searchResults = get(searchResults$);
 		const searchTerm = get(searchTerm$);

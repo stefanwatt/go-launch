@@ -6,15 +6,9 @@ import (
 )
 
 func parseCommand(commandWithArgs string) (string, []string) {
-	// Split the command and its arguments by spaces.
 	parts := strings.Fields(commandWithArgs)
-
-	// The first part is the command.
 	command := parts[0]
-
-	// The rest are the arguments.
 	args := parts[1:]
-
 	return command, args
 }
 

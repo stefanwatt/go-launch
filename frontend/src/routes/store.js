@@ -8,10 +8,7 @@ import { writable, derived, get } from 'svelte/store';
  * @typedef {Object} Position
  * @property {number} row
  * @property {number} col
- *
- * @type {Writable<App.DesktopEntry[]>}
  */
-export const desktopEntries = writable([]);
 
 /**
  * @type {Writable<Position | null>}

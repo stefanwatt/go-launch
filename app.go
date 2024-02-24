@@ -2,25 +2,26 @@ package main
 
 import (
 	"context"
+	"os"
 
 	"code.rocketnine.space/tslocum/desktop"
 )
 
-// App struct
 type App struct {
 	ctx context.Context
 }
 
-// NewApp creates a new App application struct
 func NewApp() *App {
 	return &App{}
 }
 
 var destkopEntries []*desktop.Entry
+var mruDesktopEntries []*desktop.Entry
+var homeDir, _ = os.UserHomeDir()
 
-// startup is called when the app starts. The context is saved
-// so we can call the runtime methods
 func (a *App) startup(ctx context.Context) {
 	a.ctx = ctx
+	initMru()
 	destkopEntries = getDesktopEntries()
+	updateMruEntries()
 }

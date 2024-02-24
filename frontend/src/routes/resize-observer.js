@@ -5,7 +5,7 @@ export function setup() {
 		for (let entry of entries) {
 			const cr = entry.contentRect;
 			if (!cr?.width || !cr?.height || !cr.width > 0 || !cr.height > 0) return;
-			WindowSetSize(cr.width, cr.height);
+			WindowSetSize(Math.round(cr.width), Math.round(cr.height));
 		}
 	});
 	const mainElement = document.getElementById('main');
