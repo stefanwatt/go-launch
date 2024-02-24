@@ -1,8 +1,7 @@
 <script>
-	import { GetDesktopEntries, FuzzyFindDesktopEntry } from '$lib/wailsjs/go/main/App';
-	import { onMount } from 'svelte';
+	import { FuzzyFindDesktopEntry } from '$lib/wailsjs/go/main/App';
 	import DesktopEntryComponent from './DesktopEntry.svelte';
-	import { setup } from './resize-observer';
+	import { setupResizeObserver } from './resize-observer';
 	import { onKeyPress, onInputKeypress } from './keyboard';
 	import {
 		promptInput,
@@ -13,10 +12,8 @@
 		searchResults
 	} from './store';
 	import SearchIcon from './SearchIcon.svelte';
-
-	onMount(async () => {
-		setup();
-	});
+	import { slide } from 'svelte/transition';
+	import { quintOut } from 'svelte/easing';
 
 	/** @param {HTMLInputElement} node */
 	function setupKeyboardNavigation(node) {
@@ -33,6 +30,7 @@
 
 	searchResults.subscribe(
 		/** @param {App.DesktopEntry[][]} newSearchResults*/ (newSearchResults) => {
+			console.log(newSearchResults);
 			const noResults = newSearchResults.every((row) => row.length === 0);
 			const promptInputFocused = document?.activeElement === $promptInput;
 			if ($promptInput && !promptInputFocused && noResults) {
@@ -62,7 +60,7 @@
 	type="text"
 	class="absolute h-0 w-0 overflow-hidden"
 />
-<div id="main" class="h-full">
+<div use:setupResizeObserver class="h-full">
 	<div id="input-container" class="flex flex-row justify-center bg-transparent px-12">
 		<!-- svelte-ignore a11y-autofocus -->
 		<div class="flex w-full">
@@ -82,27 +80,34 @@
 	</div>
 	{#if $searchResults.some(/** @param {App.DesktopEntry[]} row */ (row) => row.length !== 0)}
 		<div class="mt-2 flex h-full w-full justify-center py-2">
-			<div class="grid h-full w-full grid-cols-4 rounded-3xl bg-transparent p-2">
+			<div class="h-full w-full rounded-3xl bg-transparent p-2">
 				{#each $searchResults as _, row}
-					{#each $searchResults[row] as desktopEntry, col}
-						{#if desktopEntry}
-							<!-- svelte-ignore a11y-no-static-element-interactions -->
-							<div
-								on:mouseenter={() => {
-									$selectionPosition = { row, col };
-								}}
-								on:mouseleave={() => {
-									$selectionPosition = null;
-								}}
-								class={`m-4 h-32 w-56 col-start-${col} row-start-${row} col-span-1 row-span-1 m-1`}
-							>
-								<DesktopEntryComponent
-									selected={desktopEntry.Exec === $selectedEntry?.Exec}
-									{desktopEntry}
-								></DesktopEntryComponent>
-							</div>
-						{/if}
-					{/each}
+					{#if $searchResults[row]?.some(/** @param {App.DesktopEntry} entry */ (entry) => !!entry)}
+						<div
+							transition:slide={{ delay: 0, duration: 300, easing: quintOut }}
+							class="flex justify-between"
+						>
+							{#each $searchResults[row] as desktopEntry, col}
+								{#if desktopEntry}
+									<!-- svelte-ignore a11y-no-static-element-interactions -->
+									<div
+										on:mouseenter={() => {
+											$selectionPosition = { row, col };
+										}}
+										on:mouseleave={() => {
+											$selectionPosition = null;
+										}}
+										class={`m-4 h-32 w-56 col-start-${col} row-start-${row} col-span-1 row-span-1 m-1`}
+									>
+										<DesktopEntryComponent
+											selected={desktopEntry.Exec === $selectedEntry?.Exec}
+											{desktopEntry}
+										></DesktopEntryComponent>
+									</div>
+								{/if}
+							{/each}
+						</div>
+					{/if}
 				{/each}
 			</div>
 		</div>

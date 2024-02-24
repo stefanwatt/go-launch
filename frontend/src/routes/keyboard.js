@@ -1,4 +1,3 @@
-import hotkeys from 'hotkeys-js';
 import { LaunchApp, HideLauncher } from '$lib/wailsjs/go/main/App';
 import { get } from 'svelte/store';
 import {
@@ -68,6 +67,7 @@ export function onKeyPress(node) {
 				searchTerm$.set('');
 				break;
 			case 'Backspace':
+				event.preventDefault();
 				selectionPosition.set(null);
 				const input = get(promptInput);
 				input.focus();

@@ -5,8 +5,6 @@
 - make it scriptable (e.g. with lua)
 
 [for me]
-- fix centering
 - add "apps" like calculator/translator
-- get rid of scroll bar
 - maybe make highlighed entry sexier
-- on first load show the most recently used apps; what could be the fallback ranking?
+- some clipping at the bottom; bottom border is not visible
