@@ -4,7 +4,8 @@ import {
 	selectionPosition,
 	searchTerm as searchTerm$,
 	searchResults as searchResults$,
-	selectedEntry as selectedEntry$
+	selectedEntry as selectedEntry$,
+	promptInput
 } from './store';
 
 /** @param {HTMLInputElement} node */
@@ -46,11 +47,17 @@ export function onKeyPress(node) {
 				break;
 			case 'Enter':
 				LaunchApp(selectedEntry.Exec);
-				searchTerm = '';
+				searchTerm$.set('');
 				break;
 			case 'Escape':
-				searchTerm = '';
 				HideLauncher();
+				searchTerm$.set('');
+				break;
+			case 'Backspace':
+				selectionPosition.set(null);
+				const input = get(promptInput);
+				input.focus();
+				searchTerm$.set(searchTerm.slice(0, -1));
 				break;
 			default:
 				break;

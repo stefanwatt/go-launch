@@ -14,7 +14,6 @@
 		searchResults
 	} from './store';
 	import SearchIcon from './SearchIcon.svelte';
-	import DesktopEntry from './DesktopEntry.svelte';
 
 	onMount(async () => {
 		setup();
@@ -26,15 +25,33 @@
 		onKeyPress(node);
 	}
 
-	selectionPosition.subscribe((pos) => {
-		if ($promptInput && !pos && document.activeElement !== $promptInput) $promptInput.focus();
-		else if ($keyboardNavigationInput && document.activeElement !== $keyboardNavigationInput)
-			$keyboardNavigationInput.focus();
-	});
+	selectionPosition.subscribe(
+		/** @param {import('./store').Position} pos*/ (pos) => {
+			if ($promptInput && !pos && document.activeElement !== $promptInput) $promptInput.focus();
+			else if ($keyboardNavigationInput && document.activeElement !== $keyboardNavigationInput)
+				$keyboardNavigationInput.focus();
+		}
+	);
+
+	searchResults.subscribe(
+		/** @param {App.DesktopEntry[][]} newSearchResults*/ (newSearchResults) => {
+			const noResults = newSearchResults.every((row) => row.length === 0);
+			const promptInputFocused = document?.activeElement === $promptInput;
+			if ($promptInput && !promptInputFocused && noResults) {
+				return $promptInput.focus();
+			} else if (
+				$searchResults?.length &&
+				$searchResults[0].filter(/** @param {App.DesktopEntry} entry*/ (entry) => !!entry)
+					.length === 1
+			) {
+				selectionPosition.set({ row: 0, col: 0 });
+			}
+		}
+	);
+
 	$: {
 		FuzzyFindDesktopEntry($searchTerm).then(
 			/** @param {App.DesktopEntry[][]} results*/ (results) => {
-				console.log(results);
 				searchResults.set(results);
 			}
 		);
@@ -48,10 +65,7 @@
 	class="absolute h-0 w-0 overflow-hidden"
 />
 <div id="main" class="h-full">
-	<div
-		id="input-container"
-		class="flex flex-row justify-center rounded-b-lg border-b border-fuchsia-200 bg-transparent px-12"
-	>
+	<div id="input-container" class="flex flex-row justify-center bg-transparent px-12">
 		<!-- svelte-ignore a11y-autofocus -->
 		<div class="flex w-full">
 			<div class="mr-4 flex h-full w-8 items-center text-slate-100">
@@ -62,25 +76,24 @@
 				autofocus
 				on:keyup={onInputKeypress}
 				bind:value={$searchTerm}
-				class="h-20 w-full rounded-full border-none bg-transparent text-2xl text-slate-100 outline-none active:border-none"
+				class="h-20 w-full border-none bg-transparent text-2xl text-slate-100 outline-none active:border-none"
 				placeholder="Search...."
 				type="text"
 			/>
 		</div>
 	</div>
-	{#if $searchResults.some((row) => row.length !== 0)}
+	{#if $searchResults.some(/** @param {App.DesktopEntry[]} row */ (row) => row.length !== 0)}
 		<div class="mt-2 flex h-full w-full justify-center py-2">
 			<div class="grid h-full w-full grid-cols-4 rounded-3xl bg-transparent p-2">
 				{#each $searchResults as _, row}
 					{#each $searchResults[row] as desktopEntry, col}
 						{#if desktopEntry}
+							<!-- svelte-ignore a11y-no-static-element-interactions -->
 							<div
 								on:mouseenter={() => {
-									console.log('mouseenter');
 									$selectionPosition = { row, col };
 								}}
 								on:mouseleave={() => {
-									console.log('mouseleave');
 									$selectionPosition = null;
 								}}
 								class={`m-4 h-32 w-56 col-start-${col} row-start-${row} col-span-1 row-span-1 m-1`}
