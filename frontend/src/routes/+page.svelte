@@ -1,5 +1,5 @@
 <script>
-	import { GetDesktopEntries } from '$lib/wailsjs/go/main/App';
+	import { GetDesktopEntries, FuzzyFindDesktopEntry } from '$lib/wailsjs/go/main/App';
 	import { onMount } from 'svelte';
 	import DesktopEntryComponent from './DesktopEntry.svelte';
 	import { setup } from './resize-observer';
@@ -14,6 +14,7 @@
 		searchResults
 	} from './store';
 	import SearchIcon from './SearchIcon.svelte';
+	import DesktopEntry from './DesktopEntry.svelte';
 
 	onMount(async () => {
 		setup();
@@ -21,7 +22,7 @@
 	});
 
 	/** @param {HTMLInputElement} node */
-	function setupKeyboadrNavigation(node) {
+	function setupKeyboardNavigation(node) {
 		onKeyPress(node);
 	}
 
@@ -30,11 +31,19 @@
 		else if ($keyboardNavigationInput && document.activeElement !== $keyboardNavigationInput)
 			$keyboardNavigationInput.focus();
 	});
+	$: {
+		FuzzyFindDesktopEntry($searchTerm).then(
+			/** @param {App.DesktopEntry[][]} results*/ (results) => {
+				console.log(results);
+				searchResults.set(results);
+			}
+		);
+	}
 </script>
 
 <input
 	bind:this={$keyboardNavigationInput}
-	use:setupKeyboadrNavigation
+	use:setupKeyboardNavigation
 	type="text"
 	class="absolute h-0 w-0 overflow-hidden"
 />
@@ -64,22 +73,24 @@
 			<div class="grid h-full w-full grid-cols-4 rounded-3xl bg-transparent p-2">
 				{#each $searchResults as _, row}
 					{#each $searchResults[row] as desktopEntry, col}
-						<div
-							on:mouseenter={() => {
-								console.log('mouseenter');
-								$selectionPosition = { row, col };
-							}}
-							on:mouseleave={() => {
-								console.log('mouseleave');
-								$selectionPosition = null;
-							}}
-							class={`m-4 h-32 w-56 col-start-${col} row-start-${row} col-span-1 row-span-1 m-1`}
-						>
-							<DesktopEntryComponent
-								selected={desktopEntry.Exec === $selectedEntry?.Exec}
-								{desktopEntry}
-							></DesktopEntryComponent>
-						</div>
+						{#if desktopEntry}
+							<div
+								on:mouseenter={() => {
+									console.log('mouseenter');
+									$selectionPosition = { row, col };
+								}}
+								on:mouseleave={() => {
+									console.log('mouseleave');
+									$selectionPosition = null;
+								}}
+								class={`m-4 h-32 w-56 col-start-${col} row-start-${row} col-span-1 row-span-1 m-1`}
+							>
+								<DesktopEntryComponent
+									selected={desktopEntry.Exec === $selectedEntry?.Exec}
+									{desktopEntry}
+								></DesktopEntryComponent>
+							</div>
+						{/if}
 					{/each}
 				{/each}
 			</div>

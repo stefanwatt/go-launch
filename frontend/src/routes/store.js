@@ -1,7 +1,11 @@
 import { writable, derived, get } from 'svelte/store';
-import { mapSearchResults } from './desktop-entry';
 
-//** @type {Writeable<App.DesktopEntry[]>}*/
+/**
+ * @typedef {import('svelte/store').Writable} Writable
+ * @typedef {import('svelte/store').Derived} Derived
+ * @typedef {App.DesktopEntry} DesktopEntry
+ * @type {Writable<App.DesktopEntry[]>}
+ */
 export const desktopEntries = writable([]);
 
 export const selectionPosition = writable({
@@ -9,22 +13,19 @@ export const selectionPosition = writable({
 	col: 0
 });
 
-//** @type {Writeable<HTMLInputElement>}*/
+/** @type {Writable<HTMLInputElement>}*/
 export const keyboardNavigationInput = writable();
 
-//** @type {Writeable<HTMLInputElement>}*/
+/** @type {Writable<HTMLInputElement>}*/
 export const promptInput = writable();
 
-//** @type {Writeable<string>}*/
+/** @type {Writable<string>}*/
 export const searchTerm = writable('');
 
-//** @type {Derived<App.DesktopEntry[]>}*/
-export const searchResults = derived(
-	[searchTerm, desktopEntries],
-	([$searchTerm, $desktopEntries]) => {
-		return $searchTerm === '' ? [[], [], [], []] : mapSearchResults($desktopEntries, $searchTerm);
-	}
-);
+/** @type {Writable<App.DesktopEntry[]>}*/
+export const searchResults = writable([]);
+
+/** @type {Writable<App.DesktopEntry[]>}*/
 export const selectedEntry = derived(selectionPosition, ($selectionPosition) => {
 	const $searchResults = get(searchResults);
 	if (!$selectionPosition || $searchResults.every((row) => row.length === 0)) return null;

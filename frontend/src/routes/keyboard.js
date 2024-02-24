@@ -32,11 +32,15 @@ export function onKeyPress(node) {
 				break;
 			case 'ArrowLeft':
 				nextCol = col - 1;
+				if (searchResults[row].length === 1 && row > 0)
+					return selectionPosition.set({ row: row - 1, col: size - 1 });
 				if (nextCol < 0) return selectionPosition.set({ row, col: size - 1 });
 				selectionPosition.set({ row, col: nextCol });
 				break;
 			case 'ArrowRight':
 				nextCol = col + 1;
+				if (!searchResults[row + 1]?.length && !searchResults[row][nextCol])
+					return selectionPosition.set({ row: 0, col: 0 });
 				if (nextCol >= size) return selectionPosition.set({ row, col: 0 });
 				selectionPosition.set({ row, col: nextCol });
 				break;
