@@ -1,4 +1,13 @@
-2024/02/29 22:44:07 api.go:74: searchTerm = a
-2024/02/29 22:44:08 api.go:103: returning 24 results
-2024/02/29 22:44:09 api.go:74: searchTerm = 
-2024/02/29 22:44:09 api.go:103: returning 16 results
+2024/02/29 23:36:05 main.go:21: Init
+2024/02/29 23:36:05 api.go:88: searchTerm = 
+2024/02/29 23:36:05 api.go:96: true
+2024/02/29 23:36:05 api.go:98: true
+2024/02/29 23:36:05 api.go:102: true
+2024/02/29 23:36:05 api.go:107: nil entry
+2024/02/29 23:36:05 api.go:126: returning 16 results
+2024/02/29 23:36:06 api.go:88: searchTerm = 
+2024/02/29 23:36:06 api.go:96: true
+2024/02/29 23:36:06 api.go:98: true
+2024/02/29 23:36:06 api.go:102: true
+2024/02/29 23:36:06 api.go:107: nil entry
+2024/02/29 23:36:06 api.go:126: returning 16 results

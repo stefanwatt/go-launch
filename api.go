@@ -9,6 +9,11 @@ import (
 	"github.com/lithammer/fuzzysearch/fuzzy"
 )
 
+var (
+	COLS = 4
+	ROWS = 4
+)
+
 func hideLauncher() {
 	cmd := exec.Command("i3-msg", "[class=\"Go-launch\"]", "scratchpad", "show")
 	cmd.Start()
@@ -70,30 +75,48 @@ func removeDuplicateEntries(searchResultEntries []*Entry) []*Entry {
 	return filtered
 }
 
+func hasNilEntries(entries []*Entry) bool {
+	for _, entry := range entries {
+		if entry == nil {
+			return true
+		}
+	}
+	return false
+}
+
 func (a *App) FuzzyFindDesktopEntry(searchTerm string) [][]*Entry {
 	print("searchTerm = " + searchTerm)
-	getDesktopEntries()
+	initDesktopEntries()
 	var searchResultEntries []*Entry
 	if searchTerm == "" {
 		searchResultEntries = mruDesktopEntries
 	} else {
 		searchResultEntries = getSearchResultEntriesFuzzy(searchTerm)
 	}
+	print(hasNilEntries(searchResultEntries))
 	searchResultEntries = removeDuplicateEntries(searchResultEntries)
+	print(hasNilEntries(searchResultEntries))
 
 	if searchTerm == "" {
 		searchResultEntries = fillUpDesktopEntries(searchResultEntries)
+		print(hasNilEntries(searchResultEntries))
 	}
 
-	searchResultEntries = trimExec(searchResultEntries)
-	searchResults := make([][]*Entry, 4)
-	for i := range searchResults {
-		searchResults[i] = make([]*Entry, 4)
+	for _, entry := range searchResultEntries {
+		if entry == nil {
+			print("nil entry")
+			continue
+		}
+		entry.Exec = trimExec(entry.Exec)
 	}
-	size := 4
-	for i := 0; i < size; i++ {
-		for j := 0; j < size; j++ {
-			index := i*size + j
+
+	searchResults := make([][]*Entry, ROWS)
+	for i := range searchResults {
+		searchResults[i] = make([]*Entry, COLS)
+	}
+	for i := 0; i < ROWS; i++ {
+		for j := 0; j < COLS; j++ {
+			index := i*ROWS + j
 			if index < len(searchResultEntries) {
 				searchResults[i][j] = searchResultEntries[index]
 			}

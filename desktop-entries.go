@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
-	"os/exec"
+	"path"
 	"path/filepath"
 	"regexp"
 	"strconv"
@@ -11,6 +11,14 @@ import (
 
 	"code.rocketnine.space/tslocum/desktop"
 	"github.com/mitchellh/hashstructure"
+)
+
+var (
+	ZAFIRO_ICONS_PATH      = "/home/stefan/Projects/Zafiro-icons/Dark"
+	ICONS_BASE_PATH        = ZAFIRO_ICONS_PATH + "/apps/scalable"
+	ICONS_OUTPUT_BASE_PATH = path.Join(homeDir, "Projects/go-launch/frontend/static/app-icons/")
+	GENERIC_ICON_PATH      = ZAFIRO_ICONS_PATH + "/categories/22-Dark/applications-utilities.svg"
+	COUNT                  = COLS * ROWS
 )
 
 type EntryType int
@@ -50,12 +58,24 @@ type Entry struct {
 	NoDisplay bool
 }
 
-var (
-	ZAFIRO_ICONS_PATH = "/home/stefan/Projects/Zafiro-icons/Dark"
-	ICONS_BASE_PATH   = ZAFIRO_ICONS_PATH + "/apps/scalable"
-	GENERIC_ICON_PATH = ZAFIRO_ICONS_PATH + "/categories/22-Dark/applications-utilities.svg"
-	COUNT             = 16
-)
+func initDesktopEntries() []*Entry {
+	dataDirs := desktop.DataDirs()
+	desktopEntries := getDesktopEntriesOfDir(dataDirs)
+	for _, entry := range desktopEntries {
+		hash, err := hashstructure.Hash(entry, nil)
+		if err == nil {
+			entry.Hash = fmt.Sprint(hash)
+		}
+		zafiroIcon, err := mapZafiroIcon(entry.Icon)
+		iconPath := mapIconPath(zafiroIcon, entry.Icon)
+		if err == nil {
+			src := ICONS_BASE_PATH + "/" + zafiroIcon
+			copyIcon(src, iconPath)
+		}
+		entry.Icon = iconPath
+	}
+	return desktopEntries
+}
 
 func isSameEntry(a *Entry, b *Entry) bool {
 	if a == nil || b == nil {
@@ -65,23 +85,12 @@ func isSameEntry(a *Entry, b *Entry) bool {
 		b.Name == a.Name || b.Exec == a.Exec
 }
 
-func trimExec(currentEntries []*Entry) []*Entry {
-	trimmedEntries := make([]*Entry, len(currentEntries))
-	for i, entry := range currentEntries {
-		// Make a shallow copy of the entry
-		if entry == nil {
-			continue
-		}
-		entryCopy := *entry
-		// Modify the Exec field in the copy
-		fields := strings.Fields(entry.Exec)
-		if len(fields) > 0 {
-			entryCopy.Exec = fields[0]
-		}
-		// Assign the modified copy to the new slice
-		trimmedEntries[i] = &entryCopy
+func trimExec(exec string) string {
+	fields := strings.Fields(exec)
+	if len(fields) > 0 {
+		return fields[0]
 	}
-	return trimmedEntries
+	return exec
 }
 
 func fillUpDesktopEntries(currentEntries []*Entry) []*Entry {
@@ -107,20 +116,6 @@ func fillUpDesktopEntries(currentEntries []*Entry) []*Entry {
 	}
 
 	return updatedEntries
-}
-
-func findIcon(appName string) string {
-	dirEntries, error := os.ReadDir(ICONS_BASE_PATH)
-	if error != nil {
-		return ""
-	}
-	for _, entry := range dirEntries {
-		// try to find exact match first
-		if strings.Contains(entry.Name(), appName) {
-			return entry.Name()
-		}
-	}
-	return ""
 }
 
 func getDesktopEntryOfDir(dir string) []*Entry {
@@ -218,54 +213,4 @@ func getDesktopEntriesOfDir(desktopEntryDirs []string) []*Entry {
 		return getDesktopEntryOfDir(dir)
 	})
 	return flatten(desktopEntries2d)
-}
-
-func getDesktopEntries() []*Entry {
-	dataDirs := desktop.DataDirs()
-	desktopEntries := getDesktopEntriesOfDir(dataDirs)
-	for _, entry := range desktopEntries {
-
-		hash, err := hashstructure.Hash(entry, nil)
-		if err == nil {
-			entry.Hash = fmt.Sprint(hash)
-		}
-
-		if entry.Icon == "" || strings.HasPrefix(entry.Icon, "/") {
-			fmt.Println("Icon not found for ", entry.Name)
-			src := GENERIC_ICON_PATH
-			iconName := "default.svg"
-			dest := "/home/stefan/Projects/go-launch/frontend/static/app-icons/" + iconName
-			cmd := exec.Command("cp", src, dest)
-			cmd.Start()
-			entry.Icon = iconName
-			continue
-		}
-		iconPath := findIcon(entry.Icon)
-
-		if iconPath != "" {
-			entry.Icon = iconPath
-			if !strings.HasSuffix(entry.Icon, "svg") {
-				entry.Icon += ".svg"
-			}
-			src := ICONS_BASE_PATH + "/" + iconPath
-			destFileName := entry.Icon
-			if !strings.HasSuffix(destFileName, "svg") {
-				destFileName += ".svg"
-			}
-			dest := "/home/stefan/Projects/go-launch/frontend/static/app-icons/" + destFileName
-			fmt.Println(dest)
-			cmd := exec.Command("cp", src, dest)
-			err := cmd.Start()
-			fmt.Println(err)
-		} else {
-
-			src := GENERIC_ICON_PATH
-			iconName := "default.svg"
-			dest := "/home/stefan/Projects/go-launch/frontend/static/app-icons/" + iconName
-			cmd := exec.Command("cp", src, dest)
-			cmd.Start()
-			entry.Icon = iconName
-		}
-	}
-	return desktopEntries
 }
