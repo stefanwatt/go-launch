@@ -23,12 +23,11 @@ var (
 
 type EntryType int
 
-// All entry types
 const (
-	Unknown     EntryType = iota // Unspecified or unrecognized
-	Application                  // Execute command
-	Link                         // Open browser
-	Directory                    // Open file manager
+	Unknown EntryType = iota
+	Application
+	Link
+	Directory
 )
 
 const sectionHeaderNotFoundError = "section header not found"
@@ -60,13 +59,17 @@ type Entry struct {
 
 func initDesktopEntries() []*Entry {
 	dataDirs := desktop.DataDirs()
-	desktopEntries := getDesktopEntriesOfDir(dataDirs)
+	desktopEntries := getDesktopEntriesOfDirs(dataDirs)
 	for _, entry := range desktopEntries {
 		hash, err := hashstructure.Hash(entry, nil)
 		if err == nil {
 			entry.Hash = fmt.Sprint(hash)
 		}
 		zafiroIcon, err := mapZafiroIcon(entry.Icon)
+		if zafiroIcon == ".directory" {
+			print(entry.Name)
+		}
+
 		iconPath := mapIconPath(zafiroIcon, entry.Icon)
 		if err == nil {
 			src := ICONS_BASE_PATH + "/" + zafiroIcon
@@ -77,48 +80,14 @@ func initDesktopEntries() []*Entry {
 	return desktopEntries
 }
 
-func isSameEntry(a *Entry, b *Entry) bool {
-	if a == nil || b == nil {
-		return true
-	}
-	return b.Hash == a.Hash ||
-		b.Name == a.Name || b.Exec == a.Exec
-}
-
-func trimExec(exec string) string {
-	fields := strings.Fields(exec)
-	if len(fields) > 0 {
-		return fields[0]
-	}
-	return exec
-}
-
-func fillUpDesktopEntries(currentEntries []*Entry) []*Entry {
-	if len(currentEntries) >= COUNT {
-		return currentEntries
-	}
-
-	filler := filter(desktopEntries, func(a *Entry) bool {
-		found, _ := find(currentEntries, func(b *Entry) bool {
-			return isSameEntry(a, b)
-		})
-		return found == nil
+func getDesktopEntriesOfDirs(desktopEntryDirs []string) []*Entry {
+	desktopEntries2d := mapArray(desktopEntryDirs, func(dir string) []*Entry {
+		return getDesktopEntriesOfDir(dir)
 	})
-
-	updatedEntries := append([]*Entry(nil), currentEntries...)
-	for len(updatedEntries) < COUNT && len(filler) > 0 {
-		updatedEntries = append(updatedEntries, filler[0])
-		filler = filler[1:]
-	}
-
-	if len(updatedEntries) < COUNT {
-		print("insufficient amount of filler desktop entries")
-	}
-
-	return updatedEntries
+	return flatten(desktopEntries2d)
 }
 
-func getDesktopEntryOfDir(dir string) []*Entry {
+func getDesktopEntriesOfDir(dir string) []*Entry {
 	fmt.Println("Getting desktop entries of dir:", dir)
 	var entries []*Entry
 
@@ -134,7 +103,7 @@ func getDesktopEntryOfDir(dir string) []*Entry {
 		}
 		if strings.HasSuffix(file.Name(), ".desktop") {
 			filePath := filepath.Join(dir, file.Name())
-			entriesOfFile, err := parseDesktopFile(filePath)
+			entriesOfFile, err := getDesktopEntries(filePath)
 			if err != nil {
 				fmt.Println("Error parsing desktop file:", filePath, ":", err)
 				continue
@@ -145,7 +114,28 @@ func getDesktopEntryOfDir(dir string) []*Entry {
 	return entries
 }
 
-func parseDesktopEntryLines(lines []string) *Entry {
+func getDesktopEntries(path string) ([]*Entry, error) {
+	file, err := os.ReadFile(path) // Use ioutil.ReadFile in Go versions before 1.16
+	if err != nil {
+		return nil, err
+	}
+
+	content := string(file)
+	regex := regexp.MustCompile(`\[.*\]`)
+	parts := regex.Split(content, -1)
+	entries := mapArray(parts, func(part string) *Entry {
+		lines := strings.Split(part, "\n")
+		return getDesktopEntry(lines)
+	})
+
+	entries = filter(entries, func(entry *Entry) bool {
+		return !entry.NoDisplay && entry.Type == Application
+	})
+
+	return entries, nil
+}
+
+func getDesktopEntry(lines []string) *Entry {
 	entry := &Entry{}
 	for _, line := range lines {
 		line = strings.TrimSpace(line)
@@ -187,30 +177,53 @@ func parseDesktopEntryLines(lines []string) *Entry {
 	return entry
 }
 
-func parseDesktopFile(path string) ([]*Entry, error) {
-	file, err := os.ReadFile(path) // Use ioutil.ReadFile in Go versions before 1.16
-	if err != nil {
-		return nil, err
+// ----------------------UTILS-------------------------------
+func isSameEntry(a *Entry, b *Entry) bool {
+	if a == nil || b == nil {
+		return true
 	}
-
-	content := string(file)
-	regex := regexp.MustCompile(`\[.*\]`)
-	parts := regex.Split(content, -1)
-	entries := mapArray(parts, func(part string) *Entry {
-		lines := strings.Split(part, "\n")
-		return parseDesktopEntryLines(lines)
-	})
-
-	entries = filter(entries, func(entry *Entry) bool {
-		return !entry.NoDisplay && entry.Type == Application
-	})
-
-	return entries, nil
+	return b.Hash == a.Hash ||
+		b.Name == a.Name || b.Exec == a.Exec
 }
 
-func getDesktopEntriesOfDir(desktopEntryDirs []string) []*Entry {
-	desktopEntries2d := mapArray(desktopEntryDirs, func(dir string) []*Entry {
-		return getDesktopEntryOfDir(dir)
+func trimExec(exec string) string {
+	fields := strings.Fields(exec)
+	if len(fields) > 0 {
+		return fields[0]
+	}
+	return exec
+}
+
+func hasNilEntries(entries []*Entry) bool {
+	for _, entry := range entries {
+		if entry == nil {
+			return true
+		}
+	}
+	return false
+}
+
+func fillUpDesktopEntries(currentEntries []*Entry) []*Entry {
+	if len(currentEntries) >= COUNT {
+		return currentEntries
+	}
+
+	filler := filter(desktopEntries, func(a *Entry) bool {
+		found, _ := find(currentEntries, func(b *Entry) bool {
+			return isSameEntry(a, b)
+		})
+		return found == nil
 	})
-	return flatten(desktopEntries2d)
+
+	updatedEntries := append([]*Entry(nil), currentEntries...)
+	for len(updatedEntries) < COUNT && len(filler) > 0 {
+		updatedEntries = append(updatedEntries, filler[0])
+		filler = filler[1:]
+	}
+
+	if len(updatedEntries) < COUNT {
+		print("insufficient amount of filler desktop entries")
+	}
+
+	return updatedEntries
 }

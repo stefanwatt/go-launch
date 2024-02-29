@@ -75,15 +75,6 @@ func removeDuplicateEntries(searchResultEntries []*Entry) []*Entry {
 	return filtered
 }
 
-func hasNilEntries(entries []*Entry) bool {
-	for _, entry := range entries {
-		if entry == nil {
-			return true
-		}
-	}
-	return false
-}
-
 func (a *App) FuzzyFindDesktopEntry(searchTerm string) [][]*Entry {
 	print("searchTerm = " + searchTerm)
 	initDesktopEntries()
@@ -93,13 +84,10 @@ func (a *App) FuzzyFindDesktopEntry(searchTerm string) [][]*Entry {
 	} else {
 		searchResultEntries = getSearchResultEntriesFuzzy(searchTerm)
 	}
-	print(hasNilEntries(searchResultEntries))
 	searchResultEntries = removeDuplicateEntries(searchResultEntries)
-	print(hasNilEntries(searchResultEntries))
 
 	if searchTerm == "" {
 		searchResultEntries = fillUpDesktopEntries(searchResultEntries)
-		print(hasNilEntries(searchResultEntries))
 	}
 
 	for _, entry := range searchResultEntries {

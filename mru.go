@@ -78,14 +78,15 @@ func updateMruEntries() {
 		}
 		return mapped
 	})
-	fmt.Println("length of mapped = ", len(mapped))
+	mapped = filter(mapped, func(e *Entry) bool {
+		return e != nil
+	})
 	i := 0
-	for len(mapped) < 16 {
+	for len(mapped) < COUNT {
 		if desktopEntries[i] != nil && desktopEntries[i].Exec != "" {
 			mapped = append(mapped, desktopEntries[i])
 		}
 		i = i + 1
 	}
-	fmt.Println("after length of mapped = ", len(mapped))
 	mruDesktopEntries = mapped
 }

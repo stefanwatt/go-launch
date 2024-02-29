@@ -8,17 +8,23 @@ import (
 	"strings"
 )
 
-var DEFAULT_ICON = "default.svg"
+var (
+	DEFAULT_ICON  = "default.svg"
+	dirEntries, _ = os.ReadDir(ICONS_BASE_PATH)
+)
 
-func mapZafiroIcon(appName string) (string, error) {
-	dirEntries, err := os.ReadDir(ICONS_BASE_PATH)
-	if err != nil {
-		return "", err
+func mapZafiroIcon(appIconName string) (string, error) {
+	if appIconName == "" {
+		return "", errors.New("icon not found")
 	}
-	for _, dir := range dirEntries {
+	for _, file := range dirEntries {
 		// try to find exact match first
-		if strings.Contains(dir.Name(), appName) {
-			return dir.Name(), nil
+		filename := file.Name()
+		if strings.Contains(filename, ".directory") {
+			continue
+		}
+		if strings.Contains(filename, appIconName) {
+			return filename, nil
 		}
 	}
 	return "", errors.New("icon not found")
