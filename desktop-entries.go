@@ -74,7 +74,10 @@ func trimExec(currentEntries []*Entry) []*Entry {
 		}
 		entryCopy := *entry
 		// Modify the Exec field in the copy
-		entryCopy.Exec = strings.Fields(entry.Exec)[0]
+		fields := strings.Fields(entry.Exec)
+		if len(fields) > 0 {
+			entryCopy.Exec = fields[0]
+		}
 		// Assign the modified copy to the new slice
 		trimmedEntries[i] = &entryCopy
 	}
@@ -190,7 +193,6 @@ func parseDesktopEntryLines(lines []string) *Entry {
 }
 
 func parseDesktopFile(path string) ([]*Entry, error) {
-	print("parsing desktop entry: " + path)
 	file, err := os.ReadFile(path) // Use ioutil.ReadFile in Go versions before 1.16
 	if err != nil {
 		return nil, err

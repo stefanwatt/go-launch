@@ -72,7 +72,6 @@ func removeDuplicateEntries(searchResultEntries []*Entry) []*Entry {
 
 func (a *App) FuzzyFindDesktopEntry(searchTerm string) [][]*Entry {
 	print("searchTerm = " + searchTerm)
-	print("foo")
 	getDesktopEntries()
 	var searchResultEntries []*Entry
 	if searchTerm == "" {
