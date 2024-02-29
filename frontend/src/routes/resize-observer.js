@@ -1,7 +1,9 @@
 import { WindowSetSize } from '$lib/wailsjs/runtime/runtime';
 
-/** @param {HTMLInputElement} node */
+/** @param {HTMLElement} node */
 export function setupResizeObserver(node) {
+	const { clientWidth, clientHeight } = node;
+	WindowSetSize(Math.ceil(clientWidth), Math.ceil(clientHeight)) + 5;
 	const ro = new ResizeObserver((entries) => {
 		for (let entry of entries) {
 			const cr = entry.contentRect;

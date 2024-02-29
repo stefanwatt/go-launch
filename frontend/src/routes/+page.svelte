@@ -1,4 +1,5 @@
 <script>
+	import { flip } from 'svelte/animate';
 	import { FuzzyFindDesktopEntry } from '$lib/wailsjs/go/main/App';
 	import DesktopEntryComponent from './DesktopEntry.svelte';
 	import { setupResizeObserver } from './resize-observer';
@@ -12,13 +13,19 @@
 		searchResults
 	} from './store';
 	import SearchIcon from './SearchIcon.svelte';
-	import { slide } from 'svelte/transition';
+	import { slide, fade } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
+	import { onMount } from 'svelte';
 
 	/** @param {HTMLInputElement} node */
 	function setupKeyboardNavigation(node) {
 		onKeyPress(node);
 	}
+
+	onMount(async () => {
+		const results = await FuzzyFindDesktopEntry('');
+		searchResults.set(results);
+	});
 
 	selectionPosition.subscribe(
 		/** @param {import('./store').Position} pos*/ (pos) => {
@@ -30,7 +37,6 @@
 
 	searchResults.subscribe(
 		/** @param {App.DesktopEntry[][]} newSearchResults*/ (newSearchResults) => {
-			console.log(newSearchResults);
 			const noResults = newSearchResults.every((row) => row.length === 0);
 			const promptInputFocused = document?.activeElement === $promptInput;
 			if ($promptInput && !promptInputFocused && noResults) {
@@ -45,13 +51,16 @@
 		}
 	);
 
-	$: {
-		FuzzyFindDesktopEntry($searchTerm).then(
-			/** @param {App.DesktopEntry[][]} results*/ (results) => {
-				searchResults.set(results);
-			}
-		);
-	}
+	let lastSearchTerm = '';
+	searchTerm.subscribe(
+		/** @param {string} value*/ async (value) => {
+			if (value === lastSearchTerm) return;
+			lastSearchTerm = value;
+			const entries = await FuzzyFindDesktopEntry(value);
+			/**@type {App.DesktopEntry[]}*/
+			searchResults.set(entries);
+		}
+	);
 </script>
 
 <input
@@ -83,12 +92,13 @@
 			<div class="h-full w-full rounded-3xl bg-transparent p-2">
 				{#each $searchResults as _, row}
 					{#if $searchResults[row]?.some(/** @param {App.DesktopEntry} entry */ (entry) => !!entry)}
-						<div
-							transition:slide={{ delay: 0, duration: 300, easing: quintOut }}
-							class="flex justify-between"
-						>
-							{#each $searchResults[row] as desktopEntry, col}
-								{#if desktopEntry}
+						<div transition:slide={{ delay: 0, duration: 300, easing: quintOut }} class="flex">
+							{#each $searchResults[row].filter(/**@param {App.DesktopEntry}entry*/ (entry) => !!entry) as desktopEntry, col (desktopEntry.Hash)}
+								<div
+									class="w-1/4"
+									in:fade={{ delay: 0, duration: 500, easing: quintOut }}
+									animate:flip={{ duration: 500, easing: quintOut }}
+								>
 									<!-- svelte-ignore a11y-no-static-element-interactions -->
 									<div
 										on:mouseenter={() => {
@@ -100,11 +110,11 @@
 										class={`m-4 h-32 w-56 col-start-${col} row-start-${row} col-span-1 row-span-1 m-1`}
 									>
 										<DesktopEntryComponent
-											selected={desktopEntry.Exec === $selectedEntry?.Exec}
+											selected={desktopEntry.Hash === $selectedEntry?.Hash}
 											{desktopEntry}
 										></DesktopEntryComponent>
 									</div>
-								{/if}
+								</div>
 							{/each}
 						</div>
 					{/if}

@@ -30,12 +30,20 @@ func mapArray[T any, U any](arr []T, f func(T) U) []U {
 	return result
 }
 
+func filter[T any](arr []T, f func(T) bool) []T {
+	var result []T
+	for _, value := range arr {
+		if f(value) {
+			result = append(result, value)
+		}
+	}
+	return result
+}
+
 func flatten[T any](slice [][]T) []T {
 	var flatSlice []T
 	for _, innerSlice := range slice {
-		for _, value := range innerSlice {
-			flatSlice = append(flatSlice, value)
-		}
+		flatSlice = append(flatSlice, innerSlice...)
 	}
 	return flatSlice
 }

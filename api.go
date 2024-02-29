@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os/exec"
 	"sort"
+	"strconv"
 
-	"code.rocketnine.space/tslocum/desktop"
 	"github.com/lithammer/fuzzysearch/fuzzy"
 )
 
@@ -17,7 +17,9 @@ func hideLauncher() {
 func (a *App) HideLauncher() {
 	hideLauncher()
 }
+
 func (a *App) LaunchApp(Exec string) {
+	print("launching app " + Exec)
 	command, args := parseCommand(Exec)
 	cmd := exec.Command(command, args...)
 	cmd.Start()
@@ -25,12 +27,12 @@ func (a *App) LaunchApp(Exec string) {
 	updateMruEntry(Exec)
 }
 
-func (a *App) GetDesktopEntries() []*desktop.Entry {
-	return destkopEntries
+func (a *App) GetDesktopEntries() []*Entry {
+	return desktopEntries
 }
 
-func getSearchResultEntriesFuzzy(searchTerm string) []*desktop.Entry {
-	desktopEntryNames := mapArray(destkopEntries, func(entry *desktop.Entry) string {
+func getSearchResultEntriesFuzzy(searchTerm string) []*Entry {
+	desktopEntryNames := mapArray(desktopEntries, func(entry *Entry) string {
 		return entry.Name
 	})
 	matches := fuzzy.RankFindNormalizedFold(searchTerm, desktopEntryNames)
@@ -39,25 +41,55 @@ func getSearchResultEntriesFuzzy(searchTerm string) []*desktop.Entry {
 	searchResultNames := mapArray(matches, func(match fuzzy.Rank) string {
 		return match.Target
 	})
-	return mapArray(searchResultNames, func(name string) *desktop.Entry {
-		entry, _ := find(destkopEntries, func(entry *desktop.Entry) bool {
+	result := mapArray(searchResultNames, func(name string) *Entry {
+		entry, _ := find(desktopEntries, func(entry *Entry) bool {
 			return entry.Name == name
 		})
 		return entry
 	})
+	return result
 }
 
-func (a *App) FuzzyFindDesktopEntry(searchTerm string) [][]*desktop.Entry {
-	var searchResultEntries []*desktop.Entry
+func removeDuplicateEntries(searchResultEntries []*Entry) []*Entry {
+	filtered := []*Entry{}
+	for i := range searchResultEntries {
+		found, _ := find(filtered, func(entry *Entry) bool {
+			if entry == nil {
+				return false
+			}
+			if searchResultEntries[i] == nil {
+				searchResultEntries[i] = entry
+				return false
+			}
+			return isSameEntry(entry, searchResultEntries[i])
+		})
+		if found == nil { // Append if not found, meaning no duplicate
+			filtered = append(filtered, searchResultEntries[i])
+		}
+	}
+	return filtered
+}
+
+func (a *App) FuzzyFindDesktopEntry(searchTerm string) [][]*Entry {
+	print("searchTerm = " + searchTerm)
+	print("foo")
+	getDesktopEntries()
+	var searchResultEntries []*Entry
 	if searchTerm == "" {
 		searchResultEntries = mruDesktopEntries
 	} else {
 		searchResultEntries = getSearchResultEntriesFuzzy(searchTerm)
 	}
+	searchResultEntries = removeDuplicateEntries(searchResultEntries)
 
-	searchResults := make([][]*desktop.Entry, 4)
+	if searchTerm == "" {
+		searchResultEntries = fillUpDesktopEntries(searchResultEntries)
+	}
+
+	searchResultEntries = trimExec(searchResultEntries)
+	searchResults := make([][]*Entry, 4)
 	for i := range searchResults {
-		searchResults[i] = make([]*desktop.Entry, 4)
+		searchResults[i] = make([]*Entry, 4)
 	}
 	size := 4
 	for i := 0; i < size; i++ {
@@ -68,5 +100,7 @@ func (a *App) FuzzyFindDesktopEntry(searchTerm string) [][]*desktop.Entry {
 			}
 		}
 	}
+
+	print("returning " + strconv.Itoa(len(searchResultEntries)) + " results")
 	return searchResults
 }

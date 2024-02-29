@@ -46,9 +46,8 @@ export function onKeyPress(node) {
 				break;
 			case 'ArrowLeft':
 				nextCol = col - 1;
-				if (searchResults[row].length === 1 && row > 0)
-					return selectionPosition.set({ row: row - 1, col: size - 1 });
-				if (nextCol < 0) return selectionPosition.set({ row, col: size - 1 });
+				const entriesInCol = searchResults[row].filter(Boolean).length;
+				if (nextCol < 0) return selectionPosition.set({ row, col: entriesInCol - 1 });
 				selectionPosition.set({ row, col: nextCol });
 				break;
 			case 'ArrowRight':
@@ -76,6 +75,100 @@ export function onKeyPress(node) {
 			default:
 				break;
 		}
+	});
+	const characters = [
+		'a',
+		'b',
+		'c',
+		'd',
+		'e',
+		'f',
+		'g',
+		'h',
+		'i',
+		'j',
+		'k',
+		'l',
+		'm',
+		'n',
+		'o',
+		'p',
+		'q',
+		'r',
+		's',
+		't',
+		'u',
+		'v',
+		'w',
+		'x',
+		'y',
+		'z',
+		'0',
+		'1',
+		'2',
+		'3',
+		'4',
+		'5',
+		'6',
+		'7',
+		'8',
+		'9',
+		'!',
+		'"',
+		'#',
+		'$',
+		'%',
+		'&',
+		"'",
+		'(',
+		')',
+		'*',
+		'+',
+		',',
+		'-',
+		'.',
+		'/',
+		':',
+		';',
+		'<',
+		'=',
+		'>',
+		'?',
+		'@',
+		'[',
+		'\\',
+		']',
+		'^',
+		'_',
+		'`',
+		'{',
+		'|',
+		'}',
+		'~'
+	];
+	// addEventListener(characters, node, 'keyup', () => {
+	// 	selectionPosition.set(null);
+	// 	const input = get(promptInput);
+	// 	input.focus();
+	// 	searchTerm$.update((old) => old + event.key);
+	// });
+}
+
+// function that takes a list of keys, node and event and adds event listener
+/** @param {string[]} keys
+ * @param {HTMLElement} node
+ * @param {string} event
+ * @param{function} cb
+ * @param {any[]}args
+ */
+function addEventListener(keys, node, event, cb, ...args) {
+	keys.forEach((key) => {
+		node.addEventListener(event, (e) => {
+			e.preventDefault();
+			if (e.key === key) {
+				cb(args);
+			}
+		});
 	});
 }
 

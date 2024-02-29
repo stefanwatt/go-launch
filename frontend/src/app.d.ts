@@ -11,6 +11,7 @@ declare global {
 			Name: string;
 			Exec: string;
 			Icon: string;
+			Comment: string;
 		}
 	}
 }

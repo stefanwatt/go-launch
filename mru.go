@@ -6,8 +6,6 @@ import (
 	"os"
 	"path"
 	"sort"
-
-	"code.rocketnine.space/tslocum/desktop"
 )
 
 var configFilePath = path.Join(homeDir, ".config/go-launch/mru.json")
@@ -21,12 +19,11 @@ func initMru() {
 	_, err := os.Open(configFilePath)
 	if err != nil {
 		os.WriteFile(configFilePath, []byte("[]"), 0644)
-	} else {
 	}
 }
 
-func mapToDesktopEntry(mruEntry MruEntry) (*desktop.Entry, error) {
-	matchingEntry, err := find(destkopEntries, func(entry *desktop.Entry) bool {
+func mapToDesktopEntry(mruEntry MruEntry) (*Entry, error) {
+	matchingEntry, err := find(desktopEntries, func(entry *Entry) bool {
 		return entry.Exec == mruEntry.Exec
 	})
 	if err != nil {
@@ -63,7 +60,7 @@ func updateMruEntry(exec string) {
 			return entry
 		})
 	}
-	bytes, err := json.Marshal(mruEntries)
+	bytes, _ := json.Marshal(mruEntries)
 	err = os.WriteFile(configFilePath, bytes, 0644)
 	if err != nil {
 		fmt.Println(err)
@@ -74,19 +71,21 @@ func updateMruEntry(exec string) {
 
 func updateMruEntries() {
 	mruEntries := getMruExec()
-	mapped := mapArray(mruEntries, func(entry MruEntry) *desktop.Entry {
+	mapped := mapArray(mruEntries, func(entry MruEntry) *Entry {
 		mapped, err := mapToDesktopEntry(entry)
 		if err != nil {
 			return nil
 		}
 		return mapped
 	})
-	length := len(mapped)
-	if length < 16 {
-		filler := make([]*desktop.Entry, 16-length)
-		for i := range filler {
-			mapped = append(mapped, destkopEntries[i])
+	fmt.Println("length of mapped = ", len(mapped))
+	i := 0
+	for len(mapped) < 16 {
+		if desktopEntries[i] != nil && desktopEntries[i].Exec != "" {
+			mapped = append(mapped, desktopEntries[i])
 		}
+		i = i + 1
 	}
+	fmt.Println("after length of mapped = ", len(mapped))
 	mruDesktopEntries = mapped
 }
