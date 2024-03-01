@@ -93,7 +93,7 @@
 				{#each $searchResults as _, row}
 					{#if $searchResults[row]?.some(/** @param {App.DesktopEntry} entry */ (entry) => !!entry)}
 						<div transition:slide={{ delay: 0, duration: 300, easing: quintOut }} class="flex">
-							{#each $searchResults[row].filter(/**@param {App.DesktopEntry}entry*/ (entry) => !!entry) as desktopEntry, col (desktopEntry.Hash)}
+							{#each $searchResults[row].filter(/**@param {App.DesktopEntry}entry*/ (entry) => !!entry) as desktopEntry, col (desktopEntry.Id)}
 								<div
 									class="w-1/4"
 									in:fade={{ delay: 0, duration: 500, easing: quintOut }}
@@ -110,7 +110,7 @@
 										class={`m-4 h-32 w-56 col-start-${col} row-start-${row} col-span-1 row-span-1 m-1`}
 									>
 										<DesktopEntryComponent
-											selected={desktopEntry.Hash === $selectedEntry?.Hash}
+											selected={desktopEntry.Id === $selectedEntry?.Id}
 											{desktopEntry}
 										></DesktopEntryComponent>
 									</div>

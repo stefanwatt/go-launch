@@ -8,10 +8,10 @@ declare global {
 		// interface PageState {}
 		// interface Platform {}
 		interface DesktopEntry {
+			Id: string;
 			Name: string;
 			Exec: string;
 			Icon: string;
-			Comment: string;
 		}
 	}
 }

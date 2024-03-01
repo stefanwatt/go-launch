@@ -5,44 +5,39 @@ import (
 	"os"
 	"os/exec"
 	"path"
+	"sort"
 	"strings"
+
+	"github.com/lithammer/fuzzysearch/fuzzy"
 )
 
 var (
-	DEFAULT_ICON  = "default.svg"
-	dirEntries, _ = os.ReadDir(ICONS_BASE_PATH)
+	DEFAULT_ICON   = "default.svg"
+	DIR_ENTRIES, _ = os.ReadDir(ICONS_BASE_PATH)
+	ZAFIRO_ICONS   = mapArray(DIR_ENTRIES, func(entry os.DirEntry) string {
+		return entry.Name()
+	})
 )
 
-func mapZafiroIcon(appIconName string) (string, error) {
+func mapZafiroIcon(appIconName string) (*string, error) {
 	if appIconName == "" {
-		return "", errors.New("icon not found")
+		return nil, errors.New("icon not found")
 	}
-	for _, file := range dirEntries {
-		// try to find exact match first
-		filename := file.Name()
-		if strings.Contains(filename, ".directory") {
-			continue
-		}
-		if strings.Contains(filename, appIconName) {
-			return filename, nil
-		}
+	matches := fuzzy.RankFindNormalizedFold(appIconName, ZAFIRO_ICONS)
+	if len(matches) == 0 {
+		print("no matches found for " + appIconName)
+		return nil, errors.New("icon not found")
 	}
-	return "", errors.New("icon not found")
+	sort.Sort(matches)
+	print(appIconName+" matched with ", matches[0].Target)
+	return &matches[0].Target, nil
 }
 
-func mapIconPath(zafiroIconPath string, entryIcon string) string {
-	if zafiroIconPath == "" {
-		return DEFAULT_ICON
+func mapIconPath(zafiroIconPath string) string {
+	if !strings.HasSuffix(zafiroIconPath, "svg") {
+		return zafiroIconPath + ".svg"
 	}
-	updatedEntryIcon := zafiroIconPath
-	if !strings.HasSuffix(entryIcon, "svg") {
-		updatedEntryIcon += ".svg"
-	}
-	destFileName := updatedEntryIcon
-	if !strings.HasSuffix(destFileName, "svg") {
-		destFileName += ".svg"
-	}
-	return destFileName
+	return zafiroIconPath
 }
 
 func copyIcon(src string, filename string) {

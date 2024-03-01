@@ -11,7 +11,7 @@ import (
 var configFilePath = path.Join(homeDir, ".config/go-launch/mru.json")
 
 type MruEntry struct {
-	Exec  string `json:"exec"`
+	Id    string `json:"id"`
 	Count int    `json:"count"`
 }
 
@@ -24,7 +24,7 @@ func initMru() {
 
 func mapToDesktopEntry(mruEntry MruEntry) (*Entry, error) {
 	matchingEntry, err := find(desktopEntries, func(entry *Entry) bool {
-		return entry.Exec == mruEntry.Exec
+		return entry.Id == mruEntry.Id
 	})
 	if err != nil {
 		return nil, err
@@ -32,7 +32,7 @@ func mapToDesktopEntry(mruEntry MruEntry) (*Entry, error) {
 	return matchingEntry, nil
 }
 
-func getMruExec() []MruEntry {
+func getMruEntries() []MruEntry {
 	file, err := os.ReadFile(configFilePath)
 	if err != nil {
 		return []MruEntry{}
@@ -45,17 +45,17 @@ func getMruExec() []MruEntry {
 	return mru
 }
 
-func updateMruEntry(exec string) {
-	mruEntries := getMruExec()
+func updateMruEntry(desktopEntry *Entry) {
+	mruEntries := getMruEntries()
 	_, err := find(mruEntries, func(entry MruEntry) bool {
-		return entry.Exec == exec
+		return entry.Id == desktopEntry.Id
 	})
 	if err != nil {
-		mruEntries = append(mruEntries, MruEntry{Exec: exec, Count: 1})
+		mruEntries = append(mruEntries, MruEntry{Id: desktopEntry.Id, Count: 1})
 	} else {
 		mruEntries = mapArray(mruEntries, func(entry MruEntry) MruEntry {
-			if entry.Exec == exec {
-				return MruEntry{Exec: exec, Count: entry.Count + 1}
+			if entry.Id == desktopEntry.Id {
+				return MruEntry{Id: desktopEntry.Id, Count: entry.Count + 1}
 			}
 			return entry
 		})
@@ -70,7 +70,7 @@ func updateMruEntry(exec string) {
 }
 
 func updateMruEntries() {
-	mruEntries := getMruExec()
+	mruEntries := getMruEntries()
 	mapped := mapArray(mruEntries, func(entry MruEntry) *Entry {
 		mapped, err := mapToDesktopEntry(entry)
 		if err != nil {
@@ -83,7 +83,7 @@ func updateMruEntries() {
 	})
 	i := 0
 	for len(mapped) < COUNT {
-		if desktopEntries[i] != nil && desktopEntries[i].Exec != "" {
+		if desktopEntries[i] != nil && desktopEntries[i].Id != "" {
 			mapped = append(mapped, desktopEntries[i])
 		}
 		i = i + 1

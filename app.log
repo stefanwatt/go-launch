@@ -1,5 +1,2469 @@
-2024/03/01 00:07:48 main.go:21: Init
-2024/03/01 00:07:48 api.go:79: searchTerm = 
-2024/03/01 00:07:48 api.go:114: returning 16 results
-2024/03/01 00:07:49 api.go:79: searchTerm = 
-2024/03/01 00:07:49 api.go:114: returning 16 results
+2024/03/01 23:01:51 main.go:21: Init
+2024/03/01 23:01:51 icons.go:28: no matches found for lutris_steam
+2024/03/01 23:01:51 icons.go:28: no matches found for D15F_hh.0
+2024/03/01 23:01:51 icons.go:28: no matches found for ECB7_iexplore.0
+2024/03/01 23:01:51 icons.go:28: no matches found for C06E_winhlp32.0
+2024/03/01 23:01:51 icons.go:32: 81F5_winebrowser.0 matched with  81F5_winebrowser.0.svg
+2024/03/01 23:01:51 desktop-entry-parser.go:57: icon will be at 81F5_winebrowser.0.svg
+2024/03/01 23:01:51 icons.go:28: no matches found for 2E40_notepad.0
+2024/03/01 23:01:51 icons.go:28: no matches found for ECB7_iexplore.0
+2024/03/01 23:01:51 icons.go:28: no matches found for ECB7_iexplore.0
+2024/03/01 23:01:51 icons.go:28: no matches found for D23E_msiexec.0
+2024/03/01 23:01:51 icons.go:32: 81F5_winebrowser.0 matched with  81F5_winebrowser.0.svg
+2024/03/01 23:01:51 desktop-entry-parser.go:57: icon will be at 81F5_winebrowser.0.svg
+2024/03/01 23:01:51 icons.go:28: no matches found for ECB7_iexplore.0
+2024/03/01 23:01:51 icons.go:28: no matches found for 3365_wordpad.0
+2024/03/01 23:01:51 icons.go:28: no matches found for 2E40_notepad.0
+2024/03/01 23:01:51 icons.go:28: no matches found for 5742_rundll32.0
+2024/03/01 23:01:51 icons.go:28: no matches found for 2905_wscript.0
+2024/03/01 23:01:51 icons.go:28: no matches found for 3365_wordpad.0
+2024/03/01 23:01:51 icons.go:32: 81F5_winebrowser.0 matched with  81F5_winebrowser.0.svg
+2024/03/01 23:01:51 desktop-entry-parser.go:57: icon will be at 81F5_winebrowser.0.svg
+2024/03/01 23:01:51 icons.go:28: no matches found for hu.irl.cameractrls
+2024/03/01 23:01:51 icons.go:32: org.signal.Signal matched with  org.signal.Signal.svg
+2024/03/01 23:01:51 desktop-entry-parser.go:57: icon will be at org.signal.Signal.svg
+2024/03/01 23:01:51 icons.go:32: Alacritty matched with  Alacritty.svg
+2024/03/01 23:01:51 desktop-entry-parser.go:57: icon will be at Alacritty.svg
+2024/03/01 23:01:51 icons.go:32: display matched with  display.svg
+2024/03/01 23:01:51 desktop-entry-parser.go:57: icon will be at display.svg
+2024/03/01 23:01:51 icons.go:32: autokey matched with  autokey.svg
+2024/03/01 23:01:51 desktop-entry-parser.go:57: icon will be at autokey.svg
+2024/03/01 23:01:51 icons.go:32: btop matched with  btop.svg
+2024/03/01 23:01:51 desktop-entry-parser.go:57: icon will be at btop.svg
+2024/03/01 23:01:51 icons.go:32: vscode matched with  vscode.svg
+2024/03/01 23:01:51 desktop-entry-parser.go:57: icon will be at vscode.svg
+2024/03/01 23:01:51 icons.go:32: vscode matched with  vscode.svg
+2024/03/01 23:01:51 desktop-entry-parser.go:57: icon will be at vscode.svg
+2024/03/01 23:01:51 icons.go:32: vscode matched with  vscode.svg
+2024/03/01 23:01:51 desktop-entry-parser.go:57: icon will be at vscode.svg
+2024/03/01 23:01:51 icons.go:32: compton matched with  com.getpostman.Postman.svg
+2024/03/01 23:01:51 desktop-entry-parser.go:57: icon will be at com.getpostman.Postman.svg
+2024/03/01 23:01:51 icons.go:32: preferences-desktop-theme matched with  preferences-desktop-theme.svg
+2024/03/01 23:01:51 desktop-entry-parser.go:57: icon will be at preferences-desktop-theme.svg
+2024/03/01 23:01:51 icons.go:28: no matches found for neovide
+2024/03/01 23:01:51 icons.go:32: nitrogen matched with  nitrogen.svg
+2024/03/01 23:01:51 desktop-entry-parser.go:57: icon will be at nitrogen.svg
+2024/03/01 23:01:51 icons.go:32: nvim matched with  nvim.svg
+2024/03/01 23:01:51 desktop-entry-parser.go:57: icon will be at nvim.svg
+2024/03/01 23:01:51 icons.go:28: no matches found for org.wezfurlong.wezterm
+2024/03/01 23:01:51 icons.go:32: rofi matched with  tromfiles.svg
+2024/03/01 23:01:51 desktop-entry-parser.go:57: icon will be at tromfiles.svg
+2024/03/01 23:01:51 icons.go:32: rofi matched with  tromfiles.svg
+2024/03/01 23:01:51 desktop-entry-parser.go:57: icon will be at tromfiles.svg
+2024/03/01 23:01:51 icons.go:28: no matches found for slippi-launcher
+2024/03/01 23:01:51 icons.go:32: org.xfce.powermanager matched with  org.xfce.powermanager.svg
+2024/03/01 23:01:51 desktop-entry-parser.go:57: icon will be at org.xfce.powermanager.svg
+2024/03/01 23:01:51 icons.go:32: Alacritty matched with  Alacritty.svg
+2024/03/01 23:01:51 desktop-entry-parser.go:57: icon will be at Alacritty.svg
+2024/03/01 23:01:51 icons.go:32: anydesk matched with  anydesk.svg
+2024/03/01 23:01:51 desktop-entry-parser.go:57: icon will be at anydesk.svg
+2024/03/01 23:01:51 icons.go:32: xcolor matched with  xterm-color.svg
+2024/03/01 23:01:51 desktop-entry-parser.go:57: icon will be at xterm-color.svg
+2024/03/01 23:01:51 icons.go:28: no matches found for ardour8
+2024/03/01 23:01:51 icons.go:32: audacity matched with  audacity.svg
+2024/03/01 23:01:51 desktop-entry-parser.go:57: icon will be at audacity.svg
+2024/03/01 23:01:51 icons.go:32: balena-etcher matched with  balena-etcher-electron.svg
+2024/03/01 23:01:51 desktop-entry-parser.go:57: icon will be at balena-etcher-electron.svg
+2024/03/01 23:01:52 icons.go:32: base matched with  basket.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at basket.svg
+2024/03/01 23:01:52 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:01:52 icons.go:32: blueman-device matched with  blueman-device.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at blueman-device.svg
+2024/03/01 23:01:52 icons.go:32: blueman matched with  blueman.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at blueman.svg
+2024/03/01 23:01:52 icons.go:32: brave-browser matched with  brave-browser.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at brave-browser.svg
+2024/03/01 23:01:52 icons.go:32: calc matched with  calc.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at calc.svg
+2024/03/01 23:01:52 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:01:52 icons.go:32: chromium matched with  chromium.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at chromium.svg
+2024/03/01 23:01:52 icons.go:28: no matches found for com.github.wwmm.easyeffects
+2024/03/01 23:01:52 icons.go:28: no matches found for com.obsproject.Studio
+2024/03/01 23:01:52 icons.go:28: no matches found for cura-icon
+2024/03/01 23:01:52 icons.go:32: cups matched with  cups.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at cups.svg
+2024/03/01 23:01:52 icons.go:32: dbeaver matched with  dbeaver.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at dbeaver.svg
+2024/03/01 23:01:52 icons.go:32: discord matched with  discord.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at discord.svg
+2024/03/01 23:01:52 icons.go:32: dolphin-emu matched with  dolphin-emu.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at dolphin-emu.svg
+2024/03/01 23:01:52 icons.go:32: draw matched with  kdcraw.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at kdcraw.svg
+2024/03/01 23:01:52 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:01:52 icons.go:32: firefox matched with  firefox.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at firefox.svg
+2024/03/01 23:01:52 icons.go:32: gimp matched with  gimp.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at gimp.svg
+2024/03/01 23:01:52 icons.go:32: gparted matched with  gparted.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at gparted.svg
+2024/03/01 23:01:52 icons.go:32: impress matched with  ooo-impress.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at ooo-impress.svg
+2024/03/01 23:01:52 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:01:52 icons.go:28: no matches found for /usr/share/input-remapper/input-remapper.svg
+2024/03/01 23:01:52 icons.go:28: no matches found for /usr/share/input-remapper/input-remapper.svg
+2024/03/01 23:01:52 icons.go:32: math matched with  empathy.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at empathy.svg
+2024/03/01 23:01:52 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:01:52 icons.go:32: mega matched with  mega.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at mega.svg
+2024/03/01 23:01:52 icons.go:32: lutris matched with  lutris.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at lutris.svg
+2024/03/01 23:01:52 icons.go:28: no matches found for nix-snowflake
+2024/03/01 23:01:52 icons.go:28: no matches found for one.alynx.showmethekey
+2024/03/01 23:01:52 icons.go:32: org.flameshot.Flameshot matched with  org.flameshot.Flameshot.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at org.flameshot.Flameshot.svg
+2024/03/01 23:01:52 icons.go:32: openshot-qt matched with  openshot-qt.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at openshot-qt.svg
+2024/03/01 23:01:52 icons.go:32: qbittorrent matched with  qbittorrent.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at qbittorrent.svg
+2024/03/01 23:01:52 icons.go:32: org.remmina.Remmina matched with  org.remmina.Remmina.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at org.remmina.Remmina.svg
+2024/03/01 23:01:52 icons.go:32: org.remmina.Remmina matched with  org.remmina.Remmina.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at org.remmina.Remmina.svg
+2024/03/01 23:01:52 icons.go:32: telegram matched with  telegram.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at telegram.svg
+2024/03/01 23:01:52 icons.go:32: application-exit matched with  application-x-wine-extension-its.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at application-x-wine-extension-its.svg
+2024/03/01 23:01:52 icons.go:32: multimedia-volume-control matched with  multimedia-volume-control.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at multimedia-volume-control.svg
+2024/03/01 23:01:52 icons.go:32: qps matched with  qps
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at qps.svg
+2024/03/01 23:01:52 icons.go:32: utilities-terminal matched with  utilities-terminal.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at utilities-terminal.svg
+2024/03/01 23:01:52 icons.go:32: signal-desktop matched with  signal-desktop.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at signal-desktop.svg
+2024/03/01 23:01:52 icons.go:32: simplescreenrecorder matched with  simplescreenrecorder.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at simplescreenrecorder.svg
+2024/03/01 23:01:52 icons.go:32: spotify-client matched with  spotify-client.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at spotify-client.svg
+2024/03/01 23:01:52 icons.go:32: startcenter matched with  openoffice4-startcenter.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at openoffice4-startcenter.svg
+2024/03/01 23:01:52 icons.go:32: steam matched with  steam.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at steam.svg
+2024/03/01 23:01:52 icons.go:32: org.xfce.thunar matched with  org.xfce.thunar.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at org.xfce.thunar.svg
+2024/03/01 23:01:52 icons.go:32: org.xfce.thunar matched with  org.xfce.thunar.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at org.xfce.thunar.svg
+2024/03/01 23:01:52 icons.go:32: org.xfce.thunar matched with  org.xfce.thunar.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at org.xfce.thunar.svg
+2024/03/01 23:01:52 icons.go:32: virtualbox matched with  virtualbox.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at virtualbox.svg
+2024/03/01 23:01:52 icons.go:32: vlc matched with  vlc.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at vlc.svg
+2024/03/01 23:01:52 icons.go:32: wine matched with  wine.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at wine.svg
+2024/03/01 23:01:52 icons.go:32: winetricks matched with  winetricks.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at winetricks.svg
+2024/03/01 23:01:52 icons.go:32: writer matched with  ooo-writer.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at ooo-writer.svg
+2024/03/01 23:01:52 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:01:52 icons.go:32: applications-system-symbolic matched with  applications-system-symbolic.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at applications-system-symbolic.svg
+2024/03/01 23:01:52 icons.go:32: xterm-color_48x48 matched with  xterm-color_48x48.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at xterm-color_48x48.svg
+2024/03/01 23:01:52 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:52 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:52 icons.go:32: org.signal.Signal.svg matched with  org.signal.Signal.svg
+2024/03/01 23:01:52 icons.go:32: Alacritty.svg matched with  Alacritty.svg
+2024/03/01 23:01:52 icons.go:32: display.svg matched with  display.svg
+2024/03/01 23:01:52 icons.go:32: autokey.svg matched with  autokey.svg
+2024/03/01 23:01:52 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:52 icons.go:32: vscode.svg matched with  vscode.svg
+2024/03/01 23:01:52 icons.go:32: com.getpostman.Postman.svg matched with  com.getpostman.Postman.svg
+2024/03/01 23:01:52 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:52 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:52 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:52 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:52 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:52 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:52 icons.go:32: tromfiles.svg matched with  tromfiles.svg
+2024/03/01 23:01:52 icons.go:32: tromfiles.svg matched with  tromfiles.svg
+2024/03/01 23:01:52 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:52 icons.go:32: org.xfce.powermanager.svg matched with  org.xfce.powermanager.svg
+2024/03/01 23:01:52 icons.go:32: Alacritty.svg matched with  Alacritty.svg
+2024/03/01 23:01:52 icons.go:32: anydesk.svg matched with  anydesk.svg
+2024/03/01 23:01:52 icons.go:32: xterm-color.svg matched with  xterm-color.svg
+2024/03/01 23:01:52 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:52 icons.go:32: audacity.svg matched with  audacity.svg
+2024/03/01 23:01:52 icons.go:32: balena-etcher-electron.svg matched with  balena-etcher-electron.svg
+2024/03/01 23:01:52 icons.go:32: basket.svg matched with  basket.svg
+2024/03/01 23:01:52 icons.go:32: blueman-device.svg matched with  blueman-device.svg
+2024/03/01 23:01:52 icons.go:32: blueman.svg matched with  blueman.svg
+2024/03/01 23:01:52 icons.go:32: brave-browser.svg matched with  brave-browser.svg
+2024/03/01 23:01:52 icons.go:32: calc.svg matched with  calc.svg
+2024/03/01 23:01:52 icons.go:32: chromium.svg matched with  chromium.svg
+2024/03/01 23:01:52 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:52 api.go:84: searchTerm = 
+2024/03/01 23:01:52 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:52 icons.go:28: no matches found for lutris_steam
+2024/03/01 23:01:52 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:52 icons.go:28: no matches found for D15F_hh.0
+2024/03/01 23:01:52 icons.go:32: cups.svg matched with  cups.svg
+2024/03/01 23:01:52 icons.go:28: no matches found for ECB7_iexplore.0
+2024/03/01 23:01:52 icons.go:32: dbeaver.svg matched with  dbeaver.svg
+2024/03/01 23:01:52 icons.go:28: no matches found for C06E_winhlp32.0
+2024/03/01 23:01:52 icons.go:32: discord.svg matched with  discord.svg
+2024/03/01 23:01:52 icons.go:32: 81F5_winebrowser.0 matched with  81F5_winebrowser.0.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at 81F5_winebrowser.0.svg
+2024/03/01 23:01:52 icons.go:32: dolphin-emu.svg matched with  dolphin-emu.svg
+2024/03/01 23:01:52 icons.go:28: no matches found for 2E40_notepad.0
+2024/03/01 23:01:52 icons.go:28: no matches found for ECB7_iexplore.0
+2024/03/01 23:01:52 icons.go:32: kdcraw.svg matched with  kdcraw.svg
+2024/03/01 23:01:52 icons.go:28: no matches found for ECB7_iexplore.0
+2024/03/01 23:01:52 icons.go:32: firefox.svg matched with  firefox.svg
+2024/03/01 23:01:52 icons.go:28: no matches found for D23E_msiexec.0
+2024/03/01 23:01:52 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:52 icons.go:32: 81F5_winebrowser.0 matched with  81F5_winebrowser.0.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at 81F5_winebrowser.0.svg
+2024/03/01 23:01:52 icons.go:32: gparted.svg matched with  gparted.svg
+2024/03/01 23:01:52 icons.go:28: no matches found for ECB7_iexplore.0
+2024/03/01 23:01:52 icons.go:32: ooo-impress.svg matched with  ooo-impress.svg
+2024/03/01 23:01:52 icons.go:28: no matches found for 3365_wordpad.0
+2024/03/01 23:01:52 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:52 icons.go:28: no matches found for 2E40_notepad.0
+2024/03/01 23:01:52 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:52 icons.go:28: no matches found for 5742_rundll32.0
+2024/03/01 23:01:52 icons.go:32: empathy.svg matched with  empathy.svg
+2024/03/01 23:01:52 icons.go:28: no matches found for 2905_wscript.0
+2024/03/01 23:01:52 icons.go:32: mega.svg matched with  mega.svg
+2024/03/01 23:01:52 icons.go:28: no matches found for 3365_wordpad.0
+2024/03/01 23:01:52 icons.go:32: lutris.svg matched with  lutris.svg
+2024/03/01 23:01:52 icons.go:32: 81F5_winebrowser.0 matched with  81F5_winebrowser.0.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at 81F5_winebrowser.0.svg
+2024/03/01 23:01:52 icons.go:28: no matches found for hu.irl.cameractrls
+2024/03/01 23:01:52 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:52 icons.go:32: org.signal.Signal matched with  org.signal.Signal.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at org.signal.Signal.svg
+2024/03/01 23:01:52 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:52 icons.go:32: org.flameshot.Flameshot.svg matched with  org.flameshot.Flameshot.svg
+2024/03/01 23:01:52 icons.go:32: Alacritty matched with  Alacritty.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at Alacritty.svg
+2024/03/01 23:01:52 icons.go:32: openshot-qt.svg matched with  openshot-qt.svg
+2024/03/01 23:01:52 icons.go:32: display matched with  display.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at display.svg
+2024/03/01 23:01:52 icons.go:32: qbittorrent.svg matched with  qbittorrent.svg
+2024/03/01 23:01:52 icons.go:32: autokey matched with  autokey.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at autokey.svg
+2024/03/01 23:01:52 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:52 icons.go:32: btop matched with  btop.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at btop.svg
+2024/03/01 23:01:52 icons.go:32: org.remmina.Remmina.svg matched with  org.remmina.Remmina.svg
+2024/03/01 23:01:52 icons.go:32: vscode matched with  vscode.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at vscode.svg
+2024/03/01 23:01:52 icons.go:32: telegram.svg matched with  telegram.svg
+2024/03/01 23:01:52 icons.go:32: vscode matched with  vscode.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at vscode.svg
+2024/03/01 23:01:52 icons.go:32: multimedia-volume-control.svg matched with  multimedia-volume-control.svg
+2024/03/01 23:01:52 icons.go:32: vscode matched with  vscode.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at vscode.svg
+2024/03/01 23:01:52 icons.go:32: qps.svg matched with  qps.svg
+2024/03/01 23:01:52 icons.go:32: compton matched with  com.getpostman.Postman.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at com.getpostman.Postman.svg
+2024/03/01 23:01:52 icons.go:32: utilities-terminal.svg matched with  utilities-terminal.svg
+2024/03/01 23:01:52 icons.go:32: preferences-desktop-theme matched with  preferences-desktop-theme.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at preferences-desktop-theme.svg
+2024/03/01 23:01:52 icons.go:32: signal-desktop.svg matched with  signal-desktop.svg
+2024/03/01 23:01:52 icons.go:28: no matches found for neovide
+2024/03/01 23:01:52 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:52 icons.go:32: nitrogen matched with  nitrogen.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at nitrogen.svg
+2024/03/01 23:01:52 icons.go:32: spotify-client.svg matched with  spotify-client.svg
+2024/03/01 23:01:52 icons.go:32: nvim matched with  nvim.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at nvim.svg
+2024/03/01 23:01:52 icons.go:32: openoffice4-startcenter.svg matched with  openoffice4-startcenter.svg
+2024/03/01 23:01:52 icons.go:28: no matches found for org.wezfurlong.wezterm
+2024/03/01 23:01:52 icons.go:32: steam.svg matched with  steam.svg
+2024/03/01 23:01:52 icons.go:32: rofi matched with  tromfiles.svg
+2024/03/01 23:01:52 desktop-entry-parser.go:57: icon will be at tromfiles.svg
+2024/03/01 23:01:53 icons.go:32: org.xfce.thunar.svg matched with  org.xfce.thunar.svg
+2024/03/01 23:01:53 icons.go:32: rofi matched with  tromfiles.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at tromfiles.svg
+2024/03/01 23:01:53 icons.go:32: org.xfce.thunar.svg matched with  org.xfce.thunar.svg
+2024/03/01 23:01:53 icons.go:28: no matches found for slippi-launcher
+2024/03/01 23:01:53 icons.go:32: org.xfce.thunar.svg matched with  org.xfce.thunar.svg
+2024/03/01 23:01:53 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:53 icons.go:32: org.xfce.powermanager matched with  org.xfce.powermanager.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at org.xfce.powermanager.svg
+2024/03/01 23:01:53 icons.go:32: vlc.svg matched with  vlc.svg
+2024/03/01 23:01:53 icons.go:32: Alacritty matched with  Alacritty.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at Alacritty.svg
+2024/03/01 23:01:53 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:53 icons.go:32: anydesk matched with  anydesk.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at anydesk.svg
+2024/03/01 23:01:53 icons.go:32: winetricks.svg matched with  winetricks.svg
+2024/03/01 23:01:53 icons.go:32: xcolor matched with  xterm-color.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at xterm-color.svg
+2024/03/01 23:01:53 icons.go:32: ooo-writer.svg matched with  ooo-writer.svg
+2024/03/01 23:01:53 icons.go:28: no matches found for ardour8
+2024/03/01 23:01:53 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:53 icons.go:32: audacity matched with  audacity.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at audacity.svg
+2024/03/01 23:01:53 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:53 icons.go:32: balena-etcher matched with  balena-etcher-electron.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at balena-etcher-electron.svg
+2024/03/01 23:01:53 icons.go:32: xterm-color_48x48.svg matched with  xterm-color_48x48.svg
+2024/03/01 23:01:53 icons.go:32: base matched with  basket.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at basket.svg
+2024/03/01 23:01:53 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:01:53 icons.go:32: blueman-device matched with  blueman-device.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at blueman-device.svg
+2024/03/01 23:01:53 icons.go:32: blueman matched with  blueman.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at blueman.svg
+2024/03/01 23:01:53 icons.go:32: brave-browser matched with  brave-browser.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at brave-browser.svg
+2024/03/01 23:01:53 icons.go:32: calc matched with  calc.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at calc.svg
+2024/03/01 23:01:53 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:01:53 icons.go:32: chromium matched with  chromium.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at chromium.svg
+2024/03/01 23:01:53 icons.go:28: no matches found for com.github.wwmm.easyeffects
+2024/03/01 23:01:53 icons.go:28: no matches found for com.obsproject.Studio
+2024/03/01 23:01:53 icons.go:28: no matches found for cura-icon
+2024/03/01 23:01:53 icons.go:32: cups matched with  cups.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at cups.svg
+2024/03/01 23:01:53 icons.go:32: dbeaver matched with  dbeaver.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at dbeaver.svg
+2024/03/01 23:01:53 icons.go:32: discord matched with  discord.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at discord.svg
+2024/03/01 23:01:53 icons.go:32: dolphin-emu matched with  dolphin-emu.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at dolphin-emu.svg
+2024/03/01 23:01:53 icons.go:32: draw matched with  kdcraw.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at kdcraw.svg
+2024/03/01 23:01:53 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:01:53 icons.go:32: firefox matched with  firefox.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at firefox.svg
+2024/03/01 23:01:53 icons.go:32: gimp matched with  gimp.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at gimp.svg
+2024/03/01 23:01:53 icons.go:32: gparted matched with  gparted.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at gparted.svg
+2024/03/01 23:01:53 icons.go:32: impress matched with  ooo-impress.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at ooo-impress.svg
+2024/03/01 23:01:53 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:01:53 icons.go:28: no matches found for /usr/share/input-remapper/input-remapper.svg
+2024/03/01 23:01:53 icons.go:28: no matches found for /usr/share/input-remapper/input-remapper.svg
+2024/03/01 23:01:53 icons.go:32: math matched with  empathy.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at empathy.svg
+2024/03/01 23:01:53 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:01:53 icons.go:32: mega matched with  mega.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at mega.svg
+2024/03/01 23:01:53 icons.go:32: lutris matched with  lutris.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at lutris.svg
+2024/03/01 23:01:53 icons.go:28: no matches found for nix-snowflake
+2024/03/01 23:01:53 icons.go:28: no matches found for one.alynx.showmethekey
+2024/03/01 23:01:53 icons.go:32: org.flameshot.Flameshot matched with  org.flameshot.Flameshot.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at org.flameshot.Flameshot.svg
+2024/03/01 23:01:53 icons.go:32: openshot-qt matched with  openshot-qt.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at openshot-qt.svg
+2024/03/01 23:01:53 icons.go:32: qbittorrent matched with  qbittorrent.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at qbittorrent.svg
+2024/03/01 23:01:53 icons.go:32: org.remmina.Remmina matched with  org.remmina.Remmina.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at org.remmina.Remmina.svg
+2024/03/01 23:01:53 icons.go:32: org.remmina.Remmina matched with  org.remmina.Remmina.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at org.remmina.Remmina.svg
+2024/03/01 23:01:53 icons.go:32: telegram matched with  telegram.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at telegram.svg
+2024/03/01 23:01:53 icons.go:32: application-exit matched with  application-x-wine-extension-its.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at application-x-wine-extension-its.svg
+2024/03/01 23:01:53 icons.go:32: multimedia-volume-control matched with  multimedia-volume-control.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at multimedia-volume-control.svg
+2024/03/01 23:01:53 icons.go:32: qps matched with  qps
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at qps.svg
+2024/03/01 23:01:53 icons.go:32: utilities-terminal matched with  utilities-terminal.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at utilities-terminal.svg
+2024/03/01 23:01:53 icons.go:32: signal-desktop matched with  signal-desktop.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at signal-desktop.svg
+2024/03/01 23:01:53 icons.go:32: simplescreenrecorder matched with  simplescreenrecorder.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at simplescreenrecorder.svg
+2024/03/01 23:01:53 icons.go:32: spotify-client matched with  spotify-client.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at spotify-client.svg
+2024/03/01 23:01:53 icons.go:32: startcenter matched with  openoffice4-startcenter.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at openoffice4-startcenter.svg
+2024/03/01 23:01:53 icons.go:32: steam matched with  steam.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at steam.svg
+2024/03/01 23:01:53 icons.go:32: org.xfce.thunar matched with  org.xfce.thunar.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at org.xfce.thunar.svg
+2024/03/01 23:01:53 icons.go:32: org.xfce.thunar matched with  org.xfce.thunar.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at org.xfce.thunar.svg
+2024/03/01 23:01:53 icons.go:32: org.xfce.thunar matched with  org.xfce.thunar.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at org.xfce.thunar.svg
+2024/03/01 23:01:53 icons.go:32: virtualbox matched with  virtualbox.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at virtualbox.svg
+2024/03/01 23:01:53 icons.go:32: vlc matched with  vlc.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at vlc.svg
+2024/03/01 23:01:53 icons.go:32: wine matched with  wine.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at wine.svg
+2024/03/01 23:01:53 icons.go:32: winetricks matched with  winetricks.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at winetricks.svg
+2024/03/01 23:01:53 icons.go:32: writer matched with  ooo-writer.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at ooo-writer.svg
+2024/03/01 23:01:53 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:01:53 icons.go:32: applications-system-symbolic matched with  applications-system-symbolic.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at applications-system-symbolic.svg
+2024/03/01 23:01:53 icons.go:32: xterm-color_48x48 matched with  xterm-color_48x48.svg
+2024/03/01 23:01:53 desktop-entry-parser.go:57: icon will be at xterm-color_48x48.svg
+2024/03/01 23:01:53 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:53 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:53 icons.go:32: org.signal.Signal.svg matched with  org.signal.Signal.svg
+2024/03/01 23:01:53 icons.go:32: Alacritty.svg matched with  Alacritty.svg
+2024/03/01 23:01:53 icons.go:32: display.svg matched with  display.svg
+2024/03/01 23:01:53 icons.go:32: autokey.svg matched with  autokey.svg
+2024/03/01 23:01:53 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:53 icons.go:32: vscode.svg matched with  vscode.svg
+2024/03/01 23:01:53 icons.go:32: com.getpostman.Postman.svg matched with  com.getpostman.Postman.svg
+2024/03/01 23:01:53 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:53 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:53 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:53 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:53 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:53 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:53 icons.go:32: tromfiles.svg matched with  tromfiles.svg
+2024/03/01 23:01:53 icons.go:32: tromfiles.svg matched with  tromfiles.svg
+2024/03/01 23:01:53 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:53 icons.go:32: org.xfce.powermanager.svg matched with  org.xfce.powermanager.svg
+2024/03/01 23:01:53 icons.go:32: Alacritty.svg matched with  Alacritty.svg
+2024/03/01 23:01:53 icons.go:32: anydesk.svg matched with  anydesk.svg
+2024/03/01 23:01:53 icons.go:32: xterm-color.svg matched with  xterm-color.svg
+2024/03/01 23:01:53 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:53 icons.go:32: audacity.svg matched with  audacity.svg
+2024/03/01 23:01:53 icons.go:32: balena-etcher-electron.svg matched with  balena-etcher-electron.svg
+2024/03/01 23:01:53 icons.go:32: basket.svg matched with  basket.svg
+2024/03/01 23:01:53 icons.go:32: blueman-device.svg matched with  blueman-device.svg
+2024/03/01 23:01:53 icons.go:32: blueman.svg matched with  blueman.svg
+2024/03/01 23:01:53 icons.go:32: brave-browser.svg matched with  brave-browser.svg
+2024/03/01 23:01:53 icons.go:32: calc.svg matched with  calc.svg
+2024/03/01 23:01:53 icons.go:32: chromium.svg matched with  chromium.svg
+2024/03/01 23:01:53 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:53 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:53 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:53 icons.go:32: cups.svg matched with  cups.svg
+2024/03/01 23:01:53 icons.go:32: dbeaver.svg matched with  dbeaver.svg
+2024/03/01 23:01:53 icons.go:32: discord.svg matched with  discord.svg
+2024/03/01 23:01:53 icons.go:32: dolphin-emu.svg matched with  dolphin-emu.svg
+2024/03/01 23:01:53 icons.go:32: kdcraw.svg matched with  kdcraw.svg
+2024/03/01 23:01:53 icons.go:32: firefox.svg matched with  firefox.svg
+2024/03/01 23:01:53 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:53 icons.go:32: gparted.svg matched with  gparted.svg
+2024/03/01 23:01:53 icons.go:32: ooo-impress.svg matched with  ooo-impress.svg
+2024/03/01 23:01:53 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:53 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:53 icons.go:32: empathy.svg matched with  empathy.svg
+2024/03/01 23:01:53 icons.go:32: mega.svg matched with  mega.svg
+2024/03/01 23:01:53 icons.go:32: lutris.svg matched with  lutris.svg
+2024/03/01 23:01:53 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:53 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:53 icons.go:32: org.flameshot.Flameshot.svg matched with  org.flameshot.Flameshot.svg
+2024/03/01 23:01:53 icons.go:32: openshot-qt.svg matched with  openshot-qt.svg
+2024/03/01 23:01:53 icons.go:32: qbittorrent.svg matched with  qbittorrent.svg
+2024/03/01 23:01:53 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:53 icons.go:32: org.remmina.Remmina.svg matched with  org.remmina.Remmina.svg
+2024/03/01 23:01:53 icons.go:32: telegram.svg matched with  telegram.svg
+2024/03/01 23:01:53 icons.go:32: multimedia-volume-control.svg matched with  multimedia-volume-control.svg
+2024/03/01 23:01:53 icons.go:32: qps.svg matched with  qps.svg
+2024/03/01 23:01:53 icons.go:32: utilities-terminal.svg matched with  utilities-terminal.svg
+2024/03/01 23:01:53 icons.go:32: signal-desktop.svg matched with  signal-desktop.svg
+2024/03/01 23:01:53 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:53 icons.go:32: spotify-client.svg matched with  spotify-client.svg
+2024/03/01 23:01:53 icons.go:32: openoffice4-startcenter.svg matched with  openoffice4-startcenter.svg
+2024/03/01 23:01:53 icons.go:32: steam.svg matched with  steam.svg
+2024/03/01 23:01:53 icons.go:32: org.xfce.thunar.svg matched with  org.xfce.thunar.svg
+2024/03/01 23:01:53 icons.go:32: org.xfce.thunar.svg matched with  org.xfce.thunar.svg
+2024/03/01 23:01:53 icons.go:32: org.xfce.thunar.svg matched with  org.xfce.thunar.svg
+2024/03/01 23:01:53 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:53 icons.go:32: vlc.svg matched with  vlc.svg
+2024/03/01 23:01:53 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:53 icons.go:32: winetricks.svg matched with  winetricks.svg
+2024/03/01 23:01:53 icons.go:32: ooo-writer.svg matched with  ooo-writer.svg
+2024/03/01 23:01:53 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:53 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:53 icons.go:32: xterm-color_48x48.svg matched with  xterm-color_48x48.svg
+2024/03/01 23:01:53 api.go:119: returning 16 results
+2024/03/01 23:01:56 api.go:84: searchTerm = 
+2024/03/01 23:01:56 icons.go:28: no matches found for lutris_steam
+2024/03/01 23:01:56 icons.go:28: no matches found for D15F_hh.0
+2024/03/01 23:01:56 icons.go:28: no matches found for ECB7_iexplore.0
+2024/03/01 23:01:56 icons.go:28: no matches found for C06E_winhlp32.0
+2024/03/01 23:01:56 icons.go:32: 81F5_winebrowser.0 matched with  81F5_winebrowser.0.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at 81F5_winebrowser.0.svg
+2024/03/01 23:01:56 icons.go:28: no matches found for 2E40_notepad.0
+2024/03/01 23:01:56 icons.go:28: no matches found for ECB7_iexplore.0
+2024/03/01 23:01:56 icons.go:28: no matches found for ECB7_iexplore.0
+2024/03/01 23:01:56 icons.go:28: no matches found for D23E_msiexec.0
+2024/03/01 23:01:56 icons.go:32: 81F5_winebrowser.0 matched with  81F5_winebrowser.0.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at 81F5_winebrowser.0.svg
+2024/03/01 23:01:56 icons.go:28: no matches found for ECB7_iexplore.0
+2024/03/01 23:01:56 icons.go:28: no matches found for 3365_wordpad.0
+2024/03/01 23:01:56 icons.go:28: no matches found for 2E40_notepad.0
+2024/03/01 23:01:56 icons.go:28: no matches found for 5742_rundll32.0
+2024/03/01 23:01:56 icons.go:28: no matches found for 2905_wscript.0
+2024/03/01 23:01:56 icons.go:28: no matches found for 3365_wordpad.0
+2024/03/01 23:01:56 icons.go:32: 81F5_winebrowser.0 matched with  81F5_winebrowser.0.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at 81F5_winebrowser.0.svg
+2024/03/01 23:01:56 icons.go:28: no matches found for hu.irl.cameractrls
+2024/03/01 23:01:56 icons.go:32: org.signal.Signal matched with  org.signal.Signal.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at org.signal.Signal.svg
+2024/03/01 23:01:56 icons.go:32: Alacritty matched with  Alacritty.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at Alacritty.svg
+2024/03/01 23:01:56 icons.go:32: display matched with  display.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at display.svg
+2024/03/01 23:01:56 icons.go:32: autokey matched with  autokey.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at autokey.svg
+2024/03/01 23:01:56 icons.go:32: btop matched with  btop.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at btop.svg
+2024/03/01 23:01:56 icons.go:32: vscode matched with  vscode.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at vscode.svg
+2024/03/01 23:01:56 icons.go:32: vscode matched with  vscode.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at vscode.svg
+2024/03/01 23:01:56 icons.go:32: vscode matched with  vscode.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at vscode.svg
+2024/03/01 23:01:56 icons.go:32: compton matched with  com.getpostman.Postman.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at com.getpostman.Postman.svg
+2024/03/01 23:01:56 icons.go:32: preferences-desktop-theme matched with  preferences-desktop-theme.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at preferences-desktop-theme.svg
+2024/03/01 23:01:56 icons.go:28: no matches found for neovide
+2024/03/01 23:01:56 icons.go:32: nitrogen matched with  nitrogen.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at nitrogen.svg
+2024/03/01 23:01:56 icons.go:32: nvim matched with  nvim.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at nvim.svg
+2024/03/01 23:01:56 icons.go:28: no matches found for org.wezfurlong.wezterm
+2024/03/01 23:01:56 icons.go:32: rofi matched with  tromfiles.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at tromfiles.svg
+2024/03/01 23:01:56 icons.go:32: rofi matched with  tromfiles.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at tromfiles.svg
+2024/03/01 23:01:56 icons.go:28: no matches found for slippi-launcher
+2024/03/01 23:01:56 icons.go:32: org.xfce.powermanager matched with  org.xfce.powermanager.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at org.xfce.powermanager.svg
+2024/03/01 23:01:56 icons.go:32: Alacritty matched with  Alacritty.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at Alacritty.svg
+2024/03/01 23:01:56 icons.go:32: anydesk matched with  anydesk.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at anydesk.svg
+2024/03/01 23:01:56 icons.go:32: xcolor matched with  xterm-color.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at xterm-color.svg
+2024/03/01 23:01:56 icons.go:28: no matches found for ardour8
+2024/03/01 23:01:56 icons.go:32: audacity matched with  audacity.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at audacity.svg
+2024/03/01 23:01:56 icons.go:32: balena-etcher matched with  balena-etcher-electron.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at balena-etcher-electron.svg
+2024/03/01 23:01:56 icons.go:32: base matched with  basket.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at basket.svg
+2024/03/01 23:01:56 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:01:56 icons.go:32: blueman-device matched with  blueman-device.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at blueman-device.svg
+2024/03/01 23:01:56 icons.go:32: blueman matched with  blueman.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at blueman.svg
+2024/03/01 23:01:56 icons.go:32: brave-browser matched with  brave-browser.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at brave-browser.svg
+2024/03/01 23:01:56 icons.go:32: calc matched with  calc.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at calc.svg
+2024/03/01 23:01:56 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:01:56 icons.go:32: chromium matched with  chromium.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at chromium.svg
+2024/03/01 23:01:56 icons.go:28: no matches found for com.github.wwmm.easyeffects
+2024/03/01 23:01:56 icons.go:28: no matches found for com.obsproject.Studio
+2024/03/01 23:01:56 icons.go:28: no matches found for cura-icon
+2024/03/01 23:01:56 icons.go:32: cups matched with  cups.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at cups.svg
+2024/03/01 23:01:56 icons.go:32: dbeaver matched with  dbeaver.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at dbeaver.svg
+2024/03/01 23:01:56 icons.go:32: discord matched with  discord.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at discord.svg
+2024/03/01 23:01:56 icons.go:32: dolphin-emu matched with  dolphin-emu.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at dolphin-emu.svg
+2024/03/01 23:01:56 icons.go:32: draw matched with  kdcraw.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at kdcraw.svg
+2024/03/01 23:01:56 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:01:56 icons.go:32: firefox matched with  firefox.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at firefox.svg
+2024/03/01 23:01:56 icons.go:32: gimp matched with  gimp.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at gimp.svg
+2024/03/01 23:01:56 icons.go:32: gparted matched with  gparted.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at gparted.svg
+2024/03/01 23:01:56 icons.go:32: impress matched with  ooo-impress.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at ooo-impress.svg
+2024/03/01 23:01:56 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:01:56 icons.go:28: no matches found for /usr/share/input-remapper/input-remapper.svg
+2024/03/01 23:01:56 icons.go:28: no matches found for /usr/share/input-remapper/input-remapper.svg
+2024/03/01 23:01:56 icons.go:32: math matched with  empathy.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at empathy.svg
+2024/03/01 23:01:56 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:01:56 icons.go:32: mega matched with  mega.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at mega.svg
+2024/03/01 23:01:56 icons.go:32: lutris matched with  lutris.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at lutris.svg
+2024/03/01 23:01:56 icons.go:28: no matches found for nix-snowflake
+2024/03/01 23:01:56 icons.go:28: no matches found for one.alynx.showmethekey
+2024/03/01 23:01:56 icons.go:32: org.flameshot.Flameshot matched with  org.flameshot.Flameshot.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at org.flameshot.Flameshot.svg
+2024/03/01 23:01:56 icons.go:32: openshot-qt matched with  openshot-qt.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at openshot-qt.svg
+2024/03/01 23:01:56 icons.go:32: qbittorrent matched with  qbittorrent.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at qbittorrent.svg
+2024/03/01 23:01:56 icons.go:32: org.remmina.Remmina matched with  org.remmina.Remmina.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at org.remmina.Remmina.svg
+2024/03/01 23:01:56 icons.go:32: org.remmina.Remmina matched with  org.remmina.Remmina.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at org.remmina.Remmina.svg
+2024/03/01 23:01:56 icons.go:32: telegram matched with  telegram.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at telegram.svg
+2024/03/01 23:01:56 icons.go:32: application-exit matched with  application-x-wine-extension-its.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at application-x-wine-extension-its.svg
+2024/03/01 23:01:56 icons.go:32: multimedia-volume-control matched with  multimedia-volume-control.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at multimedia-volume-control.svg
+2024/03/01 23:01:56 icons.go:32: qps matched with  qps
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at qps.svg
+2024/03/01 23:01:56 icons.go:32: utilities-terminal matched with  utilities-terminal.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at utilities-terminal.svg
+2024/03/01 23:01:56 icons.go:32: signal-desktop matched with  signal-desktop.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at signal-desktop.svg
+2024/03/01 23:01:56 icons.go:32: simplescreenrecorder matched with  simplescreenrecorder.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at simplescreenrecorder.svg
+2024/03/01 23:01:56 icons.go:32: spotify-client matched with  spotify-client.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at spotify-client.svg
+2024/03/01 23:01:56 icons.go:32: startcenter matched with  openoffice4-startcenter.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at openoffice4-startcenter.svg
+2024/03/01 23:01:56 icons.go:32: steam matched with  steam.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at steam.svg
+2024/03/01 23:01:56 icons.go:32: org.xfce.thunar matched with  org.xfce.thunar.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at org.xfce.thunar.svg
+2024/03/01 23:01:56 icons.go:32: org.xfce.thunar matched with  org.xfce.thunar.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at org.xfce.thunar.svg
+2024/03/01 23:01:56 icons.go:32: org.xfce.thunar matched with  org.xfce.thunar.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at org.xfce.thunar.svg
+2024/03/01 23:01:56 icons.go:32: virtualbox matched with  virtualbox.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at virtualbox.svg
+2024/03/01 23:01:56 icons.go:32: vlc matched with  vlc.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at vlc.svg
+2024/03/01 23:01:56 icons.go:32: wine matched with  wine.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at wine.svg
+2024/03/01 23:01:56 icons.go:32: winetricks matched with  winetricks.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at winetricks.svg
+2024/03/01 23:01:56 icons.go:32: writer matched with  ooo-writer.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at ooo-writer.svg
+2024/03/01 23:01:56 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:01:56 icons.go:32: applications-system-symbolic matched with  applications-system-symbolic.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at applications-system-symbolic.svg
+2024/03/01 23:01:56 icons.go:32: xterm-color_48x48 matched with  xterm-color_48x48.svg
+2024/03/01 23:01:56 desktop-entry-parser.go:57: icon will be at xterm-color_48x48.svg
+2024/03/01 23:01:56 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:56 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:56 icons.go:32: org.signal.Signal.svg matched with  org.signal.Signal.svg
+2024/03/01 23:01:56 icons.go:32: Alacritty.svg matched with  Alacritty.svg
+2024/03/01 23:01:56 icons.go:32: display.svg matched with  display.svg
+2024/03/01 23:01:56 icons.go:32: autokey.svg matched with  autokey.svg
+2024/03/01 23:01:56 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:56 icons.go:32: vscode.svg matched with  vscode.svg
+2024/03/01 23:01:56 icons.go:32: com.getpostman.Postman.svg matched with  com.getpostman.Postman.svg
+2024/03/01 23:01:56 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:56 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:56 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:56 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:56 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:56 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:56 icons.go:32: tromfiles.svg matched with  tromfiles.svg
+2024/03/01 23:01:56 icons.go:32: tromfiles.svg matched with  tromfiles.svg
+2024/03/01 23:01:56 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:56 icons.go:32: org.xfce.powermanager.svg matched with  org.xfce.powermanager.svg
+2024/03/01 23:01:56 icons.go:32: Alacritty.svg matched with  Alacritty.svg
+2024/03/01 23:01:56 icons.go:32: anydesk.svg matched with  anydesk.svg
+2024/03/01 23:01:56 icons.go:32: xterm-color.svg matched with  xterm-color.svg
+2024/03/01 23:01:56 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:56 icons.go:32: audacity.svg matched with  audacity.svg
+2024/03/01 23:01:56 icons.go:32: balena-etcher-electron.svg matched with  balena-etcher-electron.svg
+2024/03/01 23:01:57 icons.go:32: basket.svg matched with  basket.svg
+2024/03/01 23:01:57 icons.go:32: blueman-device.svg matched with  blueman-device.svg
+2024/03/01 23:01:57 icons.go:32: blueman.svg matched with  blueman.svg
+2024/03/01 23:01:57 icons.go:32: brave-browser.svg matched with  brave-browser.svg
+2024/03/01 23:01:57 icons.go:32: calc.svg matched with  calc.svg
+2024/03/01 23:01:57 icons.go:32: chromium.svg matched with  chromium.svg
+2024/03/01 23:01:57 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:57 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:57 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:57 icons.go:32: cups.svg matched with  cups.svg
+2024/03/01 23:01:57 icons.go:32: dbeaver.svg matched with  dbeaver.svg
+2024/03/01 23:01:57 icons.go:32: discord.svg matched with  discord.svg
+2024/03/01 23:01:57 icons.go:32: dolphin-emu.svg matched with  dolphin-emu.svg
+2024/03/01 23:01:57 icons.go:32: kdcraw.svg matched with  kdcraw.svg
+2024/03/01 23:01:57 icons.go:32: firefox.svg matched with  firefox.svg
+2024/03/01 23:01:57 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:57 icons.go:32: gparted.svg matched with  gparted.svg
+2024/03/01 23:01:57 icons.go:32: ooo-impress.svg matched with  ooo-impress.svg
+2024/03/01 23:01:57 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:57 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:57 icons.go:32: empathy.svg matched with  empathy.svg
+2024/03/01 23:01:57 icons.go:32: mega.svg matched with  mega.svg
+2024/03/01 23:01:57 icons.go:32: lutris.svg matched with  lutris.svg
+2024/03/01 23:01:57 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:57 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:57 icons.go:32: org.flameshot.Flameshot.svg matched with  org.flameshot.Flameshot.svg
+2024/03/01 23:01:57 icons.go:32: openshot-qt.svg matched with  openshot-qt.svg
+2024/03/01 23:01:57 icons.go:32: qbittorrent.svg matched with  qbittorrent.svg
+2024/03/01 23:01:57 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:57 icons.go:32: org.remmina.Remmina.svg matched with  org.remmina.Remmina.svg
+2024/03/01 23:01:57 icons.go:32: telegram.svg matched with  telegram.svg
+2024/03/01 23:01:57 icons.go:32: multimedia-volume-control.svg matched with  multimedia-volume-control.svg
+2024/03/01 23:01:57 icons.go:32: qps.svg matched with  qps.svg
+2024/03/01 23:01:57 icons.go:32: utilities-terminal.svg matched with  utilities-terminal.svg
+2024/03/01 23:01:57 icons.go:32: signal-desktop.svg matched with  signal-desktop.svg
+2024/03/01 23:01:57 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:57 icons.go:32: spotify-client.svg matched with  spotify-client.svg
+2024/03/01 23:01:57 icons.go:32: openoffice4-startcenter.svg matched with  openoffice4-startcenter.svg
+2024/03/01 23:01:57 icons.go:32: steam.svg matched with  steam.svg
+2024/03/01 23:01:57 icons.go:32: org.xfce.thunar.svg matched with  org.xfce.thunar.svg
+2024/03/01 23:01:57 icons.go:32: org.xfce.thunar.svg matched with  org.xfce.thunar.svg
+2024/03/01 23:01:57 icons.go:32: org.xfce.thunar.svg matched with  org.xfce.thunar.svg
+2024/03/01 23:01:57 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:57 icons.go:32: vlc.svg matched with  vlc.svg
+2024/03/01 23:01:57 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:57 icons.go:32: winetricks.svg matched with  winetricks.svg
+2024/03/01 23:01:57 icons.go:32: ooo-writer.svg matched with  ooo-writer.svg
+2024/03/01 23:01:57 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:57 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:57 icons.go:32: xterm-color_48x48.svg matched with  xterm-color_48x48.svg
+2024/03/01 23:01:57 api.go:119: returning 16 results
+2024/03/01 23:01:58 api.go:84: searchTerm = a
+2024/03/01 23:01:58 icons.go:28: no matches found for lutris_steam
+2024/03/01 23:01:58 icons.go:28: no matches found for D15F_hh.0
+2024/03/01 23:01:58 icons.go:28: no matches found for ECB7_iexplore.0
+2024/03/01 23:01:58 icons.go:28: no matches found for C06E_winhlp32.0
+2024/03/01 23:01:58 icons.go:32: 81F5_winebrowser.0 matched with  81F5_winebrowser.0.svg
+2024/03/01 23:01:58 desktop-entry-parser.go:57: icon will be at 81F5_winebrowser.0.svg
+2024/03/01 23:01:58 icons.go:28: no matches found for 2E40_notepad.0
+2024/03/01 23:01:58 icons.go:28: no matches found for ECB7_iexplore.0
+2024/03/01 23:01:58 icons.go:28: no matches found for ECB7_iexplore.0
+2024/03/01 23:01:58 icons.go:28: no matches found for D23E_msiexec.0
+2024/03/01 23:01:58 icons.go:32: 81F5_winebrowser.0 matched with  81F5_winebrowser.0.svg
+2024/03/01 23:01:58 desktop-entry-parser.go:57: icon will be at 81F5_winebrowser.0.svg
+2024/03/01 23:01:58 icons.go:28: no matches found for ECB7_iexplore.0
+2024/03/01 23:01:58 icons.go:28: no matches found for 3365_wordpad.0
+2024/03/01 23:01:58 icons.go:28: no matches found for 2E40_notepad.0
+2024/03/01 23:01:58 icons.go:28: no matches found for 5742_rundll32.0
+2024/03/01 23:01:58 icons.go:28: no matches found for 2905_wscript.0
+2024/03/01 23:01:58 icons.go:28: no matches found for 3365_wordpad.0
+2024/03/01 23:01:58 icons.go:32: 81F5_winebrowser.0 matched with  81F5_winebrowser.0.svg
+2024/03/01 23:01:58 desktop-entry-parser.go:57: icon will be at 81F5_winebrowser.0.svg
+2024/03/01 23:01:58 icons.go:28: no matches found for hu.irl.cameractrls
+2024/03/01 23:01:58 icons.go:32: org.signal.Signal matched with  org.signal.Signal.svg
+2024/03/01 23:01:58 desktop-entry-parser.go:57: icon will be at org.signal.Signal.svg
+2024/03/01 23:01:58 icons.go:32: Alacritty matched with  Alacritty.svg
+2024/03/01 23:01:58 desktop-entry-parser.go:57: icon will be at Alacritty.svg
+2024/03/01 23:01:58 icons.go:32: display matched with  display.svg
+2024/03/01 23:01:58 desktop-entry-parser.go:57: icon will be at display.svg
+2024/03/01 23:01:58 icons.go:32: autokey matched with  autokey.svg
+2024/03/01 23:01:58 desktop-entry-parser.go:57: icon will be at autokey.svg
+2024/03/01 23:01:58 icons.go:32: btop matched with  btop.svg
+2024/03/01 23:01:58 desktop-entry-parser.go:57: icon will be at btop.svg
+2024/03/01 23:01:58 icons.go:32: vscode matched with  vscode.svg
+2024/03/01 23:01:58 desktop-entry-parser.go:57: icon will be at vscode.svg
+2024/03/01 23:01:58 icons.go:32: vscode matched with  vscode.svg
+2024/03/01 23:01:58 desktop-entry-parser.go:57: icon will be at vscode.svg
+2024/03/01 23:01:58 icons.go:32: vscode matched with  vscode.svg
+2024/03/01 23:01:58 desktop-entry-parser.go:57: icon will be at vscode.svg
+2024/03/01 23:01:58 icons.go:32: compton matched with  com.getpostman.Postman.svg
+2024/03/01 23:01:58 desktop-entry-parser.go:57: icon will be at com.getpostman.Postman.svg
+2024/03/01 23:01:58 icons.go:32: preferences-desktop-theme matched with  preferences-desktop-theme.svg
+2024/03/01 23:01:58 desktop-entry-parser.go:57: icon will be at preferences-desktop-theme.svg
+2024/03/01 23:01:58 icons.go:28: no matches found for neovide
+2024/03/01 23:01:58 icons.go:32: nitrogen matched with  nitrogen.svg
+2024/03/01 23:01:58 desktop-entry-parser.go:57: icon will be at nitrogen.svg
+2024/03/01 23:01:58 icons.go:32: nvim matched with  nvim.svg
+2024/03/01 23:01:58 desktop-entry-parser.go:57: icon will be at nvim.svg
+2024/03/01 23:01:58 icons.go:28: no matches found for org.wezfurlong.wezterm
+2024/03/01 23:01:58 icons.go:32: rofi matched with  tromfiles.svg
+2024/03/01 23:01:58 desktop-entry-parser.go:57: icon will be at tromfiles.svg
+2024/03/01 23:01:58 icons.go:32: rofi matched with  tromfiles.svg
+2024/03/01 23:01:58 desktop-entry-parser.go:57: icon will be at tromfiles.svg
+2024/03/01 23:01:59 icons.go:28: no matches found for slippi-launcher
+2024/03/01 23:01:59 icons.go:32: org.xfce.powermanager matched with  org.xfce.powermanager.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at org.xfce.powermanager.svg
+2024/03/01 23:01:59 icons.go:32: Alacritty matched with  Alacritty.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at Alacritty.svg
+2024/03/01 23:01:59 icons.go:32: anydesk matched with  anydesk.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at anydesk.svg
+2024/03/01 23:01:59 icons.go:32: xcolor matched with  xterm-color.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at xterm-color.svg
+2024/03/01 23:01:59 icons.go:28: no matches found for ardour8
+2024/03/01 23:01:59 icons.go:32: audacity matched with  audacity.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at audacity.svg
+2024/03/01 23:01:59 icons.go:32: balena-etcher matched with  balena-etcher-electron.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at balena-etcher-electron.svg
+2024/03/01 23:01:59 icons.go:32: base matched with  basket.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at basket.svg
+2024/03/01 23:01:59 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:01:59 icons.go:32: blueman-device matched with  blueman-device.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at blueman-device.svg
+2024/03/01 23:01:59 icons.go:32: blueman matched with  blueman.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at blueman.svg
+2024/03/01 23:01:59 icons.go:32: brave-browser matched with  brave-browser.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at brave-browser.svg
+2024/03/01 23:01:59 icons.go:32: calc matched with  calc.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at calc.svg
+2024/03/01 23:01:59 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:01:59 icons.go:32: chromium matched with  chromium.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at chromium.svg
+2024/03/01 23:01:59 icons.go:28: no matches found for com.github.wwmm.easyeffects
+2024/03/01 23:01:59 icons.go:28: no matches found for com.obsproject.Studio
+2024/03/01 23:01:59 icons.go:28: no matches found for cura-icon
+2024/03/01 23:01:59 icons.go:32: cups matched with  cups.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at cups.svg
+2024/03/01 23:01:59 icons.go:32: dbeaver matched with  dbeaver.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at dbeaver.svg
+2024/03/01 23:01:59 icons.go:32: discord matched with  discord.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at discord.svg
+2024/03/01 23:01:59 icons.go:32: dolphin-emu matched with  dolphin-emu.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at dolphin-emu.svg
+2024/03/01 23:01:59 icons.go:32: draw matched with  kdcraw.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at kdcraw.svg
+2024/03/01 23:01:59 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:01:59 icons.go:32: firefox matched with  firefox.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at firefox.svg
+2024/03/01 23:01:59 icons.go:32: gimp matched with  gimp.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at gimp.svg
+2024/03/01 23:01:59 icons.go:32: gparted matched with  gparted.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at gparted.svg
+2024/03/01 23:01:59 icons.go:32: impress matched with  ooo-impress.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at ooo-impress.svg
+2024/03/01 23:01:59 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:01:59 icons.go:28: no matches found for /usr/share/input-remapper/input-remapper.svg
+2024/03/01 23:01:59 icons.go:28: no matches found for /usr/share/input-remapper/input-remapper.svg
+2024/03/01 23:01:59 icons.go:32: math matched with  empathy.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at empathy.svg
+2024/03/01 23:01:59 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:01:59 icons.go:32: mega matched with  mega.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at mega.svg
+2024/03/01 23:01:59 icons.go:32: lutris matched with  lutris.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at lutris.svg
+2024/03/01 23:01:59 icons.go:28: no matches found for nix-snowflake
+2024/03/01 23:01:59 icons.go:28: no matches found for one.alynx.showmethekey
+2024/03/01 23:01:59 icons.go:32: org.flameshot.Flameshot matched with  org.flameshot.Flameshot.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at org.flameshot.Flameshot.svg
+2024/03/01 23:01:59 icons.go:32: openshot-qt matched with  openshot-qt.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at openshot-qt.svg
+2024/03/01 23:01:59 icons.go:32: qbittorrent matched with  qbittorrent.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at qbittorrent.svg
+2024/03/01 23:01:59 icons.go:32: org.remmina.Remmina matched with  org.remmina.Remmina.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at org.remmina.Remmina.svg
+2024/03/01 23:01:59 icons.go:32: org.remmina.Remmina matched with  org.remmina.Remmina.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at org.remmina.Remmina.svg
+2024/03/01 23:01:59 icons.go:32: telegram matched with  telegram.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at telegram.svg
+2024/03/01 23:01:59 icons.go:32: application-exit matched with  application-x-wine-extension-its.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at application-x-wine-extension-its.svg
+2024/03/01 23:01:59 icons.go:32: multimedia-volume-control matched with  multimedia-volume-control.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at multimedia-volume-control.svg
+2024/03/01 23:01:59 icons.go:32: qps matched with  qps
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at qps.svg
+2024/03/01 23:01:59 icons.go:32: utilities-terminal matched with  utilities-terminal.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at utilities-terminal.svg
+2024/03/01 23:01:59 icons.go:32: signal-desktop matched with  signal-desktop.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at signal-desktop.svg
+2024/03/01 23:01:59 icons.go:32: simplescreenrecorder matched with  simplescreenrecorder.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at simplescreenrecorder.svg
+2024/03/01 23:01:59 icons.go:32: spotify-client matched with  spotify-client.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at spotify-client.svg
+2024/03/01 23:01:59 icons.go:32: startcenter matched with  openoffice4-startcenter.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at openoffice4-startcenter.svg
+2024/03/01 23:01:59 icons.go:32: steam matched with  steam.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at steam.svg
+2024/03/01 23:01:59 icons.go:32: org.xfce.thunar matched with  org.xfce.thunar.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at org.xfce.thunar.svg
+2024/03/01 23:01:59 icons.go:32: org.xfce.thunar matched with  org.xfce.thunar.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at org.xfce.thunar.svg
+2024/03/01 23:01:59 icons.go:32: org.xfce.thunar matched with  org.xfce.thunar.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at org.xfce.thunar.svg
+2024/03/01 23:01:59 icons.go:32: virtualbox matched with  virtualbox.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at virtualbox.svg
+2024/03/01 23:01:59 icons.go:32: vlc matched with  vlc.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at vlc.svg
+2024/03/01 23:01:59 icons.go:32: wine matched with  wine.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at wine.svg
+2024/03/01 23:01:59 icons.go:32: winetricks matched with  winetricks.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at winetricks.svg
+2024/03/01 23:01:59 icons.go:32: writer matched with  ooo-writer.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at ooo-writer.svg
+2024/03/01 23:01:59 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:01:59 icons.go:32: applications-system-symbolic matched with  applications-system-symbolic.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at applications-system-symbolic.svg
+2024/03/01 23:01:59 icons.go:32: xterm-color_48x48 matched with  xterm-color_48x48.svg
+2024/03/01 23:01:59 desktop-entry-parser.go:57: icon will be at xterm-color_48x48.svg
+2024/03/01 23:01:59 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:59 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:59 icons.go:32: org.signal.Signal.svg matched with  org.signal.Signal.svg
+2024/03/01 23:01:59 icons.go:32: Alacritty.svg matched with  Alacritty.svg
+2024/03/01 23:01:59 icons.go:32: display.svg matched with  display.svg
+2024/03/01 23:01:59 icons.go:32: autokey.svg matched with  autokey.svg
+2024/03/01 23:01:59 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:59 icons.go:32: vscode.svg matched with  vscode.svg
+2024/03/01 23:01:59 icons.go:32: com.getpostman.Postman.svg matched with  com.getpostman.Postman.svg
+2024/03/01 23:01:59 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:59 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:59 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:59 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:59 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:59 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:59 icons.go:32: tromfiles.svg matched with  tromfiles.svg
+2024/03/01 23:01:59 icons.go:32: tromfiles.svg matched with  tromfiles.svg
+2024/03/01 23:01:59 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:59 icons.go:32: org.xfce.powermanager.svg matched with  org.xfce.powermanager.svg
+2024/03/01 23:01:59 icons.go:32: Alacritty.svg matched with  Alacritty.svg
+2024/03/01 23:01:59 icons.go:32: anydesk.svg matched with  anydesk.svg
+2024/03/01 23:01:59 icons.go:32: xterm-color.svg matched with  xterm-color.svg
+2024/03/01 23:01:59 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:59 icons.go:32: audacity.svg matched with  audacity.svg
+2024/03/01 23:01:59 icons.go:32: balena-etcher-electron.svg matched with  balena-etcher-electron.svg
+2024/03/01 23:01:59 icons.go:32: basket.svg matched with  basket.svg
+2024/03/01 23:01:59 icons.go:32: blueman-device.svg matched with  blueman-device.svg
+2024/03/01 23:01:59 icons.go:32: blueman.svg matched with  blueman.svg
+2024/03/01 23:01:59 icons.go:32: brave-browser.svg matched with  brave-browser.svg
+2024/03/01 23:01:59 icons.go:32: calc.svg matched with  calc.svg
+2024/03/01 23:01:59 icons.go:32: chromium.svg matched with  chromium.svg
+2024/03/01 23:01:59 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:59 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:59 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:59 icons.go:32: cups.svg matched with  cups.svg
+2024/03/01 23:01:59 icons.go:32: dbeaver.svg matched with  dbeaver.svg
+2024/03/01 23:01:59 icons.go:32: discord.svg matched with  discord.svg
+2024/03/01 23:01:59 icons.go:32: dolphin-emu.svg matched with  dolphin-emu.svg
+2024/03/01 23:01:59 icons.go:32: kdcraw.svg matched with  kdcraw.svg
+2024/03/01 23:01:59 icons.go:32: firefox.svg matched with  firefox.svg
+2024/03/01 23:01:59 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:59 icons.go:32: gparted.svg matched with  gparted.svg
+2024/03/01 23:01:59 icons.go:32: ooo-impress.svg matched with  ooo-impress.svg
+2024/03/01 23:01:59 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:59 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:59 icons.go:32: empathy.svg matched with  empathy.svg
+2024/03/01 23:01:59 icons.go:32: mega.svg matched with  mega.svg
+2024/03/01 23:01:59 icons.go:32: lutris.svg matched with  lutris.svg
+2024/03/01 23:01:59 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:59 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:59 icons.go:32: org.flameshot.Flameshot.svg matched with  org.flameshot.Flameshot.svg
+2024/03/01 23:01:59 icons.go:32: openshot-qt.svg matched with  openshot-qt.svg
+2024/03/01 23:01:59 icons.go:32: qbittorrent.svg matched with  qbittorrent.svg
+2024/03/01 23:01:59 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:59 icons.go:32: org.remmina.Remmina.svg matched with  org.remmina.Remmina.svg
+2024/03/01 23:01:59 icons.go:32: telegram.svg matched with  telegram.svg
+2024/03/01 23:01:59 icons.go:32: multimedia-volume-control.svg matched with  multimedia-volume-control.svg
+2024/03/01 23:01:59 icons.go:32: qps.svg matched with  qps.svg
+2024/03/01 23:01:59 icons.go:32: utilities-terminal.svg matched with  utilities-terminal.svg
+2024/03/01 23:01:59 icons.go:32: signal-desktop.svg matched with  signal-desktop.svg
+2024/03/01 23:01:59 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:59 icons.go:32: spotify-client.svg matched with  spotify-client.svg
+2024/03/01 23:01:59 icons.go:32: openoffice4-startcenter.svg matched with  openoffice4-startcenter.svg
+2024/03/01 23:01:59 icons.go:32: steam.svg matched with  steam.svg
+2024/03/01 23:01:59 icons.go:32: org.xfce.thunar.svg matched with  org.xfce.thunar.svg
+2024/03/01 23:01:59 icons.go:32: org.xfce.thunar.svg matched with  org.xfce.thunar.svg
+2024/03/01 23:01:59 icons.go:32: org.xfce.thunar.svg matched with  org.xfce.thunar.svg
+2024/03/01 23:01:59 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:59 icons.go:32: vlc.svg matched with  vlc.svg
+2024/03/01 23:01:59 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:59 icons.go:32: winetricks.svg matched with  winetricks.svg
+2024/03/01 23:01:59 icons.go:32: ooo-writer.svg matched with  ooo-writer.svg
+2024/03/01 23:01:59 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:59 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:01:59 icons.go:32: xterm-color_48x48.svg matched with  xterm-color_48x48.svg
+2024/03/01 23:01:59 api.go:119: returning 20 results
+2024/03/01 23:02:02 api.go:84: searchTerm = 
+2024/03/01 23:02:02 icons.go:28: no matches found for lutris_steam
+2024/03/01 23:02:02 icons.go:28: no matches found for D15F_hh.0
+2024/03/01 23:02:02 icons.go:28: no matches found for ECB7_iexplore.0
+2024/03/01 23:02:02 icons.go:28: no matches found for C06E_winhlp32.0
+2024/03/01 23:02:02 icons.go:32: 81F5_winebrowser.0 matched with  81F5_winebrowser.0.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at 81F5_winebrowser.0.svg
+2024/03/01 23:02:02 icons.go:28: no matches found for 2E40_notepad.0
+2024/03/01 23:02:02 icons.go:28: no matches found for ECB7_iexplore.0
+2024/03/01 23:02:02 icons.go:28: no matches found for ECB7_iexplore.0
+2024/03/01 23:02:02 icons.go:28: no matches found for D23E_msiexec.0
+2024/03/01 23:02:02 icons.go:32: 81F5_winebrowser.0 matched with  81F5_winebrowser.0.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at 81F5_winebrowser.0.svg
+2024/03/01 23:02:02 icons.go:28: no matches found for ECB7_iexplore.0
+2024/03/01 23:02:02 icons.go:28: no matches found for 3365_wordpad.0
+2024/03/01 23:02:02 icons.go:28: no matches found for 2E40_notepad.0
+2024/03/01 23:02:02 icons.go:28: no matches found for 5742_rundll32.0
+2024/03/01 23:02:02 icons.go:28: no matches found for 2905_wscript.0
+2024/03/01 23:02:02 icons.go:28: no matches found for 3365_wordpad.0
+2024/03/01 23:02:02 icons.go:32: 81F5_winebrowser.0 matched with  81F5_winebrowser.0.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at 81F5_winebrowser.0.svg
+2024/03/01 23:02:02 icons.go:28: no matches found for hu.irl.cameractrls
+2024/03/01 23:02:02 icons.go:32: org.signal.Signal matched with  org.signal.Signal.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at org.signal.Signal.svg
+2024/03/01 23:02:02 icons.go:32: Alacritty matched with  Alacritty.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at Alacritty.svg
+2024/03/01 23:02:02 icons.go:32: display matched with  display.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at display.svg
+2024/03/01 23:02:02 icons.go:32: autokey matched with  autokey.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at autokey.svg
+2024/03/01 23:02:02 icons.go:32: btop matched with  btop.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at btop.svg
+2024/03/01 23:02:02 icons.go:32: vscode matched with  vscode.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at vscode.svg
+2024/03/01 23:02:02 icons.go:32: vscode matched with  vscode.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at vscode.svg
+2024/03/01 23:02:02 icons.go:32: vscode matched with  vscode.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at vscode.svg
+2024/03/01 23:02:02 icons.go:32: compton matched with  com.getpostman.Postman.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at com.getpostman.Postman.svg
+2024/03/01 23:02:02 icons.go:32: preferences-desktop-theme matched with  preferences-desktop-theme.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at preferences-desktop-theme.svg
+2024/03/01 23:02:02 icons.go:28: no matches found for neovide
+2024/03/01 23:02:02 icons.go:32: nitrogen matched with  nitrogen.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at nitrogen.svg
+2024/03/01 23:02:02 icons.go:32: nvim matched with  nvim.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at nvim.svg
+2024/03/01 23:02:02 icons.go:28: no matches found for org.wezfurlong.wezterm
+2024/03/01 23:02:02 icons.go:32: rofi matched with  tromfiles.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at tromfiles.svg
+2024/03/01 23:02:02 icons.go:32: rofi matched with  tromfiles.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at tromfiles.svg
+2024/03/01 23:02:02 icons.go:28: no matches found for slippi-launcher
+2024/03/01 23:02:02 icons.go:32: org.xfce.powermanager matched with  org.xfce.powermanager.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at org.xfce.powermanager.svg
+2024/03/01 23:02:02 icons.go:32: Alacritty matched with  Alacritty.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at Alacritty.svg
+2024/03/01 23:02:02 icons.go:32: anydesk matched with  anydesk.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at anydesk.svg
+2024/03/01 23:02:02 icons.go:32: xcolor matched with  xterm-color.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at xterm-color.svg
+2024/03/01 23:02:02 icons.go:28: no matches found for ardour8
+2024/03/01 23:02:02 icons.go:32: audacity matched with  audacity.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at audacity.svg
+2024/03/01 23:02:02 icons.go:32: balena-etcher matched with  balena-etcher-electron.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at balena-etcher-electron.svg
+2024/03/01 23:02:02 icons.go:32: base matched with  basket.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at basket.svg
+2024/03/01 23:02:02 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:02:02 icons.go:32: blueman-device matched with  blueman-device.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at blueman-device.svg
+2024/03/01 23:02:02 icons.go:32: blueman matched with  blueman.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at blueman.svg
+2024/03/01 23:02:02 icons.go:32: brave-browser matched with  brave-browser.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at brave-browser.svg
+2024/03/01 23:02:02 icons.go:32: calc matched with  calc.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at calc.svg
+2024/03/01 23:02:02 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:02:02 icons.go:32: chromium matched with  chromium.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at chromium.svg
+2024/03/01 23:02:02 icons.go:28: no matches found for com.github.wwmm.easyeffects
+2024/03/01 23:02:02 icons.go:28: no matches found for com.obsproject.Studio
+2024/03/01 23:02:02 icons.go:28: no matches found for cura-icon
+2024/03/01 23:02:02 icons.go:32: cups matched with  cups.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at cups.svg
+2024/03/01 23:02:02 icons.go:32: dbeaver matched with  dbeaver.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at dbeaver.svg
+2024/03/01 23:02:02 icons.go:32: discord matched with  discord.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at discord.svg
+2024/03/01 23:02:02 icons.go:32: dolphin-emu matched with  dolphin-emu.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at dolphin-emu.svg
+2024/03/01 23:02:02 icons.go:32: draw matched with  kdcraw.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at kdcraw.svg
+2024/03/01 23:02:02 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:02:02 icons.go:32: firefox matched with  firefox.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at firefox.svg
+2024/03/01 23:02:02 icons.go:32: gimp matched with  gimp.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at gimp.svg
+2024/03/01 23:02:02 icons.go:32: gparted matched with  gparted.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at gparted.svg
+2024/03/01 23:02:02 icons.go:32: impress matched with  ooo-impress.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at ooo-impress.svg
+2024/03/01 23:02:02 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:02:02 icons.go:28: no matches found for /usr/share/input-remapper/input-remapper.svg
+2024/03/01 23:02:02 icons.go:28: no matches found for /usr/share/input-remapper/input-remapper.svg
+2024/03/01 23:02:02 icons.go:32: math matched with  empathy.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at empathy.svg
+2024/03/01 23:02:02 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:02:02 icons.go:32: mega matched with  mega.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at mega.svg
+2024/03/01 23:02:02 icons.go:32: lutris matched with  lutris.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at lutris.svg
+2024/03/01 23:02:02 icons.go:28: no matches found for nix-snowflake
+2024/03/01 23:02:02 icons.go:28: no matches found for one.alynx.showmethekey
+2024/03/01 23:02:02 icons.go:32: org.flameshot.Flameshot matched with  org.flameshot.Flameshot.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at org.flameshot.Flameshot.svg
+2024/03/01 23:02:02 icons.go:32: openshot-qt matched with  openshot-qt.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at openshot-qt.svg
+2024/03/01 23:02:02 icons.go:32: qbittorrent matched with  qbittorrent.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at qbittorrent.svg
+2024/03/01 23:02:02 icons.go:32: org.remmina.Remmina matched with  org.remmina.Remmina.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at org.remmina.Remmina.svg
+2024/03/01 23:02:02 icons.go:32: org.remmina.Remmina matched with  org.remmina.Remmina.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at org.remmina.Remmina.svg
+2024/03/01 23:02:02 icons.go:32: telegram matched with  telegram.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at telegram.svg
+2024/03/01 23:02:02 icons.go:32: application-exit matched with  application-x-wine-extension-its.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at application-x-wine-extension-its.svg
+2024/03/01 23:02:02 icons.go:32: multimedia-volume-control matched with  multimedia-volume-control.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at multimedia-volume-control.svg
+2024/03/01 23:02:02 icons.go:32: qps matched with  qps
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at qps.svg
+2024/03/01 23:02:02 icons.go:32: utilities-terminal matched with  utilities-terminal.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at utilities-terminal.svg
+2024/03/01 23:02:02 icons.go:32: signal-desktop matched with  signal-desktop.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at signal-desktop.svg
+2024/03/01 23:02:02 icons.go:32: simplescreenrecorder matched with  simplescreenrecorder.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at simplescreenrecorder.svg
+2024/03/01 23:02:02 icons.go:32: spotify-client matched with  spotify-client.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at spotify-client.svg
+2024/03/01 23:02:02 icons.go:32: startcenter matched with  openoffice4-startcenter.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at openoffice4-startcenter.svg
+2024/03/01 23:02:02 icons.go:32: steam matched with  steam.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at steam.svg
+2024/03/01 23:02:02 icons.go:32: org.xfce.thunar matched with  org.xfce.thunar.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at org.xfce.thunar.svg
+2024/03/01 23:02:02 icons.go:32: org.xfce.thunar matched with  org.xfce.thunar.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at org.xfce.thunar.svg
+2024/03/01 23:02:02 icons.go:32: org.xfce.thunar matched with  org.xfce.thunar.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at org.xfce.thunar.svg
+2024/03/01 23:02:02 icons.go:32: virtualbox matched with  virtualbox.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at virtualbox.svg
+2024/03/01 23:02:02 icons.go:32: vlc matched with  vlc.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at vlc.svg
+2024/03/01 23:02:02 icons.go:32: wine matched with  wine.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at wine.svg
+2024/03/01 23:02:02 icons.go:32: winetricks matched with  winetricks.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at winetricks.svg
+2024/03/01 23:02:02 icons.go:32: writer matched with  ooo-writer.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at ooo-writer.svg
+2024/03/01 23:02:02 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:02:02 icons.go:32: applications-system-symbolic matched with  applications-system-symbolic.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at applications-system-symbolic.svg
+2024/03/01 23:02:02 icons.go:32: xterm-color_48x48 matched with  xterm-color_48x48.svg
+2024/03/01 23:02:02 desktop-entry-parser.go:57: icon will be at xterm-color_48x48.svg
+2024/03/01 23:02:02 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:02 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:02 icons.go:32: org.signal.Signal.svg matched with  org.signal.Signal.svg
+2024/03/01 23:02:02 icons.go:32: Alacritty.svg matched with  Alacritty.svg
+2024/03/01 23:02:02 icons.go:32: display.svg matched with  display.svg
+2024/03/01 23:02:02 icons.go:32: autokey.svg matched with  autokey.svg
+2024/03/01 23:02:02 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:02 icons.go:32: vscode.svg matched with  vscode.svg
+2024/03/01 23:02:02 icons.go:32: com.getpostman.Postman.svg matched with  com.getpostman.Postman.svg
+2024/03/01 23:02:02 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:02 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:02 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:03 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:03 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:03 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:03 icons.go:32: tromfiles.svg matched with  tromfiles.svg
+2024/03/01 23:02:03 icons.go:32: tromfiles.svg matched with  tromfiles.svg
+2024/03/01 23:02:03 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:03 icons.go:32: org.xfce.powermanager.svg matched with  org.xfce.powermanager.svg
+2024/03/01 23:02:03 icons.go:32: Alacritty.svg matched with  Alacritty.svg
+2024/03/01 23:02:03 icons.go:32: anydesk.svg matched with  anydesk.svg
+2024/03/01 23:02:03 icons.go:32: xterm-color.svg matched with  xterm-color.svg
+2024/03/01 23:02:03 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:03 icons.go:32: audacity.svg matched with  audacity.svg
+2024/03/01 23:02:03 icons.go:32: balena-etcher-electron.svg matched with  balena-etcher-electron.svg
+2024/03/01 23:02:03 icons.go:32: basket.svg matched with  basket.svg
+2024/03/01 23:02:03 icons.go:32: blueman-device.svg matched with  blueman-device.svg
+2024/03/01 23:02:03 icons.go:32: blueman.svg matched with  blueman.svg
+2024/03/01 23:02:03 icons.go:32: brave-browser.svg matched with  brave-browser.svg
+2024/03/01 23:02:03 icons.go:32: calc.svg matched with  calc.svg
+2024/03/01 23:02:03 icons.go:32: chromium.svg matched with  chromium.svg
+2024/03/01 23:02:03 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:03 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:03 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:03 icons.go:32: cups.svg matched with  cups.svg
+2024/03/01 23:02:03 icons.go:32: dbeaver.svg matched with  dbeaver.svg
+2024/03/01 23:02:03 icons.go:32: discord.svg matched with  discord.svg
+2024/03/01 23:02:03 icons.go:32: dolphin-emu.svg matched with  dolphin-emu.svg
+2024/03/01 23:02:03 icons.go:32: kdcraw.svg matched with  kdcraw.svg
+2024/03/01 23:02:03 icons.go:32: firefox.svg matched with  firefox.svg
+2024/03/01 23:02:03 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:03 icons.go:32: gparted.svg matched with  gparted.svg
+2024/03/01 23:02:03 icons.go:32: ooo-impress.svg matched with  ooo-impress.svg
+2024/03/01 23:02:03 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:03 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:03 icons.go:32: empathy.svg matched with  empathy.svg
+2024/03/01 23:02:03 icons.go:32: mega.svg matched with  mega.svg
+2024/03/01 23:02:03 icons.go:32: lutris.svg matched with  lutris.svg
+2024/03/01 23:02:03 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:03 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:03 icons.go:32: org.flameshot.Flameshot.svg matched with  org.flameshot.Flameshot.svg
+2024/03/01 23:02:03 icons.go:32: openshot-qt.svg matched with  openshot-qt.svg
+2024/03/01 23:02:03 icons.go:32: qbittorrent.svg matched with  qbittorrent.svg
+2024/03/01 23:02:03 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:03 icons.go:32: org.remmina.Remmina.svg matched with  org.remmina.Remmina.svg
+2024/03/01 23:02:03 icons.go:32: telegram.svg matched with  telegram.svg
+2024/03/01 23:02:03 icons.go:32: multimedia-volume-control.svg matched with  multimedia-volume-control.svg
+2024/03/01 23:02:03 icons.go:32: qps.svg matched with  qps.svg
+2024/03/01 23:02:03 icons.go:32: utilities-terminal.svg matched with  utilities-terminal.svg
+2024/03/01 23:02:03 icons.go:32: signal-desktop.svg matched with  signal-desktop.svg
+2024/03/01 23:02:03 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:03 icons.go:32: spotify-client.svg matched with  spotify-client.svg
+2024/03/01 23:02:03 icons.go:32: openoffice4-startcenter.svg matched with  openoffice4-startcenter.svg
+2024/03/01 23:02:03 icons.go:32: steam.svg matched with  steam.svg
+2024/03/01 23:02:03 icons.go:32: org.xfce.thunar.svg matched with  org.xfce.thunar.svg
+2024/03/01 23:02:03 icons.go:32: org.xfce.thunar.svg matched with  org.xfce.thunar.svg
+2024/03/01 23:02:03 icons.go:32: org.xfce.thunar.svg matched with  org.xfce.thunar.svg
+2024/03/01 23:02:03 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:03 icons.go:32: vlc.svg matched with  vlc.svg
+2024/03/01 23:02:03 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:03 icons.go:32: winetricks.svg matched with  winetricks.svg
+2024/03/01 23:02:03 icons.go:32: ooo-writer.svg matched with  ooo-writer.svg
+2024/03/01 23:02:03 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:03 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:03 icons.go:32: xterm-color_48x48.svg matched with  xterm-color_48x48.svg
+2024/03/01 23:02:03 api.go:119: returning 16 results
+2024/03/01 23:02:33 api.go:84: searchTerm = 
+2024/03/01 23:02:33 icons.go:28: no matches found for lutris_steam
+2024/03/01 23:02:33 api.go:84: searchTerm = 
+2024/03/01 23:02:33 icons.go:28: no matches found for lutris_steam
+2024/03/01 23:02:33 icons.go:28: no matches found for D15F_hh.0
+2024/03/01 23:02:33 icons.go:28: no matches found for ECB7_iexplore.0
+2024/03/01 23:02:33 icons.go:28: no matches found for D15F_hh.0
+2024/03/01 23:02:33 icons.go:28: no matches found for ECB7_iexplore.0
+2024/03/01 23:02:33 icons.go:28: no matches found for C06E_winhlp32.0
+2024/03/01 23:02:33 icons.go:32: 81F5_winebrowser.0 matched with  81F5_winebrowser.0.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at 81F5_winebrowser.0.svg
+2024/03/01 23:02:33 icons.go:28: no matches found for C06E_winhlp32.0
+2024/03/01 23:02:33 icons.go:28: no matches found for 2E40_notepad.0
+2024/03/01 23:02:33 icons.go:32: 81F5_winebrowser.0 matched with  81F5_winebrowser.0.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at 81F5_winebrowser.0.svg
+2024/03/01 23:02:33 icons.go:28: no matches found for ECB7_iexplore.0
+2024/03/01 23:02:33 icons.go:28: no matches found for 2E40_notepad.0
+2024/03/01 23:02:33 icons.go:28: no matches found for ECB7_iexplore.0
+2024/03/01 23:02:33 icons.go:28: no matches found for ECB7_iexplore.0
+2024/03/01 23:02:33 icons.go:28: no matches found for ECB7_iexplore.0
+2024/03/01 23:02:33 icons.go:28: no matches found for D23E_msiexec.0
+2024/03/01 23:02:33 icons.go:28: no matches found for D23E_msiexec.0
+2024/03/01 23:02:33 icons.go:32: 81F5_winebrowser.0 matched with  81F5_winebrowser.0.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at 81F5_winebrowser.0.svg
+2024/03/01 23:02:33 icons.go:32: 81F5_winebrowser.0 matched with  81F5_winebrowser.0.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at 81F5_winebrowser.0.svg
+2024/03/01 23:02:33 icons.go:28: no matches found for ECB7_iexplore.0
+2024/03/01 23:02:33 icons.go:28: no matches found for ECB7_iexplore.0
+2024/03/01 23:02:33 icons.go:28: no matches found for 3365_wordpad.0
+2024/03/01 23:02:33 icons.go:28: no matches found for 3365_wordpad.0
+2024/03/01 23:02:33 icons.go:28: no matches found for 2E40_notepad.0
+2024/03/01 23:02:33 icons.go:28: no matches found for 2E40_notepad.0
+2024/03/01 23:02:33 icons.go:28: no matches found for 5742_rundll32.0
+2024/03/01 23:02:33 icons.go:28: no matches found for 5742_rundll32.0
+2024/03/01 23:02:33 icons.go:28: no matches found for 2905_wscript.0
+2024/03/01 23:02:33 icons.go:28: no matches found for 2905_wscript.0
+2024/03/01 23:02:33 icons.go:28: no matches found for 3365_wordpad.0
+2024/03/01 23:02:33 icons.go:28: no matches found for 3365_wordpad.0
+2024/03/01 23:02:33 icons.go:32: 81F5_winebrowser.0 matched with  81F5_winebrowser.0.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at 81F5_winebrowser.0.svg
+2024/03/01 23:02:33 icons.go:32: 81F5_winebrowser.0 matched with  81F5_winebrowser.0.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at 81F5_winebrowser.0.svg
+2024/03/01 23:02:33 icons.go:28: no matches found for hu.irl.cameractrls
+2024/03/01 23:02:33 icons.go:28: no matches found for hu.irl.cameractrls
+2024/03/01 23:02:33 icons.go:32: org.signal.Signal matched with  org.signal.Signal.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at org.signal.Signal.svg
+2024/03/01 23:02:33 icons.go:32: org.signal.Signal matched with  org.signal.Signal.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at org.signal.Signal.svg
+2024/03/01 23:02:33 icons.go:32: Alacritty matched with  Alacritty.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at Alacritty.svg
+2024/03/01 23:02:33 icons.go:32: Alacritty matched with  Alacritty.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at Alacritty.svg
+2024/03/01 23:02:33 icons.go:32: display matched with  display.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at display.svg
+2024/03/01 23:02:33 icons.go:32: display matched with  display.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at display.svg
+2024/03/01 23:02:33 icons.go:32: autokey matched with  autokey.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at autokey.svg
+2024/03/01 23:02:33 icons.go:32: autokey matched with  autokey.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at autokey.svg
+2024/03/01 23:02:33 icons.go:32: btop matched with  btop.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at btop.svg
+2024/03/01 23:02:33 icons.go:32: btop matched with  btop.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at btop.svg
+2024/03/01 23:02:33 icons.go:32: vscode matched with  vscode.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at vscode.svg
+2024/03/01 23:02:33 icons.go:32: vscode matched with  vscode.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at vscode.svg
+2024/03/01 23:02:33 icons.go:32: vscode matched with  vscode.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at vscode.svg
+2024/03/01 23:02:33 icons.go:32: vscode matched with  vscode.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at vscode.svg
+2024/03/01 23:02:33 icons.go:32: vscode matched with  vscode.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at vscode.svg
+2024/03/01 23:02:33 icons.go:32: vscode matched with  vscode.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at vscode.svg
+2024/03/01 23:02:33 icons.go:32: compton matched with  com.getpostman.Postman.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at com.getpostman.Postman.svg
+2024/03/01 23:02:33 icons.go:32: compton matched with  com.getpostman.Postman.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at com.getpostman.Postman.svg
+2024/03/01 23:02:33 icons.go:32: preferences-desktop-theme matched with  preferences-desktop-theme.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at preferences-desktop-theme.svg
+2024/03/01 23:02:33 icons.go:32: preferences-desktop-theme matched with  preferences-desktop-theme.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at preferences-desktop-theme.svg
+2024/03/01 23:02:33 icons.go:28: no matches found for neovide
+2024/03/01 23:02:33 icons.go:28: no matches found for neovide
+2024/03/01 23:02:33 icons.go:32: nitrogen matched with  nitrogen.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at nitrogen.svg
+2024/03/01 23:02:33 icons.go:32: nitrogen matched with  nitrogen.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at nitrogen.svg
+2024/03/01 23:02:33 icons.go:32: nvim matched with  nvim.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at nvim.svg
+2024/03/01 23:02:33 icons.go:32: nvim matched with  nvim.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at nvim.svg
+2024/03/01 23:02:33 icons.go:28: no matches found for org.wezfurlong.wezterm
+2024/03/01 23:02:33 icons.go:28: no matches found for org.wezfurlong.wezterm
+2024/03/01 23:02:33 icons.go:32: rofi matched with  tromfiles.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at tromfiles.svg
+2024/03/01 23:02:33 icons.go:32: rofi matched with  tromfiles.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at tromfiles.svg
+2024/03/01 23:02:33 icons.go:32: rofi matched with  tromfiles.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at tromfiles.svg
+2024/03/01 23:02:33 icons.go:32: rofi matched with  tromfiles.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at tromfiles.svg
+2024/03/01 23:02:33 icons.go:28: no matches found for slippi-launcher
+2024/03/01 23:02:33 icons.go:28: no matches found for slippi-launcher
+2024/03/01 23:02:33 icons.go:32: org.xfce.powermanager matched with  org.xfce.powermanager.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at org.xfce.powermanager.svg
+2024/03/01 23:02:33 icons.go:32: org.xfce.powermanager matched with  org.xfce.powermanager.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at org.xfce.powermanager.svg
+2024/03/01 23:02:33 icons.go:32: Alacritty matched with  Alacritty.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at Alacritty.svg
+2024/03/01 23:02:33 icons.go:32: Alacritty matched with  Alacritty.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at Alacritty.svg
+2024/03/01 23:02:33 icons.go:32: anydesk matched with  anydesk.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at anydesk.svg
+2024/03/01 23:02:33 icons.go:32: anydesk matched with  anydesk.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at anydesk.svg
+2024/03/01 23:02:33 icons.go:32: xcolor matched with  xterm-color.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at xterm-color.svg
+2024/03/01 23:02:33 icons.go:32: xcolor matched with  xterm-color.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at xterm-color.svg
+2024/03/01 23:02:33 icons.go:28: no matches found for ardour8
+2024/03/01 23:02:33 icons.go:28: no matches found for ardour8
+2024/03/01 23:02:33 icons.go:32: audacity matched with  audacity.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at audacity.svg
+2024/03/01 23:02:33 icons.go:32: audacity matched with  audacity.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at audacity.svg
+2024/03/01 23:02:33 icons.go:32: balena-etcher matched with  balena-etcher-electron.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at balena-etcher-electron.svg
+2024/03/01 23:02:33 icons.go:32: balena-etcher matched with  balena-etcher-electron.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at balena-etcher-electron.svg
+2024/03/01 23:02:33 icons.go:32: base matched with  basket.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at basket.svg
+2024/03/01 23:02:33 icons.go:32: base matched with  basket.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at basket.svg
+2024/03/01 23:02:33 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:02:33 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:02:33 icons.go:32: blueman-device matched with  blueman-device.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at blueman-device.svg
+2024/03/01 23:02:33 icons.go:32: blueman-device matched with  blueman-device.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at blueman-device.svg
+2024/03/01 23:02:33 icons.go:32: blueman matched with  blueman.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at blueman.svg
+2024/03/01 23:02:33 icons.go:32: blueman matched with  blueman.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at blueman.svg
+2024/03/01 23:02:33 icons.go:32: brave-browser matched with  brave-browser.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at brave-browser.svg
+2024/03/01 23:02:33 icons.go:32: brave-browser matched with  brave-browser.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at brave-browser.svg
+2024/03/01 23:02:33 icons.go:32: calc matched with  calc.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at calc.svg
+2024/03/01 23:02:33 icons.go:32: calc matched with  calc.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at calc.svg
+2024/03/01 23:02:33 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:02:33 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:02:33 icons.go:32: chromium matched with  chromium.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at chromium.svg
+2024/03/01 23:02:33 icons.go:32: chromium matched with  chromium.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at chromium.svg
+2024/03/01 23:02:33 icons.go:28: no matches found for com.github.wwmm.easyeffects
+2024/03/01 23:02:33 icons.go:28: no matches found for com.github.wwmm.easyeffects
+2024/03/01 23:02:33 icons.go:28: no matches found for com.obsproject.Studio
+2024/03/01 23:02:33 icons.go:28: no matches found for com.obsproject.Studio
+2024/03/01 23:02:33 icons.go:28: no matches found for cura-icon
+2024/03/01 23:02:33 icons.go:28: no matches found for cura-icon
+2024/03/01 23:02:33 icons.go:32: cups matched with  cups.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at cups.svg
+2024/03/01 23:02:33 icons.go:32: cups matched with  cups.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at cups.svg
+2024/03/01 23:02:33 icons.go:32: dbeaver matched with  dbeaver.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at dbeaver.svg
+2024/03/01 23:02:33 icons.go:32: dbeaver matched with  dbeaver.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at dbeaver.svg
+2024/03/01 23:02:33 icons.go:32: discord matched with  discord.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at discord.svg
+2024/03/01 23:02:33 icons.go:32: discord matched with  discord.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at discord.svg
+2024/03/01 23:02:33 icons.go:32: dolphin-emu matched with  dolphin-emu.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at dolphin-emu.svg
+2024/03/01 23:02:33 icons.go:32: dolphin-emu matched with  dolphin-emu.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at dolphin-emu.svg
+2024/03/01 23:02:33 icons.go:32: draw matched with  kdcraw.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at kdcraw.svg
+2024/03/01 23:02:33 icons.go:32: draw matched with  kdcraw.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at kdcraw.svg
+2024/03/01 23:02:33 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:02:33 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:02:33 icons.go:32: firefox matched with  firefox.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at firefox.svg
+2024/03/01 23:02:33 icons.go:32: firefox matched with  firefox.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at firefox.svg
+2024/03/01 23:02:33 icons.go:32: gimp matched with  gimp.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at gimp.svg
+2024/03/01 23:02:33 icons.go:32: gimp matched with  gimp.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at gimp.svg
+2024/03/01 23:02:33 icons.go:32: gparted matched with  gparted.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at gparted.svg
+2024/03/01 23:02:33 icons.go:32: gparted matched with  gparted.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at gparted.svg
+2024/03/01 23:02:33 icons.go:32: impress matched with  ooo-impress.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at ooo-impress.svg
+2024/03/01 23:02:33 icons.go:32: impress matched with  ooo-impress.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at ooo-impress.svg
+2024/03/01 23:02:33 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:02:33 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:02:33 icons.go:28: no matches found for /usr/share/input-remapper/input-remapper.svg
+2024/03/01 23:02:33 icons.go:28: no matches found for /usr/share/input-remapper/input-remapper.svg
+2024/03/01 23:02:33 icons.go:28: no matches found for /usr/share/input-remapper/input-remapper.svg
+2024/03/01 23:02:33 icons.go:28: no matches found for /usr/share/input-remapper/input-remapper.svg
+2024/03/01 23:02:33 icons.go:32: math matched with  empathy.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at empathy.svg
+2024/03/01 23:02:33 icons.go:32: math matched with  empathy.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at empathy.svg
+2024/03/01 23:02:33 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:02:33 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:02:33 icons.go:32: mega matched with  mega.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at mega.svg
+2024/03/01 23:02:33 icons.go:32: mega matched with  mega.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at mega.svg
+2024/03/01 23:02:33 icons.go:32: lutris matched with  lutris.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at lutris.svg
+2024/03/01 23:02:33 icons.go:32: lutris matched with  lutris.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at lutris.svg
+2024/03/01 23:02:33 icons.go:28: no matches found for nix-snowflake
+2024/03/01 23:02:33 icons.go:28: no matches found for nix-snowflake
+2024/03/01 23:02:33 icons.go:28: no matches found for one.alynx.showmethekey
+2024/03/01 23:02:33 icons.go:28: no matches found for one.alynx.showmethekey
+2024/03/01 23:02:33 icons.go:32: org.flameshot.Flameshot matched with  org.flameshot.Flameshot.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at org.flameshot.Flameshot.svg
+2024/03/01 23:02:33 icons.go:32: org.flameshot.Flameshot matched with  org.flameshot.Flameshot.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at org.flameshot.Flameshot.svg
+2024/03/01 23:02:33 icons.go:32: openshot-qt matched with  openshot-qt.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at openshot-qt.svg
+2024/03/01 23:02:33 icons.go:32: openshot-qt matched with  openshot-qt.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at openshot-qt.svg
+2024/03/01 23:02:33 icons.go:32: qbittorrent matched with  qbittorrent.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at qbittorrent.svg
+2024/03/01 23:02:33 icons.go:32: qbittorrent matched with  qbittorrent.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at qbittorrent.svg
+2024/03/01 23:02:33 icons.go:32: org.remmina.Remmina matched with  org.remmina.Remmina.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at org.remmina.Remmina.svg
+2024/03/01 23:02:33 icons.go:32: org.remmina.Remmina matched with  org.remmina.Remmina.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at org.remmina.Remmina.svg
+2024/03/01 23:02:33 icons.go:32: org.remmina.Remmina matched with  org.remmina.Remmina.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at org.remmina.Remmina.svg
+2024/03/01 23:02:33 icons.go:32: org.remmina.Remmina matched with  org.remmina.Remmina.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at org.remmina.Remmina.svg
+2024/03/01 23:02:33 icons.go:32: telegram matched with  telegram.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at telegram.svg
+2024/03/01 23:02:33 icons.go:32: telegram matched with  telegram.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at telegram.svg
+2024/03/01 23:02:33 icons.go:32: application-exit matched with  application-x-wine-extension-its.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at application-x-wine-extension-its.svg
+2024/03/01 23:02:33 icons.go:32: application-exit matched with  application-x-wine-extension-its.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at application-x-wine-extension-its.svg
+2024/03/01 23:02:33 icons.go:32: multimedia-volume-control matched with  multimedia-volume-control.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at multimedia-volume-control.svg
+2024/03/01 23:02:33 icons.go:32: multimedia-volume-control matched with  multimedia-volume-control.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at multimedia-volume-control.svg
+2024/03/01 23:02:33 icons.go:32: qps matched with  qps
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at qps.svg
+2024/03/01 23:02:33 icons.go:32: qps matched with  qps
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at qps.svg
+2024/03/01 23:02:33 icons.go:32: utilities-terminal matched with  utilities-terminal.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at utilities-terminal.svg
+2024/03/01 23:02:33 icons.go:32: utilities-terminal matched with  utilities-terminal.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at utilities-terminal.svg
+2024/03/01 23:02:33 icons.go:32: signal-desktop matched with  signal-desktop.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at signal-desktop.svg
+2024/03/01 23:02:33 icons.go:32: signal-desktop matched with  signal-desktop.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at signal-desktop.svg
+2024/03/01 23:02:33 icons.go:32: simplescreenrecorder matched with  simplescreenrecorder.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at simplescreenrecorder.svg
+2024/03/01 23:02:33 icons.go:32: simplescreenrecorder matched with  simplescreenrecorder.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at simplescreenrecorder.svg
+2024/03/01 23:02:33 icons.go:32: spotify-client matched with  spotify-client.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at spotify-client.svg
+2024/03/01 23:02:33 icons.go:32: spotify-client matched with  spotify-client.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at spotify-client.svg
+2024/03/01 23:02:33 icons.go:32: startcenter matched with  openoffice4-startcenter.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at openoffice4-startcenter.svg
+2024/03/01 23:02:33 icons.go:32: startcenter matched with  openoffice4-startcenter.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at openoffice4-startcenter.svg
+2024/03/01 23:02:33 icons.go:32: steam matched with  steam.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at steam.svg
+2024/03/01 23:02:33 icons.go:32: steam matched with  steam.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at steam.svg
+2024/03/01 23:02:33 icons.go:32: org.xfce.thunar matched with  org.xfce.thunar.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at org.xfce.thunar.svg
+2024/03/01 23:02:33 icons.go:32: org.xfce.thunar matched with  org.xfce.thunar.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at org.xfce.thunar.svg
+2024/03/01 23:02:33 icons.go:32: org.xfce.thunar matched with  org.xfce.thunar.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at org.xfce.thunar.svg
+2024/03/01 23:02:33 icons.go:32: org.xfce.thunar matched with  org.xfce.thunar.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at org.xfce.thunar.svg
+2024/03/01 23:02:33 icons.go:32: org.xfce.thunar matched with  org.xfce.thunar.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at org.xfce.thunar.svg
+2024/03/01 23:02:33 icons.go:32: org.xfce.thunar matched with  org.xfce.thunar.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at org.xfce.thunar.svg
+2024/03/01 23:02:33 icons.go:32: virtualbox matched with  virtualbox.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at virtualbox.svg
+2024/03/01 23:02:33 icons.go:32: virtualbox matched with  virtualbox.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at virtualbox.svg
+2024/03/01 23:02:33 icons.go:32: vlc matched with  vlc.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at vlc.svg
+2024/03/01 23:02:33 icons.go:32: vlc matched with  vlc.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at vlc.svg
+2024/03/01 23:02:33 icons.go:32: wine matched with  wine.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at wine.svg
+2024/03/01 23:02:33 icons.go:32: wine matched with  wine.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at wine.svg
+2024/03/01 23:02:33 icons.go:32: winetricks matched with  winetricks.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at winetricks.svg
+2024/03/01 23:02:33 icons.go:32: winetricks matched with  winetricks.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at winetricks.svg
+2024/03/01 23:02:33 icons.go:32: writer matched with  ooo-writer.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at ooo-writer.svg
+2024/03/01 23:02:33 icons.go:32: writer matched with  ooo-writer.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at ooo-writer.svg
+2024/03/01 23:02:33 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:02:33 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:02:33 icons.go:32: applications-system-symbolic matched with  applications-system-symbolic.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at applications-system-symbolic.svg
+2024/03/01 23:02:33 icons.go:32: applications-system-symbolic matched with  applications-system-symbolic.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at applications-system-symbolic.svg
+2024/03/01 23:02:33 icons.go:32: xterm-color_48x48 matched with  xterm-color_48x48.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at xterm-color_48x48.svg
+2024/03/01 23:02:33 icons.go:32: xterm-color_48x48 matched with  xterm-color_48x48.svg
+2024/03/01 23:02:33 desktop-entry-parser.go:57: icon will be at xterm-color_48x48.svg
+2024/03/01 23:02:33 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:33 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:33 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:33 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:33 icons.go:32: org.signal.Signal.svg matched with  org.signal.Signal.svg
+2024/03/01 23:02:33 icons.go:32: org.signal.Signal.svg matched with  org.signal.Signal.svg
+2024/03/01 23:02:33 icons.go:32: Alacritty.svg matched with  Alacritty.svg
+2024/03/01 23:02:33 icons.go:32: Alacritty.svg matched with  Alacritty.svg
+2024/03/01 23:02:33 icons.go:32: display.svg matched with  display.svg
+2024/03/01 23:02:33 icons.go:32: display.svg matched with  display.svg
+2024/03/01 23:02:33 icons.go:32: autokey.svg matched with  autokey.svg
+2024/03/01 23:02:33 icons.go:32: autokey.svg matched with  autokey.svg
+2024/03/01 23:02:33 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:33 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:33 icons.go:32: vscode.svg matched with  vscode.svg
+2024/03/01 23:02:33 icons.go:32: vscode.svg matched with  vscode.svg
+2024/03/01 23:02:33 icons.go:32: com.getpostman.Postman.svg matched with  com.getpostman.Postman.svg
+2024/03/01 23:02:33 icons.go:32: com.getpostman.Postman.svg matched with  com.getpostman.Postman.svg
+2024/03/01 23:02:33 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:33 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:33 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:34 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:34 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:34 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:34 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:34 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:34 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:34 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:34 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:34 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:34 icons.go:32: tromfiles.svg matched with  tromfiles.svg
+2024/03/01 23:02:34 icons.go:32: tromfiles.svg matched with  tromfiles.svg
+2024/03/01 23:02:34 icons.go:32: tromfiles.svg matched with  tromfiles.svg
+2024/03/01 23:02:34 icons.go:32: tromfiles.svg matched with  tromfiles.svg
+2024/03/01 23:02:34 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:34 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:34 icons.go:32: org.xfce.powermanager.svg matched with  org.xfce.powermanager.svg
+2024/03/01 23:02:34 icons.go:32: org.xfce.powermanager.svg matched with  org.xfce.powermanager.svg
+2024/03/01 23:02:34 icons.go:32: Alacritty.svg matched with  Alacritty.svg
+2024/03/01 23:02:34 icons.go:32: Alacritty.svg matched with  Alacritty.svg
+2024/03/01 23:02:34 icons.go:32: anydesk.svg matched with  anydesk.svg
+2024/03/01 23:02:34 icons.go:32: anydesk.svg matched with  anydesk.svg
+2024/03/01 23:02:34 icons.go:32: xterm-color.svg matched with  xterm-color.svg
+2024/03/01 23:02:34 icons.go:32: xterm-color.svg matched with  xterm-color.svg
+2024/03/01 23:02:34 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:34 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:34 icons.go:32: audacity.svg matched with  audacity.svg
+2024/03/01 23:02:34 icons.go:32: audacity.svg matched with  audacity.svg
+2024/03/01 23:02:34 icons.go:32: balena-etcher-electron.svg matched with  balena-etcher-electron.svg
+2024/03/01 23:02:34 icons.go:32: basket.svg matched with  basket.svg
+2024/03/01 23:02:34 icons.go:32: balena-etcher-electron.svg matched with  balena-etcher-electron.svg
+2024/03/01 23:02:34 icons.go:32: blueman-device.svg matched with  blueman-device.svg
+2024/03/01 23:02:34 icons.go:32: basket.svg matched with  basket.svg
+2024/03/01 23:02:34 icons.go:32: blueman.svg matched with  blueman.svg
+2024/03/01 23:02:34 icons.go:32: blueman-device.svg matched with  blueman-device.svg
+2024/03/01 23:02:34 icons.go:32: blueman.svg matched with  blueman.svg
+2024/03/01 23:02:34 icons.go:32: brave-browser.svg matched with  brave-browser.svg
+2024/03/01 23:02:34 icons.go:32: brave-browser.svg matched with  brave-browser.svg
+2024/03/01 23:02:34 icons.go:32: calc.svg matched with  calc.svg
+2024/03/01 23:02:34 icons.go:32: chromium.svg matched with  chromium.svg
+2024/03/01 23:02:34 icons.go:32: calc.svg matched with  calc.svg
+2024/03/01 23:02:34 icons.go:32: chromium.svg matched with  chromium.svg
+2024/03/01 23:02:34 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:34 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:34 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:34 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:34 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:34 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:34 icons.go:32: cups.svg matched with  cups.svg
+2024/03/01 23:02:34 icons.go:32: cups.svg matched with  cups.svg
+2024/03/01 23:02:34 icons.go:32: dbeaver.svg matched with  dbeaver.svg
+2024/03/01 23:02:34 icons.go:32: dbeaver.svg matched with  dbeaver.svg
+2024/03/01 23:02:34 icons.go:32: discord.svg matched with  discord.svg
+2024/03/01 23:02:34 icons.go:32: discord.svg matched with  discord.svg
+2024/03/01 23:02:34 icons.go:32: dolphin-emu.svg matched with  dolphin-emu.svg
+2024/03/01 23:02:34 icons.go:32: dolphin-emu.svg matched with  dolphin-emu.svg
+2024/03/01 23:02:34 icons.go:32: kdcraw.svg matched with  kdcraw.svg
+2024/03/01 23:02:34 icons.go:32: kdcraw.svg matched with  kdcraw.svg
+2024/03/01 23:02:34 icons.go:32: firefox.svg matched with  firefox.svg
+2024/03/01 23:02:34 icons.go:32: firefox.svg matched with  firefox.svg
+2024/03/01 23:02:34 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:34 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:34 icons.go:32: gparted.svg matched with  gparted.svg
+2024/03/01 23:02:34 icons.go:32: gparted.svg matched with  gparted.svg
+2024/03/01 23:02:34 icons.go:32: ooo-impress.svg matched with  ooo-impress.svg
+2024/03/01 23:02:34 icons.go:32: ooo-impress.svg matched with  ooo-impress.svg
+2024/03/01 23:02:34 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:34 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:34 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:34 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:34 icons.go:32: empathy.svg matched with  empathy.svg
+2024/03/01 23:02:34 icons.go:32: empathy.svg matched with  empathy.svg
+2024/03/01 23:02:34 icons.go:32: mega.svg matched with  mega.svg
+2024/03/01 23:02:34 icons.go:32: mega.svg matched with  mega.svg
+2024/03/01 23:02:34 icons.go:32: lutris.svg matched with  lutris.svg
+2024/03/01 23:02:34 icons.go:32: lutris.svg matched with  lutris.svg
+2024/03/01 23:02:34 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:34 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:34 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:34 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:34 icons.go:32: org.flameshot.Flameshot.svg matched with  org.flameshot.Flameshot.svg
+2024/03/01 23:02:34 icons.go:32: org.flameshot.Flameshot.svg matched with  org.flameshot.Flameshot.svg
+2024/03/01 23:02:34 icons.go:32: openshot-qt.svg matched with  openshot-qt.svg
+2024/03/01 23:02:34 icons.go:32: openshot-qt.svg matched with  openshot-qt.svg
+2024/03/01 23:02:34 icons.go:32: qbittorrent.svg matched with  qbittorrent.svg
+2024/03/01 23:02:34 icons.go:32: qbittorrent.svg matched with  qbittorrent.svg
+2024/03/01 23:02:34 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:34 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:34 icons.go:32: org.remmina.Remmina.svg matched with  org.remmina.Remmina.svg
+2024/03/01 23:02:34 icons.go:32: org.remmina.Remmina.svg matched with  org.remmina.Remmina.svg
+2024/03/01 23:02:34 icons.go:32: telegram.svg matched with  telegram.svg
+2024/03/01 23:02:34 icons.go:32: telegram.svg matched with  telegram.svg
+2024/03/01 23:02:34 icons.go:32: multimedia-volume-control.svg matched with  multimedia-volume-control.svg
+2024/03/01 23:02:34 icons.go:32: multimedia-volume-control.svg matched with  multimedia-volume-control.svg
+2024/03/01 23:02:34 icons.go:32: qps.svg matched with  qps.svg
+2024/03/01 23:02:34 icons.go:32: qps.svg matched with  qps.svg
+2024/03/01 23:02:34 icons.go:32: utilities-terminal.svg matched with  utilities-terminal.svg
+2024/03/01 23:02:34 icons.go:32: utilities-terminal.svg matched with  utilities-terminal.svg
+2024/03/01 23:02:34 icons.go:32: signal-desktop.svg matched with  signal-desktop.svg
+2024/03/01 23:02:34 icons.go:32: signal-desktop.svg matched with  signal-desktop.svg
+2024/03/01 23:02:34 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:34 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:34 icons.go:32: spotify-client.svg matched with  spotify-client.svg
+2024/03/01 23:02:34 icons.go:32: spotify-client.svg matched with  spotify-client.svg
+2024/03/01 23:02:34 icons.go:32: openoffice4-startcenter.svg matched with  openoffice4-startcenter.svg
+2024/03/01 23:02:34 icons.go:32: openoffice4-startcenter.svg matched with  openoffice4-startcenter.svg
+2024/03/01 23:02:34 icons.go:32: steam.svg matched with  steam.svg
+2024/03/01 23:02:34 icons.go:32: steam.svg matched with  steam.svg
+2024/03/01 23:02:34 icons.go:32: org.xfce.thunar.svg matched with  org.xfce.thunar.svg
+2024/03/01 23:02:34 icons.go:32: org.xfce.thunar.svg matched with  org.xfce.thunar.svg
+2024/03/01 23:02:34 icons.go:32: org.xfce.thunar.svg matched with  org.xfce.thunar.svg
+2024/03/01 23:02:34 icons.go:32: org.xfce.thunar.svg matched with  org.xfce.thunar.svg
+2024/03/01 23:02:34 icons.go:32: org.xfce.thunar.svg matched with  org.xfce.thunar.svg
+2024/03/01 23:02:34 icons.go:32: org.xfce.thunar.svg matched with  org.xfce.thunar.svg
+2024/03/01 23:02:34 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:34 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:34 icons.go:32: vlc.svg matched with  vlc.svg
+2024/03/01 23:02:34 icons.go:32: vlc.svg matched with  vlc.svg
+2024/03/01 23:02:34 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:34 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:34 icons.go:32: winetricks.svg matched with  winetricks.svg
+2024/03/01 23:02:34 icons.go:32: winetricks.svg matched with  winetricks.svg
+2024/03/01 23:02:34 icons.go:32: ooo-writer.svg matched with  ooo-writer.svg
+2024/03/01 23:02:34 icons.go:32: ooo-writer.svg matched with  ooo-writer.svg
+2024/03/01 23:02:34 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:34 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:34 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:34 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:34 icons.go:32: xterm-color_48x48.svg matched with  xterm-color_48x48.svg
+2024/03/01 23:02:34 icons.go:32: xterm-color_48x48.svg matched with  xterm-color_48x48.svg
+2024/03/01 23:02:34 api.go:119: returning 16 results
+2024/03/01 23:02:34 api.go:119: returning 16 results
+2024/03/01 23:02:40 api.go:84: searchTerm = 
+2024/03/01 23:02:40 icons.go:28: no matches found for lutris_steam
+2024/03/01 23:02:40 api.go:84: searchTerm = 
+2024/03/01 23:02:40 icons.go:28: no matches found for D15F_hh.0
+2024/03/01 23:02:40 icons.go:28: no matches found for lutris_steam
+2024/03/01 23:02:40 icons.go:28: no matches found for ECB7_iexplore.0
+2024/03/01 23:02:40 icons.go:28: no matches found for D15F_hh.0
+2024/03/01 23:02:40 icons.go:28: no matches found for C06E_winhlp32.0
+2024/03/01 23:02:40 icons.go:28: no matches found for ECB7_iexplore.0
+2024/03/01 23:02:40 icons.go:32: 81F5_winebrowser.0 matched with  81F5_winebrowser.0.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at 81F5_winebrowser.0.svg
+2024/03/01 23:02:40 icons.go:28: no matches found for C06E_winhlp32.0
+2024/03/01 23:02:40 icons.go:28: no matches found for 2E40_notepad.0
+2024/03/01 23:02:40 icons.go:32: 81F5_winebrowser.0 matched with  81F5_winebrowser.0.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at 81F5_winebrowser.0.svg
+2024/03/01 23:02:40 icons.go:28: no matches found for ECB7_iexplore.0
+2024/03/01 23:02:40 icons.go:28: no matches found for 2E40_notepad.0
+2024/03/01 23:02:40 icons.go:28: no matches found for ECB7_iexplore.0
+2024/03/01 23:02:40 icons.go:28: no matches found for ECB7_iexplore.0
+2024/03/01 23:02:40 icons.go:28: no matches found for D23E_msiexec.0
+2024/03/01 23:02:40 icons.go:28: no matches found for ECB7_iexplore.0
+2024/03/01 23:02:40 icons.go:32: 81F5_winebrowser.0 matched with  81F5_winebrowser.0.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at 81F5_winebrowser.0.svg
+2024/03/01 23:02:40 icons.go:28: no matches found for D23E_msiexec.0
+2024/03/01 23:02:40 icons.go:28: no matches found for ECB7_iexplore.0
+2024/03/01 23:02:40 icons.go:32: 81F5_winebrowser.0 matched with  81F5_winebrowser.0.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at 81F5_winebrowser.0.svg
+2024/03/01 23:02:40 icons.go:28: no matches found for 3365_wordpad.0
+2024/03/01 23:02:40 icons.go:28: no matches found for ECB7_iexplore.0
+2024/03/01 23:02:40 icons.go:28: no matches found for 2E40_notepad.0
+2024/03/01 23:02:40 icons.go:28: no matches found for 3365_wordpad.0
+2024/03/01 23:02:40 icons.go:28: no matches found for 5742_rundll32.0
+2024/03/01 23:02:40 icons.go:28: no matches found for 2E40_notepad.0
+2024/03/01 23:02:40 icons.go:28: no matches found for 2905_wscript.0
+2024/03/01 23:02:40 icons.go:28: no matches found for 5742_rundll32.0
+2024/03/01 23:02:40 icons.go:28: no matches found for 3365_wordpad.0
+2024/03/01 23:02:40 icons.go:28: no matches found for 2905_wscript.0
+2024/03/01 23:02:40 icons.go:32: 81F5_winebrowser.0 matched with  81F5_winebrowser.0.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at 81F5_winebrowser.0.svg
+2024/03/01 23:02:40 icons.go:28: no matches found for 3365_wordpad.0
+2024/03/01 23:02:40 icons.go:28: no matches found for hu.irl.cameractrls
+2024/03/01 23:02:40 icons.go:32: 81F5_winebrowser.0 matched with  81F5_winebrowser.0.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at 81F5_winebrowser.0.svg
+2024/03/01 23:02:40 icons.go:32: org.signal.Signal matched with  org.signal.Signal.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at org.signal.Signal.svg
+2024/03/01 23:02:40 icons.go:28: no matches found for hu.irl.cameractrls
+2024/03/01 23:02:40 icons.go:32: Alacritty matched with  Alacritty.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at Alacritty.svg
+2024/03/01 23:02:40 icons.go:32: org.signal.Signal matched with  org.signal.Signal.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at org.signal.Signal.svg
+2024/03/01 23:02:40 icons.go:32: display matched with  display.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at display.svg
+2024/03/01 23:02:40 icons.go:32: Alacritty matched with  Alacritty.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at Alacritty.svg
+2024/03/01 23:02:40 icons.go:32: autokey matched with  autokey.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at autokey.svg
+2024/03/01 23:02:40 icons.go:32: display matched with  display.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at display.svg
+2024/03/01 23:02:40 icons.go:32: btop matched with  btop.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at btop.svg
+2024/03/01 23:02:40 icons.go:32: autokey matched with  autokey.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at autokey.svg
+2024/03/01 23:02:40 icons.go:32: vscode matched with  vscode.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at vscode.svg
+2024/03/01 23:02:40 icons.go:32: btop matched with  btop.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at btop.svg
+2024/03/01 23:02:40 icons.go:32: vscode matched with  vscode.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at vscode.svg
+2024/03/01 23:02:40 icons.go:32: vscode matched with  vscode.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at vscode.svg
+2024/03/01 23:02:40 icons.go:32: vscode matched with  vscode.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at vscode.svg
+2024/03/01 23:02:40 icons.go:32: vscode matched with  vscode.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at vscode.svg
+2024/03/01 23:02:40 icons.go:32: compton matched with  com.getpostman.Postman.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at com.getpostman.Postman.svg
+2024/03/01 23:02:40 icons.go:32: vscode matched with  vscode.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at vscode.svg
+2024/03/01 23:02:40 icons.go:32: preferences-desktop-theme matched with  preferences-desktop-theme.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at preferences-desktop-theme.svg
+2024/03/01 23:02:40 icons.go:32: compton matched with  com.getpostman.Postman.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at com.getpostman.Postman.svg
+2024/03/01 23:02:40 icons.go:28: no matches found for neovide
+2024/03/01 23:02:40 icons.go:32: preferences-desktop-theme matched with  preferences-desktop-theme.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at preferences-desktop-theme.svg
+2024/03/01 23:02:40 icons.go:32: nitrogen matched with  nitrogen.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at nitrogen.svg
+2024/03/01 23:02:40 icons.go:28: no matches found for neovide
+2024/03/01 23:02:40 icons.go:32: nvim matched with  nvim.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at nvim.svg
+2024/03/01 23:02:40 icons.go:32: nitrogen matched with  nitrogen.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at nitrogen.svg
+2024/03/01 23:02:40 icons.go:28: no matches found for org.wezfurlong.wezterm
+2024/03/01 23:02:40 icons.go:32: nvim matched with  nvim.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at nvim.svg
+2024/03/01 23:02:40 icons.go:32: rofi matched with  tromfiles.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at tromfiles.svg
+2024/03/01 23:02:40 icons.go:28: no matches found for org.wezfurlong.wezterm
+2024/03/01 23:02:40 icons.go:32: rofi matched with  tromfiles.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at tromfiles.svg
+2024/03/01 23:02:40 icons.go:28: no matches found for slippi-launcher
+2024/03/01 23:02:40 icons.go:32: rofi matched with  tromfiles.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at tromfiles.svg
+2024/03/01 23:02:40 icons.go:32: org.xfce.powermanager matched with  org.xfce.powermanager.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at org.xfce.powermanager.svg
+2024/03/01 23:02:40 icons.go:32: rofi matched with  tromfiles.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at tromfiles.svg
+2024/03/01 23:02:40 icons.go:32: Alacritty matched with  Alacritty.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at Alacritty.svg
+2024/03/01 23:02:40 icons.go:28: no matches found for slippi-launcher
+2024/03/01 23:02:40 icons.go:32: anydesk matched with  anydesk.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at anydesk.svg
+2024/03/01 23:02:40 icons.go:32: org.xfce.powermanager matched with  org.xfce.powermanager.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at org.xfce.powermanager.svg
+2024/03/01 23:02:40 icons.go:32: xcolor matched with  xterm-color.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at xterm-color.svg
+2024/03/01 23:02:40 icons.go:32: Alacritty matched with  Alacritty.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at Alacritty.svg
+2024/03/01 23:02:40 icons.go:28: no matches found for ardour8
+2024/03/01 23:02:40 icons.go:32: anydesk matched with  anydesk.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at anydesk.svg
+2024/03/01 23:02:40 icons.go:32: audacity matched with  audacity.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at audacity.svg
+2024/03/01 23:02:40 icons.go:32: xcolor matched with  xterm-color.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at xterm-color.svg
+2024/03/01 23:02:40 icons.go:32: balena-etcher matched with  balena-etcher-electron.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at balena-etcher-electron.svg
+2024/03/01 23:02:40 icons.go:28: no matches found for ardour8
+2024/03/01 23:02:40 icons.go:32: base matched with  basket.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at basket.svg
+2024/03/01 23:02:40 icons.go:32: audacity matched with  audacity.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at audacity.svg
+2024/03/01 23:02:40 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:02:40 icons.go:32: balena-etcher matched with  balena-etcher-electron.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at balena-etcher-electron.svg
+2024/03/01 23:02:40 icons.go:32: blueman-device matched with  blueman-device.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at blueman-device.svg
+2024/03/01 23:02:40 icons.go:32: base matched with  basket.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at basket.svg
+2024/03/01 23:02:40 icons.go:32: blueman matched with  blueman.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at blueman.svg
+2024/03/01 23:02:40 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:02:40 icons.go:32: blueman-device matched with  blueman-device.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at blueman-device.svg
+2024/03/01 23:02:40 icons.go:32: brave-browser matched with  brave-browser.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at brave-browser.svg
+2024/03/01 23:02:40 icons.go:32: blueman matched with  blueman.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at blueman.svg
+2024/03/01 23:02:40 icons.go:32: calc matched with  calc.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at calc.svg
+2024/03/01 23:02:40 icons.go:32: brave-browser matched with  brave-browser.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at brave-browser.svg
+2024/03/01 23:02:40 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:02:40 icons.go:32: chromium matched with  chromium.svg
+2024/03/01 23:02:40 icons.go:32: calc matched with  calc.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at calc.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at chromium.svg
+2024/03/01 23:02:40 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:02:40 icons.go:28: no matches found for com.github.wwmm.easyeffects
+2024/03/01 23:02:40 icons.go:28: no matches found for com.obsproject.Studio
+2024/03/01 23:02:40 icons.go:32: chromium matched with  chromium.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at chromium.svg
+2024/03/01 23:02:40 icons.go:28: no matches found for cura-icon
+2024/03/01 23:02:40 icons.go:28: no matches found for com.github.wwmm.easyeffects
+2024/03/01 23:02:40 icons.go:32: cups matched with  cups.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at cups.svg
+2024/03/01 23:02:40 icons.go:28: no matches found for com.obsproject.Studio
+2024/03/01 23:02:40 icons.go:32: dbeaver matched with  dbeaver.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at dbeaver.svg
+2024/03/01 23:02:40 icons.go:28: no matches found for cura-icon
+2024/03/01 23:02:40 icons.go:32: discord matched with  discord.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at discord.svg
+2024/03/01 23:02:40 icons.go:32: cups matched with  cups.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at cups.svg
+2024/03/01 23:02:40 icons.go:32: dbeaver matched with  dbeaver.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at dbeaver.svg
+2024/03/01 23:02:40 icons.go:32: dolphin-emu matched with  dolphin-emu.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at dolphin-emu.svg
+2024/03/01 23:02:40 icons.go:32: discord matched with  discord.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at discord.svg
+2024/03/01 23:02:40 icons.go:32: draw matched with  kdcraw.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at kdcraw.svg
+2024/03/01 23:02:40 icons.go:32: dolphin-emu matched with  dolphin-emu.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at dolphin-emu.svg
+2024/03/01 23:02:40 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:02:40 icons.go:32: draw matched with  kdcraw.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at kdcraw.svg
+2024/03/01 23:02:40 icons.go:32: firefox matched with  firefox.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at firefox.svg
+2024/03/01 23:02:40 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:02:40 icons.go:32: gimp matched with  gimp.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at gimp.svg
+2024/03/01 23:02:40 icons.go:32: firefox matched with  firefox.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at firefox.svg
+2024/03/01 23:02:40 icons.go:32: gparted matched with  gparted.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at gparted.svg
+2024/03/01 23:02:40 icons.go:32: gimp matched with  gimp.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at gimp.svg
+2024/03/01 23:02:40 icons.go:32: impress matched with  ooo-impress.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at ooo-impress.svg
+2024/03/01 23:02:40 icons.go:32: gparted matched with  gparted.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at gparted.svg
+2024/03/01 23:02:40 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:02:40 icons.go:32: impress matched with  ooo-impress.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at ooo-impress.svg
+2024/03/01 23:02:40 icons.go:28: no matches found for /usr/share/input-remapper/input-remapper.svg
+2024/03/01 23:02:40 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:02:40 icons.go:28: no matches found for /usr/share/input-remapper/input-remapper.svg
+2024/03/01 23:02:40 icons.go:28: no matches found for /usr/share/input-remapper/input-remapper.svg
+2024/03/01 23:02:40 icons.go:32: math matched with  empathy.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at empathy.svg
+2024/03/01 23:02:40 icons.go:28: no matches found for /usr/share/input-remapper/input-remapper.svg
+2024/03/01 23:02:40 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:02:40 icons.go:32: math matched with  empathy.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at empathy.svg
+2024/03/01 23:02:40 icons.go:32: mega matched with  mega.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at mega.svg
+2024/03/01 23:02:40 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:02:40 icons.go:32: lutris matched with  lutris.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at lutris.svg
+2024/03/01 23:02:40 icons.go:32: mega matched with  mega.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at mega.svg
+2024/03/01 23:02:40 icons.go:28: no matches found for nix-snowflake
+2024/03/01 23:02:40 icons.go:32: lutris matched with  lutris.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at lutris.svg
+2024/03/01 23:02:40 icons.go:28: no matches found for one.alynx.showmethekey
+2024/03/01 23:02:40 icons.go:28: no matches found for nix-snowflake
+2024/03/01 23:02:40 icons.go:28: no matches found for one.alynx.showmethekey
+2024/03/01 23:02:40 icons.go:32: org.flameshot.Flameshot matched with  org.flameshot.Flameshot.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at org.flameshot.Flameshot.svg
+2024/03/01 23:02:40 icons.go:32: org.flameshot.Flameshot matched with  org.flameshot.Flameshot.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at org.flameshot.Flameshot.svg
+2024/03/01 23:02:40 icons.go:32: openshot-qt matched with  openshot-qt.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at openshot-qt.svg
+2024/03/01 23:02:40 icons.go:32: openshot-qt matched with  openshot-qt.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at openshot-qt.svg
+2024/03/01 23:02:40 icons.go:32: qbittorrent matched with  qbittorrent.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at qbittorrent.svg
+2024/03/01 23:02:40 icons.go:32: qbittorrent matched with  qbittorrent.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at qbittorrent.svg
+2024/03/01 23:02:40 icons.go:32: org.remmina.Remmina matched with  org.remmina.Remmina.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at org.remmina.Remmina.svg
+2024/03/01 23:02:40 icons.go:32: org.remmina.Remmina matched with  org.remmina.Remmina.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at org.remmina.Remmina.svg
+2024/03/01 23:02:40 icons.go:32: org.remmina.Remmina matched with  org.remmina.Remmina.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at org.remmina.Remmina.svg
+2024/03/01 23:02:40 icons.go:32: telegram matched with  telegram.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at telegram.svg
+2024/03/01 23:02:40 icons.go:32: org.remmina.Remmina matched with  org.remmina.Remmina.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at org.remmina.Remmina.svg
+2024/03/01 23:02:40 icons.go:32: application-exit matched with  application-x-wine-extension-its.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at application-x-wine-extension-its.svg
+2024/03/01 23:02:40 icons.go:32: telegram matched with  telegram.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at telegram.svg
+2024/03/01 23:02:40 icons.go:32: application-exit matched with  application-x-wine-extension-its.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at application-x-wine-extension-its.svg
+2024/03/01 23:02:40 icons.go:32: multimedia-volume-control matched with  multimedia-volume-control.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at multimedia-volume-control.svg
+2024/03/01 23:02:40 icons.go:32: qps matched with  qps
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at qps.svg
+2024/03/01 23:02:40 icons.go:32: multimedia-volume-control matched with  multimedia-volume-control.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at multimedia-volume-control.svg
+2024/03/01 23:02:40 icons.go:32: utilities-terminal matched with  utilities-terminal.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at utilities-terminal.svg
+2024/03/01 23:02:40 icons.go:32: qps matched with  qps
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at qps.svg
+2024/03/01 23:02:40 icons.go:32: signal-desktop matched with  signal-desktop.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at signal-desktop.svg
+2024/03/01 23:02:40 icons.go:32: utilities-terminal matched with  utilities-terminal.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at utilities-terminal.svg
+2024/03/01 23:02:40 icons.go:32: simplescreenrecorder matched with  simplescreenrecorder.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at simplescreenrecorder.svg
+2024/03/01 23:02:40 icons.go:32: signal-desktop matched with  signal-desktop.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at signal-desktop.svg
+2024/03/01 23:02:40 icons.go:32: spotify-client matched with  spotify-client.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at spotify-client.svg
+2024/03/01 23:02:40 icons.go:32: simplescreenrecorder matched with  simplescreenrecorder.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at simplescreenrecorder.svg
+2024/03/01 23:02:40 icons.go:32: startcenter matched with  openoffice4-startcenter.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at openoffice4-startcenter.svg
+2024/03/01 23:02:40 icons.go:32: spotify-client matched with  spotify-client.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at spotify-client.svg
+2024/03/01 23:02:40 icons.go:32: steam matched with  steam.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at steam.svg
+2024/03/01 23:02:40 icons.go:32: startcenter matched with  openoffice4-startcenter.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at openoffice4-startcenter.svg
+2024/03/01 23:02:40 icons.go:32: steam matched with  steam.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at steam.svg
+2024/03/01 23:02:40 icons.go:32: org.xfce.thunar matched with  org.xfce.thunar.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at org.xfce.thunar.svg
+2024/03/01 23:02:40 icons.go:32: org.xfce.thunar matched with  org.xfce.thunar.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at org.xfce.thunar.svg
+2024/03/01 23:02:40 icons.go:32: org.xfce.thunar matched with  org.xfce.thunar.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at org.xfce.thunar.svg
+2024/03/01 23:02:40 icons.go:32: org.xfce.thunar matched with  org.xfce.thunar.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at org.xfce.thunar.svg
+2024/03/01 23:02:40 icons.go:32: org.xfce.thunar matched with  org.xfce.thunar.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at org.xfce.thunar.svg
+2024/03/01 23:02:40 icons.go:32: virtualbox matched with  virtualbox.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at virtualbox.svg
+2024/03/01 23:02:40 icons.go:32: org.xfce.thunar matched with  org.xfce.thunar.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at org.xfce.thunar.svg
+2024/03/01 23:02:40 icons.go:32: virtualbox matched with  virtualbox.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at virtualbox.svg
+2024/03/01 23:02:40 icons.go:32: vlc matched with  vlc.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at vlc.svg
+2024/03/01 23:02:40 icons.go:32: wine matched with  wine.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at wine.svg
+2024/03/01 23:02:40 icons.go:32: vlc matched with  vlc.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at vlc.svg
+2024/03/01 23:02:40 icons.go:32: winetricks matched with  winetricks.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at winetricks.svg
+2024/03/01 23:02:40 icons.go:32: wine matched with  wine.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at wine.svg
+2024/03/01 23:02:40 icons.go:32: writer matched with  ooo-writer.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at ooo-writer.svg
+2024/03/01 23:02:40 icons.go:32: winetricks matched with  winetricks.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at winetricks.svg
+2024/03/01 23:02:40 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:02:40 icons.go:32: writer matched with  ooo-writer.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at ooo-writer.svg
+2024/03/01 23:02:40 icons.go:32: applications-system-symbolic matched with  applications-system-symbolic.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at applications-system-symbolic.svg
+2024/03/01 23:02:40 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:02:40 icons.go:32: xterm-color_48x48 matched with  xterm-color_48x48.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at xterm-color_48x48.svg
+2024/03/01 23:02:40 icons.go:32: applications-system-symbolic matched with  applications-system-symbolic.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at applications-system-symbolic.svg
+2024/03/01 23:02:40 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:40 icons.go:32: xterm-color_48x48 matched with  xterm-color_48x48.svg
+2024/03/01 23:02:40 desktop-entry-parser.go:57: icon will be at xterm-color_48x48.svg
+2024/03/01 23:02:40 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:40 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:40 icons.go:32: org.signal.Signal.svg matched with  org.signal.Signal.svg
+2024/03/01 23:02:40 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:40 icons.go:32: Alacritty.svg matched with  Alacritty.svg
+2024/03/01 23:02:40 icons.go:32: org.signal.Signal.svg matched with  org.signal.Signal.svg
+2024/03/01 23:02:40 icons.go:32: display.svg matched with  display.svg
+2024/03/01 23:02:40 icons.go:32: Alacritty.svg matched with  Alacritty.svg
+2024/03/01 23:02:40 icons.go:32: autokey.svg matched with  autokey.svg
+2024/03/01 23:02:40 icons.go:32: display.svg matched with  display.svg
+2024/03/01 23:02:40 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:40 icons.go:32: autokey.svg matched with  autokey.svg
+2024/03/01 23:02:40 icons.go:32: vscode.svg matched with  vscode.svg
+2024/03/01 23:02:40 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:40 icons.go:32: com.getpostman.Postman.svg matched with  com.getpostman.Postman.svg
+2024/03/01 23:02:40 icons.go:32: vscode.svg matched with  vscode.svg
+2024/03/01 23:02:40 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:40 icons.go:32: com.getpostman.Postman.svg matched with  com.getpostman.Postman.svg
+2024/03/01 23:02:40 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:40 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:40 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:40 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:40 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:40 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:40 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:40 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:41 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:41 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:41 icons.go:32: tromfiles.svg matched with  tromfiles.svg
+2024/03/01 23:02:41 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:41 icons.go:32: tromfiles.svg matched with  tromfiles.svg
+2024/03/01 23:02:41 icons.go:32: tromfiles.svg matched with  tromfiles.svg
+2024/03/01 23:02:41 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:41 icons.go:32: tromfiles.svg matched with  tromfiles.svg
+2024/03/01 23:02:41 icons.go:32: org.xfce.powermanager.svg matched with  org.xfce.powermanager.svg
+2024/03/01 23:02:41 icons.go:32: Alacritty.svg matched with  Alacritty.svg
+2024/03/01 23:02:41 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:41 icons.go:32: anydesk.svg matched with  anydesk.svg
+2024/03/01 23:02:41 icons.go:32: org.xfce.powermanager.svg matched with  org.xfce.powermanager.svg
+2024/03/01 23:02:41 icons.go:32: xterm-color.svg matched with  xterm-color.svg
+2024/03/01 23:02:41 icons.go:32: Alacritty.svg matched with  Alacritty.svg
+2024/03/01 23:02:41 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:41 icons.go:32: anydesk.svg matched with  anydesk.svg
+2024/03/01 23:02:41 icons.go:32: audacity.svg matched with  audacity.svg
+2024/03/01 23:02:41 icons.go:32: xterm-color.svg matched with  xterm-color.svg
+2024/03/01 23:02:41 icons.go:32: balena-etcher-electron.svg matched with  balena-etcher-electron.svg
+2024/03/01 23:02:41 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:41 icons.go:32: basket.svg matched with  basket.svg
+2024/03/01 23:02:41 icons.go:32: audacity.svg matched with  audacity.svg
+2024/03/01 23:02:41 icons.go:32: blueman-device.svg matched with  blueman-device.svg
+2024/03/01 23:02:41 icons.go:32: balena-etcher-electron.svg matched with  balena-etcher-electron.svg
+2024/03/01 23:02:41 icons.go:32: blueman.svg matched with  blueman.svg
+2024/03/01 23:02:41 icons.go:32: basket.svg matched with  basket.svg
+2024/03/01 23:02:41 icons.go:32: brave-browser.svg matched with  brave-browser.svg
+2024/03/01 23:02:41 icons.go:32: blueman-device.svg matched with  blueman-device.svg
+2024/03/01 23:02:41 icons.go:32: calc.svg matched with  calc.svg
+2024/03/01 23:02:41 icons.go:32: blueman.svg matched with  blueman.svg
+2024/03/01 23:02:41 icons.go:32: chromium.svg matched with  chromium.svg
+2024/03/01 23:02:41 icons.go:32: brave-browser.svg matched with  brave-browser.svg
+2024/03/01 23:02:41 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:41 icons.go:32: calc.svg matched with  calc.svg
+2024/03/01 23:02:41 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:41 icons.go:32: chromium.svg matched with  chromium.svg
+2024/03/01 23:02:41 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:41 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:41 icons.go:32: cups.svg matched with  cups.svg
+2024/03/01 23:02:41 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:41 icons.go:32: dbeaver.svg matched with  dbeaver.svg
+2024/03/01 23:02:41 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:41 icons.go:32: discord.svg matched with  discord.svg
+2024/03/01 23:02:41 icons.go:32: dolphin-emu.svg matched with  dolphin-emu.svg
+2024/03/01 23:02:41 icons.go:32: cups.svg matched with  cups.svg
+2024/03/01 23:02:41 icons.go:32: kdcraw.svg matched with  kdcraw.svg
+2024/03/01 23:02:41 icons.go:32: dbeaver.svg matched with  dbeaver.svg
+2024/03/01 23:02:41 icons.go:32: firefox.svg matched with  firefox.svg
+2024/03/01 23:02:41 icons.go:32: discord.svg matched with  discord.svg
+2024/03/01 23:02:41 icons.go:32: dolphin-emu.svg matched with  dolphin-emu.svg
+2024/03/01 23:02:41 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:41 icons.go:32: kdcraw.svg matched with  kdcraw.svg
+2024/03/01 23:02:41 icons.go:32: gparted.svg matched with  gparted.svg
+2024/03/01 23:02:41 icons.go:32: firefox.svg matched with  firefox.svg
+2024/03/01 23:02:41 icons.go:32: ooo-impress.svg matched with  ooo-impress.svg
+2024/03/01 23:02:41 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:41 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:41 icons.go:32: gparted.svg matched with  gparted.svg
+2024/03/01 23:02:41 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:41 icons.go:32: empathy.svg matched with  empathy.svg
+2024/03/01 23:02:41 icons.go:32: ooo-impress.svg matched with  ooo-impress.svg
+2024/03/01 23:02:41 icons.go:32: mega.svg matched with  mega.svg
+2024/03/01 23:02:41 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:41 icons.go:32: lutris.svg matched with  lutris.svg
+2024/03/01 23:02:41 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:41 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:41 icons.go:32: empathy.svg matched with  empathy.svg
+2024/03/01 23:02:41 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:41 icons.go:32: mega.svg matched with  mega.svg
+2024/03/01 23:02:41 icons.go:32: org.flameshot.Flameshot.svg matched with  org.flameshot.Flameshot.svg
+2024/03/01 23:02:41 icons.go:32: lutris.svg matched with  lutris.svg
+2024/03/01 23:02:41 icons.go:32: openshot-qt.svg matched with  openshot-qt.svg
+2024/03/01 23:02:41 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:41 icons.go:32: qbittorrent.svg matched with  qbittorrent.svg
+2024/03/01 23:02:41 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:41 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:41 icons.go:32: org.flameshot.Flameshot.svg matched with  org.flameshot.Flameshot.svg
+2024/03/01 23:02:41 icons.go:32: org.remmina.Remmina.svg matched with  org.remmina.Remmina.svg
+2024/03/01 23:02:41 icons.go:32: openshot-qt.svg matched with  openshot-qt.svg
+2024/03/01 23:02:41 icons.go:32: telegram.svg matched with  telegram.svg
+2024/03/01 23:02:41 icons.go:32: qbittorrent.svg matched with  qbittorrent.svg
+2024/03/01 23:02:41 icons.go:32: multimedia-volume-control.svg matched with  multimedia-volume-control.svg
+2024/03/01 23:02:41 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:41 icons.go:32: qps.svg matched with  qps.svg
+2024/03/01 23:02:41 icons.go:32: org.remmina.Remmina.svg matched with  org.remmina.Remmina.svg
+2024/03/01 23:02:41 icons.go:32: utilities-terminal.svg matched with  utilities-terminal.svg
+2024/03/01 23:02:41 icons.go:32: telegram.svg matched with  telegram.svg
+2024/03/01 23:02:41 icons.go:32: signal-desktop.svg matched with  signal-desktop.svg
+2024/03/01 23:02:41 icons.go:32: multimedia-volume-control.svg matched with  multimedia-volume-control.svg
+2024/03/01 23:02:41 icons.go:32: qps.svg matched with  qps.svg
+2024/03/01 23:02:41 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:41 icons.go:32: utilities-terminal.svg matched with  utilities-terminal.svg
+2024/03/01 23:02:41 icons.go:32: spotify-client.svg matched with  spotify-client.svg
+2024/03/01 23:02:41 icons.go:32: openoffice4-startcenter.svg matched with  openoffice4-startcenter.svg
+2024/03/01 23:02:41 icons.go:32: signal-desktop.svg matched with  signal-desktop.svg
+2024/03/01 23:02:41 icons.go:32: steam.svg matched with  steam.svg
+2024/03/01 23:02:41 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:41 icons.go:32: org.xfce.thunar.svg matched with  org.xfce.thunar.svg
+2024/03/01 23:02:41 icons.go:32: spotify-client.svg matched with  spotify-client.svg
+2024/03/01 23:02:41 icons.go:32: org.xfce.thunar.svg matched with  org.xfce.thunar.svg
+2024/03/01 23:02:41 icons.go:32: openoffice4-startcenter.svg matched with  openoffice4-startcenter.svg
+2024/03/01 23:02:41 icons.go:32: org.xfce.thunar.svg matched with  org.xfce.thunar.svg
+2024/03/01 23:02:41 icons.go:32: steam.svg matched with  steam.svg
+2024/03/01 23:02:41 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:41 icons.go:32: org.xfce.thunar.svg matched with  org.xfce.thunar.svg
+2024/03/01 23:02:41 icons.go:32: vlc.svg matched with  vlc.svg
+2024/03/01 23:02:41 icons.go:32: org.xfce.thunar.svg matched with  org.xfce.thunar.svg
+2024/03/01 23:02:41 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:41 icons.go:32: org.xfce.thunar.svg matched with  org.xfce.thunar.svg
+2024/03/01 23:02:41 icons.go:32: winetricks.svg matched with  winetricks.svg
+2024/03/01 23:02:41 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:41 icons.go:32: ooo-writer.svg matched with  ooo-writer.svg
+2024/03/01 23:02:41 icons.go:32: vlc.svg matched with  vlc.svg
+2024/03/01 23:02:41 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:41 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:41 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:41 icons.go:32: winetricks.svg matched with  winetricks.svg
+2024/03/01 23:02:41 icons.go:32: xterm-color_48x48.svg matched with  xterm-color_48x48.svg
+2024/03/01 23:02:41 api.go:119: returning 16 results
+2024/03/01 23:02:41 icons.go:32: ooo-writer.svg matched with  ooo-writer.svg
+2024/03/01 23:02:41 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:41 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:41 icons.go:32: xterm-color_48x48.svg matched with  xterm-color_48x48.svg
+2024/03/01 23:02:41 api.go:119: returning 16 results
+2024/03/01 23:02:43 api.go:84: searchTerm = 
+2024/03/01 23:02:43 icons.go:28: no matches found for lutris_steam
+2024/03/01 23:02:43 icons.go:28: no matches found for D15F_hh.0
+2024/03/01 23:02:43 icons.go:28: no matches found for ECB7_iexplore.0
+2024/03/01 23:02:43 icons.go:28: no matches found for C06E_winhlp32.0
+2024/03/01 23:02:43 icons.go:32: 81F5_winebrowser.0 matched with  81F5_winebrowser.0.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at 81F5_winebrowser.0.svg
+2024/03/01 23:02:43 icons.go:28: no matches found for 2E40_notepad.0
+2024/03/01 23:02:43 icons.go:28: no matches found for ECB7_iexplore.0
+2024/03/01 23:02:43 icons.go:28: no matches found for ECB7_iexplore.0
+2024/03/01 23:02:43 icons.go:28: no matches found for D23E_msiexec.0
+2024/03/01 23:02:43 icons.go:32: 81F5_winebrowser.0 matched with  81F5_winebrowser.0.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at 81F5_winebrowser.0.svg
+2024/03/01 23:02:43 icons.go:28: no matches found for ECB7_iexplore.0
+2024/03/01 23:02:43 icons.go:28: no matches found for 3365_wordpad.0
+2024/03/01 23:02:43 icons.go:28: no matches found for 2E40_notepad.0
+2024/03/01 23:02:43 icons.go:28: no matches found for 5742_rundll32.0
+2024/03/01 23:02:43 icons.go:28: no matches found for 2905_wscript.0
+2024/03/01 23:02:43 icons.go:28: no matches found for 3365_wordpad.0
+2024/03/01 23:02:43 icons.go:32: 81F5_winebrowser.0 matched with  81F5_winebrowser.0.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at 81F5_winebrowser.0.svg
+2024/03/01 23:02:43 icons.go:28: no matches found for hu.irl.cameractrls
+2024/03/01 23:02:43 icons.go:32: org.signal.Signal matched with  org.signal.Signal.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at org.signal.Signal.svg
+2024/03/01 23:02:43 icons.go:32: Alacritty matched with  Alacritty.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at Alacritty.svg
+2024/03/01 23:02:43 icons.go:32: display matched with  display.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at display.svg
+2024/03/01 23:02:43 icons.go:32: autokey matched with  autokey.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at autokey.svg
+2024/03/01 23:02:43 icons.go:32: btop matched with  btop.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at btop.svg
+2024/03/01 23:02:43 icons.go:32: vscode matched with  vscode.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at vscode.svg
+2024/03/01 23:02:43 icons.go:32: vscode matched with  vscode.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at vscode.svg
+2024/03/01 23:02:43 icons.go:32: vscode matched with  vscode.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at vscode.svg
+2024/03/01 23:02:43 icons.go:32: compton matched with  com.getpostman.Postman.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at com.getpostman.Postman.svg
+2024/03/01 23:02:43 icons.go:32: preferences-desktop-theme matched with  preferences-desktop-theme.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at preferences-desktop-theme.svg
+2024/03/01 23:02:43 icons.go:28: no matches found for neovide
+2024/03/01 23:02:43 icons.go:32: nitrogen matched with  nitrogen.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at nitrogen.svg
+2024/03/01 23:02:43 icons.go:32: nvim matched with  nvim.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at nvim.svg
+2024/03/01 23:02:43 icons.go:28: no matches found for org.wezfurlong.wezterm
+2024/03/01 23:02:43 icons.go:32: rofi matched with  tromfiles.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at tromfiles.svg
+2024/03/01 23:02:43 icons.go:32: rofi matched with  tromfiles.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at tromfiles.svg
+2024/03/01 23:02:43 icons.go:28: no matches found for slippi-launcher
+2024/03/01 23:02:43 icons.go:32: org.xfce.powermanager matched with  org.xfce.powermanager.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at org.xfce.powermanager.svg
+2024/03/01 23:02:43 icons.go:32: Alacritty matched with  Alacritty.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at Alacritty.svg
+2024/03/01 23:02:43 icons.go:32: anydesk matched with  anydesk.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at anydesk.svg
+2024/03/01 23:02:43 icons.go:32: xcolor matched with  xterm-color.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at xterm-color.svg
+2024/03/01 23:02:43 icons.go:28: no matches found for ardour8
+2024/03/01 23:02:43 icons.go:32: audacity matched with  audacity.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at audacity.svg
+2024/03/01 23:02:43 icons.go:32: balena-etcher matched with  balena-etcher-electron.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at balena-etcher-electron.svg
+2024/03/01 23:02:43 icons.go:32: base matched with  basket.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at basket.svg
+2024/03/01 23:02:43 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:02:43 icons.go:32: blueman-device matched with  blueman-device.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at blueman-device.svg
+2024/03/01 23:02:43 icons.go:32: blueman matched with  blueman.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at blueman.svg
+2024/03/01 23:02:43 icons.go:32: brave-browser matched with  brave-browser.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at brave-browser.svg
+2024/03/01 23:02:43 icons.go:32: calc matched with  calc.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at calc.svg
+2024/03/01 23:02:43 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:02:43 icons.go:32: chromium matched with  chromium.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at chromium.svg
+2024/03/01 23:02:43 icons.go:28: no matches found for com.github.wwmm.easyeffects
+2024/03/01 23:02:43 icons.go:28: no matches found for com.obsproject.Studio
+2024/03/01 23:02:43 icons.go:28: no matches found for cura-icon
+2024/03/01 23:02:43 icons.go:32: cups matched with  cups.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at cups.svg
+2024/03/01 23:02:43 icons.go:32: dbeaver matched with  dbeaver.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at dbeaver.svg
+2024/03/01 23:02:43 icons.go:32: discord matched with  discord.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at discord.svg
+2024/03/01 23:02:43 icons.go:32: dolphin-emu matched with  dolphin-emu.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at dolphin-emu.svg
+2024/03/01 23:02:43 icons.go:32: draw matched with  kdcraw.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at kdcraw.svg
+2024/03/01 23:02:43 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:02:43 icons.go:32: firefox matched with  firefox.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at firefox.svg
+2024/03/01 23:02:43 icons.go:32: gimp matched with  gimp.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at gimp.svg
+2024/03/01 23:02:43 icons.go:32: gparted matched with  gparted.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at gparted.svg
+2024/03/01 23:02:43 icons.go:32: impress matched with  ooo-impress.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at ooo-impress.svg
+2024/03/01 23:02:43 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:02:43 icons.go:28: no matches found for /usr/share/input-remapper/input-remapper.svg
+2024/03/01 23:02:43 icons.go:28: no matches found for /usr/share/input-remapper/input-remapper.svg
+2024/03/01 23:02:43 icons.go:32: math matched with  empathy.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at empathy.svg
+2024/03/01 23:02:43 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:02:43 icons.go:32: mega matched with  mega.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at mega.svg
+2024/03/01 23:02:43 icons.go:32: lutris matched with  lutris.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at lutris.svg
+2024/03/01 23:02:43 icons.go:28: no matches found for nix-snowflake
+2024/03/01 23:02:43 icons.go:28: no matches found for one.alynx.showmethekey
+2024/03/01 23:02:43 icons.go:32: org.flameshot.Flameshot matched with  org.flameshot.Flameshot.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at org.flameshot.Flameshot.svg
+2024/03/01 23:02:43 icons.go:32: openshot-qt matched with  openshot-qt.svg
+2024/03/01 23:02:43 desktop-entry-parser.go:57: icon will be at openshot-qt.svg
+2024/03/01 23:02:44 icons.go:32: qbittorrent matched with  qbittorrent.svg
+2024/03/01 23:02:44 desktop-entry-parser.go:57: icon will be at qbittorrent.svg
+2024/03/01 23:02:44 icons.go:32: org.remmina.Remmina matched with  org.remmina.Remmina.svg
+2024/03/01 23:02:44 desktop-entry-parser.go:57: icon will be at org.remmina.Remmina.svg
+2024/03/01 23:02:44 icons.go:32: org.remmina.Remmina matched with  org.remmina.Remmina.svg
+2024/03/01 23:02:44 desktop-entry-parser.go:57: icon will be at org.remmina.Remmina.svg
+2024/03/01 23:02:44 icons.go:32: telegram matched with  telegram.svg
+2024/03/01 23:02:44 desktop-entry-parser.go:57: icon will be at telegram.svg
+2024/03/01 23:02:44 icons.go:32: application-exit matched with  application-x-wine-extension-its.svg
+2024/03/01 23:02:44 desktop-entry-parser.go:57: icon will be at application-x-wine-extension-its.svg
+2024/03/01 23:02:44 icons.go:32: multimedia-volume-control matched with  multimedia-volume-control.svg
+2024/03/01 23:02:44 desktop-entry-parser.go:57: icon will be at multimedia-volume-control.svg
+2024/03/01 23:02:44 icons.go:32: qps matched with  qps
+2024/03/01 23:02:44 desktop-entry-parser.go:57: icon will be at qps.svg
+2024/03/01 23:02:44 icons.go:32: utilities-terminal matched with  utilities-terminal.svg
+2024/03/01 23:02:44 desktop-entry-parser.go:57: icon will be at utilities-terminal.svg
+2024/03/01 23:02:44 icons.go:32: signal-desktop matched with  signal-desktop.svg
+2024/03/01 23:02:44 desktop-entry-parser.go:57: icon will be at signal-desktop.svg
+2024/03/01 23:02:44 icons.go:32: simplescreenrecorder matched with  simplescreenrecorder.svg
+2024/03/01 23:02:44 desktop-entry-parser.go:57: icon will be at simplescreenrecorder.svg
+2024/03/01 23:02:44 icons.go:32: spotify-client matched with  spotify-client.svg
+2024/03/01 23:02:44 desktop-entry-parser.go:57: icon will be at spotify-client.svg
+2024/03/01 23:02:44 icons.go:32: startcenter matched with  openoffice4-startcenter.svg
+2024/03/01 23:02:44 desktop-entry-parser.go:57: icon will be at openoffice4-startcenter.svg
+2024/03/01 23:02:44 icons.go:32: steam matched with  steam.svg
+2024/03/01 23:02:44 desktop-entry-parser.go:57: icon will be at steam.svg
+2024/03/01 23:02:44 icons.go:32: org.xfce.thunar matched with  org.xfce.thunar.svg
+2024/03/01 23:02:44 desktop-entry-parser.go:57: icon will be at org.xfce.thunar.svg
+2024/03/01 23:02:44 icons.go:32: org.xfce.thunar matched with  org.xfce.thunar.svg
+2024/03/01 23:02:44 desktop-entry-parser.go:57: icon will be at org.xfce.thunar.svg
+2024/03/01 23:02:44 icons.go:32: org.xfce.thunar matched with  org.xfce.thunar.svg
+2024/03/01 23:02:44 desktop-entry-parser.go:57: icon will be at org.xfce.thunar.svg
+2024/03/01 23:02:44 icons.go:32: virtualbox matched with  virtualbox.svg
+2024/03/01 23:02:44 desktop-entry-parser.go:57: icon will be at virtualbox.svg
+2024/03/01 23:02:44 icons.go:32: vlc matched with  vlc.svg
+2024/03/01 23:02:44 desktop-entry-parser.go:57: icon will be at vlc.svg
+2024/03/01 23:02:44 icons.go:32: wine matched with  wine.svg
+2024/03/01 23:02:44 desktop-entry-parser.go:57: icon will be at wine.svg
+2024/03/01 23:02:44 icons.go:32: winetricks matched with  winetricks.svg
+2024/03/01 23:02:44 desktop-entry-parser.go:57: icon will be at winetricks.svg
+2024/03/01 23:02:44 icons.go:32: writer matched with  ooo-writer.svg
+2024/03/01 23:02:44 desktop-entry-parser.go:57: icon will be at ooo-writer.svg
+2024/03/01 23:02:44 icons.go:32: document-new matched with  document-print-preview.svg
+2024/03/01 23:02:44 desktop-entry-parser.go:57: icon will be at document-print-preview.svg
+2024/03/01 23:02:44 icons.go:32: applications-system-symbolic matched with  applications-system-symbolic.svg
+2024/03/01 23:02:44 desktop-entry-parser.go:57: icon will be at applications-system-symbolic.svg
+2024/03/01 23:02:44 icons.go:32: xterm-color_48x48 matched with  xterm-color_48x48.svg
+2024/03/01 23:02:44 desktop-entry-parser.go:57: icon will be at xterm-color_48x48.svg
+2024/03/01 23:02:44 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:44 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:44 icons.go:32: org.signal.Signal.svg matched with  org.signal.Signal.svg
+2024/03/01 23:02:44 icons.go:32: Alacritty.svg matched with  Alacritty.svg
+2024/03/01 23:02:44 icons.go:32: display.svg matched with  display.svg
+2024/03/01 23:02:44 icons.go:32: autokey.svg matched with  autokey.svg
+2024/03/01 23:02:44 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:44 icons.go:32: vscode.svg matched with  vscode.svg
+2024/03/01 23:02:44 icons.go:32: com.getpostman.Postman.svg matched with  com.getpostman.Postman.svg
+2024/03/01 23:02:44 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:44 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:44 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:44 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:44 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:44 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:44 icons.go:32: tromfiles.svg matched with  tromfiles.svg
+2024/03/01 23:02:44 icons.go:32: tromfiles.svg matched with  tromfiles.svg
+2024/03/01 23:02:44 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:44 icons.go:32: org.xfce.powermanager.svg matched with  org.xfce.powermanager.svg
+2024/03/01 23:02:44 icons.go:32: Alacritty.svg matched with  Alacritty.svg
+2024/03/01 23:02:44 icons.go:32: anydesk.svg matched with  anydesk.svg
+2024/03/01 23:02:44 icons.go:32: xterm-color.svg matched with  xterm-color.svg
+2024/03/01 23:02:44 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:44 icons.go:32: audacity.svg matched with  audacity.svg
+2024/03/01 23:02:44 icons.go:32: balena-etcher-electron.svg matched with  balena-etcher-electron.svg
+2024/03/01 23:02:44 icons.go:32: basket.svg matched with  basket.svg
+2024/03/01 23:02:44 icons.go:32: blueman-device.svg matched with  blueman-device.svg
+2024/03/01 23:02:44 icons.go:32: blueman.svg matched with  blueman.svg
+2024/03/01 23:02:44 icons.go:32: brave-browser.svg matched with  brave-browser.svg
+2024/03/01 23:02:44 icons.go:32: calc.svg matched with  calc.svg
+2024/03/01 23:02:44 icons.go:32: chromium.svg matched with  chromium.svg
+2024/03/01 23:02:44 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:44 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:44 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:44 icons.go:32: cups.svg matched with  cups.svg
+2024/03/01 23:02:44 icons.go:32: dbeaver.svg matched with  dbeaver.svg
+2024/03/01 23:02:44 icons.go:32: discord.svg matched with  discord.svg
+2024/03/01 23:02:44 icons.go:32: dolphin-emu.svg matched with  dolphin-emu.svg
+2024/03/01 23:02:44 icons.go:32: kdcraw.svg matched with  kdcraw.svg
+2024/03/01 23:02:44 icons.go:32: firefox.svg matched with  firefox.svg
+2024/03/01 23:02:44 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:44 icons.go:32: gparted.svg matched with  gparted.svg
+2024/03/01 23:02:44 icons.go:32: ooo-impress.svg matched with  ooo-impress.svg
+2024/03/01 23:02:44 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:44 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:44 icons.go:32: empathy.svg matched with  empathy.svg
+2024/03/01 23:02:44 icons.go:32: mega.svg matched with  mega.svg
+2024/03/01 23:02:44 icons.go:32: lutris.svg matched with  lutris.svg
+2024/03/01 23:02:44 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:44 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:44 icons.go:32: org.flameshot.Flameshot.svg matched with  org.flameshot.Flameshot.svg
+2024/03/01 23:02:44 icons.go:32: openshot-qt.svg matched with  openshot-qt.svg
+2024/03/01 23:02:44 icons.go:32: qbittorrent.svg matched with  qbittorrent.svg
+2024/03/01 23:02:44 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:44 icons.go:32: org.remmina.Remmina.svg matched with  org.remmina.Remmina.svg
+2024/03/01 23:02:44 icons.go:32: telegram.svg matched with  telegram.svg
+2024/03/01 23:02:44 icons.go:32: multimedia-volume-control.svg matched with  multimedia-volume-control.svg
+2024/03/01 23:02:44 icons.go:32: qps.svg matched with  qps.svg
+2024/03/01 23:02:44 icons.go:32: utilities-terminal.svg matched with  utilities-terminal.svg
+2024/03/01 23:02:44 icons.go:32: signal-desktop.svg matched with  signal-desktop.svg
+2024/03/01 23:02:44 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:44 icons.go:32: spotify-client.svg matched with  spotify-client.svg
+2024/03/01 23:02:44 icons.go:32: openoffice4-startcenter.svg matched with  openoffice4-startcenter.svg
+2024/03/01 23:02:44 icons.go:32: steam.svg matched with  steam.svg
+2024/03/01 23:02:44 icons.go:32: org.xfce.thunar.svg matched with  org.xfce.thunar.svg
+2024/03/01 23:02:44 icons.go:32: org.xfce.thunar.svg matched with  org.xfce.thunar.svg
+2024/03/01 23:02:44 icons.go:32: org.xfce.thunar.svg matched with  org.xfce.thunar.svg
+2024/03/01 23:02:44 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:44 icons.go:32: vlc.svg matched with  vlc.svg
+2024/03/01 23:02:44 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:44 icons.go:32: winetricks.svg matched with  winetricks.svg
+2024/03/01 23:02:44 icons.go:32: ooo-writer.svg matched with  ooo-writer.svg
+2024/03/01 23:02:44 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:44 icons.go:32: default.svg matched with  avatar-default.svg
+2024/03/01 23:02:44 icons.go:32: xterm-color_48x48.svg matched with  xterm-color_48x48.svg
+2024/03/01 23:02:44 api.go:119: returning 16 results

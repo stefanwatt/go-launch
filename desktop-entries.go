@@ -10,7 +10,6 @@ import (
 	"strings"
 
 	"code.rocketnine.space/tslocum/desktop"
-	"github.com/mitchellh/hashstructure"
 )
 
 var (
@@ -48,11 +47,11 @@ func (t EntryType) String() string {
 }
 
 type Entry struct {
+	Id        string
 	Name      string
 	Icon      string
 	Path      string
 	Exec      string
-	Hash      string
 	Type      EntryType
 	NoDisplay bool
 }
@@ -61,21 +60,9 @@ func initDesktopEntries() []*Entry {
 	dataDirs := desktop.DataDirs()
 	desktopEntries := getDesktopEntriesOfDirs(dataDirs)
 	for _, entry := range desktopEntries {
-		hash, err := hashstructure.Hash(entry, nil)
-		if err == nil {
-			entry.Hash = fmt.Sprint(hash)
-		}
-		zafiroIcon, err := mapZafiroIcon(entry.Icon)
-		if zafiroIcon == ".directory" {
-			print(entry.Name)
-		}
-
-		iconPath := mapIconPath(zafiroIcon, entry.Icon)
-		if err == nil {
-			src := ICONS_BASE_PATH + "/" + zafiroIcon
-			copyIcon(src, iconPath)
-		}
-		entry.Icon = iconPath
+		zafiroIcon, _ := mapZafiroIcon(entry.Icon)
+		src := ICONS_BASE_PATH + "/" + *zafiroIcon
+		copyIcon(src, entry.Icon)
 	}
 	return desktopEntries
 }
@@ -135,54 +122,12 @@ func getDesktopEntries(path string) ([]*Entry, error) {
 	return entries, nil
 }
 
-func getDesktopEntry(lines []string) *Entry {
-	entry := &Entry{}
-	for _, line := range lines {
-		line = strings.TrimSpace(line)
-		if line == "" || strings.HasPrefix(line, "#") {
-			continue
-		}
-		parts := strings.SplitN(line, "=", 2)
-		if len(parts) != 2 {
-			continue
-		}
-
-		key := strings.TrimSpace(parts[0])
-		value := strings.TrimSpace(parts[1])
-
-		switch key {
-		case "Name":
-			entry.Name = value
-		case "Icon":
-			entry.Icon = value
-		case "Path":
-			entry.Path = value
-		case "Exec":
-			entry.Exec = value
-		case "NoDisplay":
-			entry.NoDisplay = value == "true"
-		case "Type":
-			switch value {
-			case "Application":
-				entry.Type = Application
-			case "Link":
-				entry.Type = Link
-			case "Directory":
-				entry.Type = Directory
-			case "Unknown":
-				entry.Type = Unknown
-			}
-		}
-	}
-	return entry
-}
-
 // ----------------------UTILS-------------------------------
 func isSameEntry(a *Entry, b *Entry) bool {
 	if a == nil || b == nil {
 		return true
 	}
-	return b.Hash == a.Hash ||
+	return b.Id == a.Id ||
 		b.Name == a.Name || b.Exec == a.Exec
 }
 

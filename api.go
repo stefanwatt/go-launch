@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"os/exec"
 	"sort"
 	"strconv"
@@ -23,13 +22,20 @@ func (a *App) HideLauncher() {
 	hideLauncher()
 }
 
-func (a *App) LaunchApp(Exec string) {
-	print("launching app " + Exec)
-	command, args := parseCommand(Exec)
+func (a *App) LaunchApp(Id string) {
+	desktopEntry, err := find(desktopEntries, func(entry *Entry) bool {
+		return entry.Id == Id
+	})
+	if err != nil {
+		print("entry not found")
+		return
+	}
+	print("launching app " + desktopEntry.Name)
+	command, args := parseCommand(desktopEntry.Exec)
 	cmd := exec.Command(command, args...)
 	cmd.Start()
 	hideLauncher()
-	updateMruEntry(Exec)
+	updateMruEntry(desktopEntry)
 }
 
 func (a *App) GetDesktopEntries() []*Entry {
@@ -42,7 +48,6 @@ func getSearchResultEntriesFuzzy(searchTerm string) []*Entry {
 	})
 	matches := fuzzy.RankFindNormalizedFold(searchTerm, desktopEntryNames)
 	sort.Sort(matches)
-	fmt.Println(matches)
 	searchResultNames := mapArray(matches, func(match fuzzy.Rank) string {
 		return match.Target
 	})

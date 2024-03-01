@@ -23,7 +23,7 @@
 <!-- svelte-ignore a11y-no-static-element-interactions -->
 <div
 	on:click={() => {
-		LaunchApp(desktopEntry.Exec);
+		LaunchApp(desktopEntry.Id);
 	}}
 	style={selected ? 'background-color: #aad1fa; color: #1e293b' : 'background-color: transparent'}
 	class="flex h-full w-full cursor-pointer items-center rounded-2xl px-2 text-slate-100"
