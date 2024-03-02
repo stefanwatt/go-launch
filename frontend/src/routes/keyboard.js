@@ -58,7 +58,7 @@ export function onKeyPress(node) {
 				selectionPosition.set({ row, col: nextCol });
 				break;
 			case 'Enter':
-				LaunchApp(selectedEntry.Exec);
+				LaunchApp(selectedEntry.Id);
 				searchTerm$.set('');
 				break;
 			case 'Escape':

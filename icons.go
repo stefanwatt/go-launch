@@ -12,9 +12,13 @@ import (
 )
 
 var (
-	DEFAULT_ICON   = "default.svg"
-	DIR_ENTRIES, _ = os.ReadDir(ICONS_BASE_PATH)
-	ZAFIRO_ICONS   = mapArray(DIR_ENTRIES, func(entry os.DirEntry) string {
+	ZAFIRO_ICONS_PATH      = "/home/stefan/Projects/Zafiro-icons/Dark"
+	ICONS_BASE_PATH        = ZAFIRO_ICONS_PATH + "/apps/scalable"
+	ICONS_OUTPUT_BASE_PATH = path.Join(homeDir, "Projects/go-launch/frontend/static/app-icons/")
+	GENERIC_ICON_PATH      = ZAFIRO_ICONS_PATH + "/categories/22-Dark/applications-utilities.svg"
+	DEFAULT_ICON           = "default.svg"
+	DIR_ENTRIES, _         = os.ReadDir(ICONS_BASE_PATH)
+	ZAFIRO_ICONS           = mapArray(DIR_ENTRIES, func(entry os.DirEntry) string {
 		return entry.Name()
 	})
 )
@@ -29,7 +33,6 @@ func mapZafiroIcon(appIconName string) (*string, error) {
 		return nil, errors.New("icon not found")
 	}
 	sort.Sort(matches)
-	print(appIconName+" matched with ", matches[0].Target)
 	return &matches[0].Target, nil
 }
 

@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"os"
-	"path"
 	"path/filepath"
 	"regexp"
 	"strconv"
@@ -12,13 +11,7 @@ import (
 	"code.rocketnine.space/tslocum/desktop"
 )
 
-var (
-	ZAFIRO_ICONS_PATH      = "/home/stefan/Projects/Zafiro-icons/Dark"
-	ICONS_BASE_PATH        = ZAFIRO_ICONS_PATH + "/apps/scalable"
-	ICONS_OUTPUT_BASE_PATH = path.Join(homeDir, "Projects/go-launch/frontend/static/app-icons/")
-	GENERIC_ICON_PATH      = ZAFIRO_ICONS_PATH + "/categories/22-Dark/applications-utilities.svg"
-	COUNT                  = COLS * ROWS
-)
+var COUNT = COLS * ROWS
 
 type EntryType int
 
@@ -60,9 +53,13 @@ func initDesktopEntries() []*Entry {
 	dataDirs := desktop.DataDirs()
 	desktopEntries := getDesktopEntriesOfDirs(dataDirs)
 	for _, entry := range desktopEntries {
-		zafiroIcon, _ := mapZafiroIcon(entry.Icon)
-		src := ICONS_BASE_PATH + "/" + *zafiroIcon
-		copyIcon(src, entry.Icon)
+		zafiroIcon, err := mapZafiroIcon(entry.Icon)
+		if err == nil {
+			src := ICONS_BASE_PATH + "/" + *zafiroIcon
+			copyIcon(src, entry.Icon)
+		} else {
+			print("could not copy icon for " + entry.Name)
+		}
 	}
 	return desktopEntries
 }
@@ -108,7 +105,7 @@ func getDesktopEntries(path string) ([]*Entry, error) {
 	}
 
 	content := string(file)
-	regex := regexp.MustCompile(`\[.*\]`)
+	regex := regexp.MustCompile(`^\[.*\]`)
 	parts := regex.Split(content, -1)
 	entries := mapArray(parts, func(part string) *Entry {
 		lines := strings.Split(part, "\n")
@@ -133,10 +130,23 @@ func isSameEntry(a *Entry, b *Entry) bool {
 
 func trimExec(exec string) string {
 	fields := strings.Fields(exec)
-	if len(fields) > 0 {
-		return fields[0]
+	if len(fields) == 0 {
+		return exec
 	}
-	return exec
+	if strings.HasPrefix(fields[0], "flatpak") {
+		// can be like: flatpak run --branch=stable --arch=x86_64 --comman…top --file-forwarding org.signal.Signal @@u %U @@
+		// trim off @@u %U @@ or similar endings
+		// loop over fields and only when field starts with @@ or %U or similar, stop and return the string
+		value := ""
+		for _, field := range fields {
+			if strings.HasPrefix(field, "@@") || strings.HasPrefix(field, "%") {
+				break
+			}
+			value += field + " "
+		}
+		return strings.Trim(value, " ")
+	}
+	return fields[0]
 }
 
 func hasNilEntries(entries []*Entry) bool {

@@ -27,10 +27,10 @@ func (a *App) LaunchApp(Id string) {
 		return entry.Id == Id
 	})
 	if err != nil {
-		print("entry not found")
+		print("entry not found for id " + Id)
 		return
 	}
-	print("launching app " + desktopEntry.Name)
+	print("launching app " + desktopEntry.Exec)
 	command, args := parseCommand(desktopEntry.Exec)
 	cmd := exec.Command(command, args...)
 	cmd.Start()

@@ -37,6 +37,7 @@
 
 	searchResults.subscribe(
 		/** @param {App.DesktopEntry[][]} newSearchResults*/ (newSearchResults) => {
+			console.log(newSearchResults);
 			const noResults = newSearchResults.every((row) => row.length === 0);
 			const promptInputFocused = document?.activeElement === $promptInput;
 			if ($promptInput && !promptInputFocused && noResults) {

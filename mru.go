@@ -35,6 +35,7 @@ func mapToDesktopEntry(mruEntry MruEntry) (*Entry, error) {
 func getMruEntries() []MruEntry {
 	file, err := os.ReadFile(configFilePath)
 	if err != nil {
+		print("mru config file not found")
 		return []MruEntry{}
 	}
 	var mru []MruEntry
@@ -42,6 +43,7 @@ func getMruEntries() []MruEntry {
 	sort.Slice(mru, func(i, j int) bool {
 		return mru[i].Count > mru[j].Count
 	})
+	print("found " + fmt.Sprint(len(mru)) + " mru entries")
 	return mru
 }
 
@@ -65,11 +67,11 @@ func updateMruEntry(desktopEntry *Entry) {
 	if err != nil {
 		fmt.Println(err)
 	} else {
-		updateMruEntries()
+		mruDesktopEntries = getMruDesktopEntries()
 	}
 }
 
-func updateMruEntries() {
+func getMruDesktopEntries() []*Entry {
 	mruEntries := getMruEntries()
 	mapped := mapArray(mruEntries, func(entry MruEntry) *Entry {
 		mapped, err := mapToDesktopEntry(entry)
@@ -81,12 +83,9 @@ func updateMruEntries() {
 	mapped = filter(mapped, func(e *Entry) bool {
 		return e != nil
 	})
-	i := 0
-	for len(mapped) < COUNT {
-		if desktopEntries[i] != nil && desktopEntries[i].Id != "" {
-			mapped = append(mapped, desktopEntries[i])
-		}
-		i = i + 1
+	if len(mapped) < COUNT {
+		print("found only " + fmt.Sprint(len(mapped)) + " mru entries ; " + "filling up " + fmt.Sprint(COUNT-len(mapped)) + " mru entries")
+		return fillUpDesktopEntries(mapped)
 	}
-	mruDesktopEntries = mapped
+	return mapped
 }

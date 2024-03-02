@@ -21,5 +21,5 @@ func (a *App) startup(ctx context.Context) {
 	a.ctx = ctx
 	initMru()
 	desktopEntries = initDesktopEntries()
-	updateMruEntries()
+	mruDesktopEntries = getMruDesktopEntries()
 }

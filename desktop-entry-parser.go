@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"regexp"
 	"strconv"
 	"strings"
 
@@ -46,15 +47,19 @@ func getIcon(lines []string) string {
 		return strings.HasPrefix(line, "Icon=")
 	})
 	if err != nil {
+		if strings.Contains(strings.Join(lines, "\n"), "nitrogen") {
+			print(strings.Join(lines, "\n"))
+		}
 		return DEFAULT_ICON
 	}
 	value := strings.Split(icon, "=")[1]
 	zafiroIcon, err := mapZafiroIcon(value)
 	if err != nil {
+		print("zafiro icon not found for icon name: " + value)
 		return DEFAULT_ICON
 	}
 	ppath := mapIconPath(*zafiroIcon)
-	print("icon will be at " + ppath)
+	// print("icon will be at " + ppath)
 	return ppath
 }
 
@@ -65,7 +70,9 @@ func getExec(lines []string) string {
 	if err != nil {
 		return "not found"
 	}
-	return trimExec(exec)
+	regex := regexp.MustCompile(`=`)
+	value := regex.Split(exec, 2)[1]
+	return trimExec(value)
 }
 
 func getType(lines []string) EntryType {
