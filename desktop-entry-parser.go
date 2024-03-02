@@ -16,8 +16,10 @@ func getDesktopEntry(lines []string) *Entry {
 	entry.Name = getAttribute(lines, "Name")
 	entry.Icon = getIcon(lines)
 	entry.Path = getAttribute(lines, "Path")
-	entry.Exec = getExec(lines)
 	entry.NoDisplay = getAttribute(lines, "NoDisplay") == "true"
+	isTerminalApp := getAttribute(lines, "Terminal") == "true"
+	entry.Terminal = isTerminalApp
+	entry.Exec = getExec(lines, isTerminalApp)
 	entry.Type = getType(lines)
 	hash, err := hashstructure.Hash(entry, nil)
 	if err != nil {
@@ -63,7 +65,7 @@ func getIcon(lines []string) string {
 	return ppath
 }
 
-func getExec(lines []string) string {
+func getExec(lines []string, isTerminalApp bool) string {
 	exec, err := find(lines, func(line string) bool {
 		return strings.HasPrefix(line, "Exec=")
 	})
@@ -71,8 +73,14 @@ func getExec(lines []string) string {
 		return "not found"
 	}
 	regex := regexp.MustCompile(`=`)
-	value := regex.Split(exec, 2)[1]
-	return trimExec(value)
+	exec = regex.Split(exec, 2)[1]
+	print("getEXec: " + exec)
+	exec = trimExec(exec)
+	if isTerminalApp {
+		exec = LAUNCH_TERMINAL_APP_CMD + exec
+		print("added terminal app command to exec: " + exec)
+	}
+	return exec
 }
 
 func getType(lines []string) EntryType {

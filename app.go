@@ -13,8 +13,9 @@ func NewApp() *App {
 }
 
 var (
-	desktopEntries    []*Entry
-	mruDesktopEntries []*Entry
+	desktopEntries          []*Entry
+	mruDesktopEntries       []*Entry
+	LAUNCH_TERMINAL_APP_CMD = "wezterm -e "
 )
 
 func (a *App) startup(ctx context.Context) {

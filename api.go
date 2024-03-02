@@ -30,10 +30,13 @@ func (a *App) LaunchApp(Id string) {
 		print("entry not found for id " + Id)
 		return
 	}
-	print("launching app " + desktopEntry.Exec)
 	command, args := parseCommand(desktopEntry.Exec)
+	print("launching app with exec=" + desktopEntry.Exec + "; executing cmd: " + command)
 	cmd := exec.Command(command, args...)
-	cmd.Start()
+	cmderr := cmd.Start()
+	if cmderr != nil {
+		print("error launching app " + cmderr.Error())
+	}
 	hideLauncher()
 	updateMruEntry(desktopEntry)
 }
@@ -100,7 +103,6 @@ func (a *App) FuzzyFindDesktopEntry(searchTerm string) [][]*Entry {
 			print("nil entry")
 			continue
 		}
-		entry.Exec = trimExec(entry.Exec)
 	}
 
 	searchResults := make([][]*Entry, ROWS)

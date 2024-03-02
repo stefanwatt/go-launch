@@ -47,6 +47,7 @@ type Entry struct {
 	Exec      string
 	Type      EntryType
 	NoDisplay bool
+	Terminal  bool
 }
 
 func initDesktopEntries() []*Entry {
