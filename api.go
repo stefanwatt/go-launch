@@ -44,6 +44,8 @@ func (a *App) GetDesktopEntries() []*Entry {
 
 func (a *App) FuzzyFindDesktopEntry(searchTerm string) [][]*Entry {
 	print("searchTerm = " + searchTerm)
+	// TODO: used to call initDesktopEntries here
+	// gotta find a different way to keep desktop entries up to date
 	var searchResultEntries []*Entry
 	if searchTerm == "" {
 		searchResultEntries = mruDesktopEntries

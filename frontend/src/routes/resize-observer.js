@@ -1,7 +1,3 @@
-// TODO: can end up in a bugged state until resize observer is triggered again
-// -> wrong height
-// some clipping at the bottom; bottom border is not visible
-
 import { WindowSetSize } from '$lib/wailsjs/runtime/runtime';
 
 /** @param {HTMLElement} node */

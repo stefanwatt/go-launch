@@ -25,7 +25,7 @@ func main() {
 	err := wails.Run(&options.App{
 		Title:     "nvim-wails",
 		Width:     1008,
-		Height:    800,
+		Height:    766,
 		MinWidth:  1008,
 		MinHeight: 80,
 		AssetServer: &assetserver.Options{
