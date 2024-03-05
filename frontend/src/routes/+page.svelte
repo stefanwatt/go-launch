@@ -3,10 +3,9 @@
 	import { FuzzyFindDesktopEntry } from '$lib/wailsjs/go/main/App';
 	import DesktopEntryComponent from './DesktopEntry.svelte';
 	import { setupResizeObserver } from './resize-observer';
-	import { onKeyPress, onInputKeypress } from './keyboard';
+	import { onKeyPress } from './keyboard';
 	import {
 		promptInput,
-		keyboardNavigationInput,
 		selectionPosition,
 		selectedEntry,
 		searchTerm,
@@ -17,27 +16,13 @@
 	import { quintOut } from 'svelte/easing';
 	import { onMount } from 'svelte';
 
-	/** @param {HTMLInputElement} node */
-	function setupKeyboardNavigation(node) {
-		onKeyPress(node);
-	}
-
 	onMount(async () => {
 		const results = await FuzzyFindDesktopEntry('');
 		searchResults.set(results);
 	});
 
-	selectionPosition.subscribe(
-		/** @param {import('./store').Position} pos*/ (pos) => {
-			if ($promptInput && !pos && document.activeElement !== $promptInput) $promptInput.focus();
-			else if ($keyboardNavigationInput && document.activeElement !== $keyboardNavigationInput)
-				$keyboardNavigationInput.focus();
-		}
-	);
-
 	searchResults.subscribe(
 		/** @param {App.DesktopEntry[][]} newSearchResults*/ (newSearchResults) => {
-			console.log(newSearchResults);
 			const noResults = newSearchResults.every((row) => row.length === 0);
 			const promptInputFocused = document?.activeElement === $promptInput;
 			if ($promptInput && !promptInputFocused && noResults) {
@@ -67,17 +52,17 @@
 				const entries = await FuzzyFindDesktopEntry(value);
 				/**@type {App.DesktopEntry[]} */
 				searchResults.set(entries);
+				selectionPosition.set({ row: 0, col: 0 });
 			}, 130);
 		}
 	);
+	function disableArrowKeys(event) {
+		if (event.key === 'ArrowUp' || event.key === 'ArrowDown') {
+			event.preventDefault();
+		}
+	}
 </script>
 
-<input
-	bind:this={$keyboardNavigationInput}
-	use:setupKeyboardNavigation
-	type="text"
-	class="absolute h-0 w-0 overflow-hidden"
-/>
 <div use:setupResizeObserver class="h-full">
 	<div id="input-container" class="flex flex-row justify-center bg-transparent px-12">
 		<!-- svelte-ignore a11y-autofocus -->
@@ -88,7 +73,8 @@
 			<input
 				bind:this={$promptInput}
 				autofocus
-				on:keyup={onInputKeypress}
+				on:keyup={onKeyPress}
+				on:keydown={disableArrowKeys}
 				bind:value={$searchTerm}
 				class="h-20 w-full border-none bg-transparent text-2xl text-slate-100 outline-none active:border-none"
 				placeholder="Search...."
