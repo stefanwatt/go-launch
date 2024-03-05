@@ -1,5 +1,6 @@
 <script>
 	import { LaunchApp } from '$lib/wailsjs/go/main/App';
+	// TODO: maybe make highlighed entry sexier
 	/** @type {App.DesktopEntry} */
 	export let desktopEntry;
 	/** @type {boolean} */

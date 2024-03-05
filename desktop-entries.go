@@ -183,3 +183,23 @@ func fillUpDesktopEntries(currentEntries []*Entry) []*Entry {
 
 	return updatedEntries
 }
+
+func removeDuplicateEntries(searchResultEntries []*Entry) []*Entry {
+	filtered := []*Entry{}
+	for i := range searchResultEntries {
+		found, _ := find(filtered, func(entry *Entry) bool {
+			if entry == nil {
+				return false
+			}
+			if searchResultEntries[i] == nil {
+				searchResultEntries[i] = entry
+				return false
+			}
+			return isSameEntry(entry, searchResultEntries[i])
+		})
+		if found == nil { // Append if not found, meaning no duplicate
+			filtered = append(filtered, searchResultEntries[i])
+		}
+	}
+	return filtered
+}

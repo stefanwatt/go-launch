@@ -1,3 +1,6 @@
+// TODO:add "apps" like calculator/translator
+
+// TODO:allow to give list of arbitrary commands
 package main
 
 import (

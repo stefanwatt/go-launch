@@ -53,13 +53,21 @@
 	);
 
 	let lastSearchTerm = '';
+	/** @type {number} */
+	let debounceTimer;
+
 	searchTerm.subscribe(
-		/** @param {string} value*/ async (value) => {
+		/** @param {string} value */ async (value) => {
 			if (value === lastSearchTerm) return;
 			lastSearchTerm = value;
-			const entries = await FuzzyFindDesktopEntry(value);
-			/**@type {App.DesktopEntry[]}*/
-			searchResults.set(entries);
+
+			if (debounceTimer) clearTimeout(debounceTimer);
+
+			debounceTimer = setTimeout(async () => {
+				const entries = await FuzzyFindDesktopEntry(value);
+				/**@type {App.DesktopEntry[]} */
+				searchResults.set(entries);
+			}, 130);
 		}
 	);
 </script>
@@ -93,8 +101,8 @@
 			<div class="h-full w-full rounded-3xl bg-transparent p-2">
 				{#each $searchResults as _, row}
 					{#if $searchResults[row]?.some(/** @param {App.DesktopEntry} entry */ (entry) => !!entry)}
-						<div transition:slide={{ delay: 0, duration: 300, easing: quintOut }} class="flex">
-							{#each $searchResults[row].filter(/**@param {App.DesktopEntry}entry*/ (entry) => !!entry) as desktopEntry, col (desktopEntry.Id)}
+						<div transition:slide={{ delay: 50, duration: 300, easing: quintOut }} class="flex">
+							{#each $searchResults[row].filter(/**@param {App.DesktopEntry} entry*/ (entry) => !!entry) as desktopEntry, col (desktopEntry.Id)}
 								<div
 									class="w-1/4"
 									in:fade={{ delay: 0, duration: 500, easing: quintOut }}
