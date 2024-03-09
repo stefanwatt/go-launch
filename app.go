@@ -5,6 +5,7 @@ package main
 
 import (
 	"context"
+	Desktop "go-launch/backend/desktop"
 )
 
 type App struct {
@@ -15,15 +16,9 @@ func NewApp() *App {
 	return &App{}
 }
 
-var (
-	desktopEntries          []*Entry
-	mruDesktopEntries       []*Entry
-	LAUNCH_TERMINAL_APP_CMD = "wezterm -e "
-)
-
-func (a *App) startup(ctx context.Context) {
+func (a *App) Startup(ctx context.Context) {
 	a.ctx = ctx
-	initMru()
-	desktopEntries = initDesktopEntries()
-	mruDesktopEntries = getMruDesktopEntries()
+	Desktop.InitMru()
+	Desktop.DesktopEntries = Desktop.InitDesktopEntries()
+	Desktop.MruDesktopEntries = Desktop.GetMruDesktopEntries()
 }

@@ -8,8 +8,9 @@ import { writable, derived, get } from 'svelte/store';
  * @typedef {Object} Position
  * @property {number} row
  * @property {number} col
- * @type {Writable<Position | null>}
  */
+
+/** @type {Writable<Position | null>}*/
 export const selectionPosition = writable({
 	row: 0,
 	col: 0

@@ -1,13 +1,13 @@
 package main
 
 import (
+	Config "go-launch/backend/config"
+	Desktop "go-launch/backend/desktop"
+	Log "go-launch/backend/log"
+	Utils "go-launch/backend/utils"
 	"os/exec"
+	"path"
 	"strconv"
-)
-
-var (
-	COLS = 4
-	ROWS = 4
 )
 
 func hideLauncher() {
@@ -20,65 +20,65 @@ func (a *App) HideLauncher() {
 }
 
 func (a *App) LaunchApp(Id string) {
-	desktopEntry, err := find(desktopEntries, func(entry *Entry) bool {
+	desktopEntry, err := Utils.Find(Desktop.DesktopEntries, func(entry *Desktop.Entry) bool {
 		return entry.Id == Id
 	})
 	if err != nil {
-		print("entry not found for id " + Id)
+		Log.Print("entry not found for id " + Id)
 		return
 	}
-	command, args := parseCommand(desktopEntry.Exec)
-	print("launching app with exec=" + desktopEntry.Exec + "; executing cmd: " + command)
-	cmd := exec.Command(command, args...)
+	Log.Print("launching app with gtk-launch " + desktopEntry.Path)
+	// extract just the filename with extension forom the path
+	cmd := exec.Command("gtk-launch", path.Base(desktopEntry.Path))
 	cmderr := cmd.Start()
 	if cmderr != nil {
-		print("error launching app " + cmderr.Error())
+		Log.Print("error launching app " + cmderr.Error())
 	}
 	hideLauncher()
-	updateMruEntry(desktopEntry)
+	Desktop.UpdateMruEntry(desktopEntry)
 }
 
-func (a *App) GetDesktopEntries() []*Entry {
-	return desktopEntries
+func (a *App) GetDesktopEntries() []*Desktop.Entry {
+	return Desktop.DesktopEntries
 }
 
-func (a *App) FuzzyFindDesktopEntry(searchTerm string) [][]*Entry {
-	print("searchTerm = " + searchTerm)
+func (a *App) FuzzyFindDesktopEntry(searchTerm string) [][]*Desktop.Entry {
+	Log.Print("searchTerm = " + searchTerm)
 	// TODO: used to call initDesktopEntries here
 	// gotta find a different way to keep desktop entries up to date
-	var searchResultEntries []*Entry
+	var searchResultEntries []*Desktop.Entry
 	if searchTerm == "" {
-		searchResultEntries = mruDesktopEntries
+		searchResultEntries = Desktop.MruDesktopEntries
 	} else {
-		searchResultEntries = fuzzyFindObj(searchTerm, desktopEntries, []string{"Name", "Exec"})
+		searchResultEntries = Utils.FuzzyFindObj(searchTerm, Desktop.DesktopEntries, []string{"Name", "Exec"})
 	}
-	searchResultEntries = removeDuplicateEntries(searchResultEntries)
+	searchResultEntries = Desktop.RemoveDuplicateEntries(searchResultEntries)
 
 	if searchTerm == "" {
-		searchResultEntries = fillUpDesktopEntries(searchResultEntries)
+		searchResultEntries = Desktop.FillUpDesktopEntries(searchResultEntries)
 	}
 
 	for _, entry := range searchResultEntries {
 		if entry == nil {
-			print("nil entry")
+			Log.Print("nil entry")
 			continue
 		}
 	}
 
-	searchResults := make([][]*Entry, ROWS)
+	searchResults := make([][]*Desktop.Entry, Config.ROWS)
 	for i := range searchResults {
-		searchResults[i] = make([]*Entry, COLS)
+		searchResults[i] = make([]*Desktop.Entry, Config.COLS)
 	}
-	for i := 0; i < ROWS; i++ {
-		for j := 0; j < COLS; j++ {
-			index := i*ROWS + j
+	for i := 0; i < Config.ROWS; i++ {
+		for j := 0; j < Config.COLS; j++ {
+			index := i*Config.ROWS + j
 			if index < len(searchResultEntries) {
 				searchResults[i][j] = searchResultEntries[index]
 			}
 		}
 	}
 
-	print("returning " + strconv.Itoa(len(searchResultEntries)) + " results")
+	Log.Print("returning " + strconv.Itoa(len(searchResultEntries)) + " results")
 
 	return searchResults
 }

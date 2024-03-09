@@ -56,6 +56,8 @@
 			}, 130);
 		}
 	);
+
+	/**@param{KeyboardEvent} event*/
 	function disableArrowKeys(event) {
 		if (event.key === 'ArrowUp' || event.key === 'ArrowDown') {
 			event.preventDefault();

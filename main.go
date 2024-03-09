@@ -2,7 +2,7 @@ package main
 
 import (
 	"embed"
-	"os"
+	Log "go-launch/backend/log"
 
 	"github.com/wailsapp/wails/v2"
 	"github.com/wailsapp/wails/v2/pkg/options"
@@ -13,12 +13,10 @@ import (
 //go:embed all:frontend/build
 var assets embed.FS
 
-var homeDir, _ = os.UserHomeDir()
-
 func main() {
 	// Create an instance of the app structure
-	initLogger()
-	print("Init")
+	Log.InitLogger()
+	Log.Print("Init")
 	app := NewApp()
 
 	// Create application with options
@@ -32,7 +30,7 @@ func main() {
 			Assets: assets,
 		},
 		BackgroundColour: &options.RGBA{R: 65, G: 69, B: 89, A: 128},
-		OnStartup:        app.startup,
+		OnStartup:        app.Startup,
 		Bind: []interface{}{
 			app,
 		},

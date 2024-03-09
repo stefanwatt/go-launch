@@ -6,9 +6,11 @@
 	export let selected;
 
 	/**@param{HTMLDivElement} node*/
-	async function autoAdjustFontSize(node) {
-		const fitty = (await import('fitty')).default;
-		fitty(node, { minSize: 10, maxSize: 16, multiLine: true });
+	function autoAdjustFontSize(node) {
+		import('fitty').then((module) => {
+			const fitty = module.default;
+			fitty(node, { minSize: 10, maxSize: 16, multiLine: true });
+		});
 	}
 </script>
 

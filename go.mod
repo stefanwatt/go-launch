@@ -1,4 +1,4 @@
-module changeme
+module go-launch
 
 go 1.21
 
