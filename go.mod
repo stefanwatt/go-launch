@@ -9,6 +9,7 @@ require github.com/wailsapp/wails/v2 v2.7.1
 require (
 	code.rocketnine.space/tslocum/desktop v0.1.5
 	github.com/bep/debounce v1.2.1 // indirect
+	github.com/fsnotify/fsnotify v1.7.0
 	github.com/go-ole/go-ole v1.2.6 // indirect
 	github.com/godbus/dbus/v5 v5.1.0 // indirect
 	github.com/google/uuid v1.3.0 // indirect

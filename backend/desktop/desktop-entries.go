@@ -11,8 +11,10 @@ import (
 	"regexp"
 	"strconv"
 	"strings"
+	"sync"
 
 	"code.rocketnine.space/tslocum/desktop"
+	"github.com/fsnotify/fsnotify"
 )
 
 var (
@@ -58,8 +60,36 @@ type Entry struct {
 	Terminal  bool
 }
 
+func onWrite(event fsnotify.Event) {
+	DesktopEntries = Utils.Filter(DesktopEntries, func(entry *Entry) bool {
+		return entry.Path != event.Name
+	})
+	newEntries, err := getDesktopEntries(event.Name)
+	if err != nil {
+		Log.Print("error getting desktop entries")
+		return
+	}
+	DesktopEntries = append(DesktopEntries, newEntries...)
+}
+
+func onDelete(event fsnotify.Event) {
+	path := event.Name
+	DesktopEntries = Utils.Filter(DesktopEntries, func(entry *Entry) bool {
+		return entry.Path != path
+	})
+	RemoveMruEntry(path)
+}
+
 func InitDesktopEntries() []*Entry {
 	dataDirs := desktop.DataDirs()
+	var wg sync.WaitGroup
+	wg.Add(len(dataDirs))
+	for _, dir := range dataDirs {
+		go func(directory string) {
+			defer wg.Done()
+			ObserveDirectory(directory, onWrite, onDelete)
+		}(dir)
+	}
 	desktopEntries := getDesktopEntriesOfDirs(dataDirs)
 	for _, entry := range desktopEntries {
 		zafiroIcon, err := Icon.MapZafiroIcon(entry.Icon)

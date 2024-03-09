@@ -35,7 +35,7 @@ func (a *App) LaunchApp(Id string) {
 		Log.Print("error launching app " + cmderr.Error())
 	}
 	hideLauncher()
-	Desktop.UpdateMruEntry(desktopEntry)
+	Desktop.IncrementMruEntry(desktopEntry)
 }
 
 func (a *App) GetDesktopEntries() []*Desktop.Entry {

@@ -11,8 +11,9 @@ import (
 )
 
 type MruEntry struct {
-	Id    string `json:"id"`
-	Count int    `json:"count"`
+	Id      string `json:"id"`
+	Count   int    `json:"count"`
+	Deleted bool   `json:"deleted"`
 }
 
 func GetMruDesktopEntries() []*Entry {
@@ -34,7 +35,11 @@ func GetMruDesktopEntries() []*Entry {
 	return mapped
 }
 
-func UpdateMruEntry(desktopEntry *Entry) {
+func IncrementMruEntry(desktopEntry *Entry) {
+	UpdateMruEntry(desktopEntry, 1, false)
+}
+
+func UpdateMruEntry(desktopEntry *Entry, countAdd int, deleted bool) {
 	mruEntries := getMruEntries()
 	_, err := Utils.Find(mruEntries, func(entry MruEntry) bool {
 		return entry.Id == desktopEntry.Id
@@ -44,7 +49,7 @@ func UpdateMruEntry(desktopEntry *Entry) {
 	} else {
 		mruEntries = Utils.MapArray(mruEntries, func(entry MruEntry) MruEntry {
 			if entry.Id == desktopEntry.Id {
-				return MruEntry{Id: desktopEntry.Id, Count: entry.Count + 1}
+				return MruEntry{Id: desktopEntry.Id, Count: entry.Count + countAdd, Deleted: deleted}
 			}
 			return entry
 		})
@@ -63,6 +68,24 @@ func InitMru() {
 	if err != nil {
 		os.WriteFile(Config.CONFIG_FILE_PATH, []byte("[]"), 0644)
 	}
+}
+
+func RemoveMruEntry(path string) error {
+	index := -1
+	for i, entry := range MruDesktopEntries {
+		if entry.Path == path {
+			index = i
+			break
+		}
+	}
+	if index == -1 {
+		return fmt.Errorf("MRU entry with path %s not found", path)
+	}
+	entry := MruDesktopEntries[index]
+	UpdateMruEntry(entry, 0, true)
+	MruDesktopEntries = append(MruDesktopEntries[:index], MruDesktopEntries[index+1:]...)
+
+	return nil
 }
 
 func mapToDesktopEntry(mruEntry MruEntry) (*Entry, error) {
