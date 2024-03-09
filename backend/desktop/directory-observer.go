@@ -1,6 +1,7 @@
 package desktop_entries
 
 import (
+	"context"
 	"log"
 
 	Log "go-launch/backend/log"
@@ -8,7 +9,11 @@ import (
 	"github.com/fsnotify/fsnotify"
 )
 
-func ObserveDirectory(directory string, onWrite func(fsnotify.Event), onDelete func(fsnotify.Event)) {
+func ObserveDirectory(ctx context.Context,
+	directory string,
+	onWrite func(fsnotify.Event, context.Context),
+	onDelete func(fsnotify.Event, context.Context),
+) {
 	watcher, err := fsnotify.NewWatcher()
 	if err != nil {
 		Log.Print(err)
@@ -28,10 +33,10 @@ func ObserveDirectory(directory string, onWrite func(fsnotify.Event), onDelete f
 				return
 			}
 			if event.Op == fsnotify.Create || event.Op == fsnotify.Write {
-				onWrite(event)
+				onWrite(event, ctx)
 			}
 			if event.Op == fsnotify.Remove {
-				onDelete(event)
+				onDelete(event, ctx)
 			}
 		case err, ok := <-watcher.Errors:
 			if !ok {

@@ -8,6 +8,8 @@ import (
 	"os/exec"
 	"path"
 	"strconv"
+
+	Runtime "github.com/wailsapp/wails/v2/pkg/runtime"
 )
 
 func hideLauncher() {
@@ -36,6 +38,7 @@ func (a *App) LaunchApp(Id string) {
 	}
 	hideLauncher()
 	Desktop.IncrementMruEntry(desktopEntry)
+	Runtime.EventsEmit(a.ctx, "desktop-entries-changed")
 }
 
 func (a *App) GetDesktopEntries() []*Desktop.Entry {
@@ -44,8 +47,6 @@ func (a *App) GetDesktopEntries() []*Desktop.Entry {
 
 func (a *App) FuzzyFindDesktopEntry(searchTerm string) [][]*Desktop.Entry {
 	Log.Print("searchTerm = " + searchTerm)
-	// TODO: used to call initDesktopEntries here
-	// gotta find a different way to keep desktop entries up to date
 	var searchResultEntries []*Desktop.Entry
 	if searchTerm == "" {
 		searchResultEntries = Desktop.MruDesktopEntries

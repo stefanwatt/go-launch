@@ -1,6 +1,7 @@
 package desktop_entries
 
 import (
+	"context"
 	"fmt"
 	Config "go-launch/backend/config"
 	Icon "go-launch/backend/icon"
@@ -15,6 +16,7 @@ import (
 
 	"code.rocketnine.space/tslocum/desktop"
 	"github.com/fsnotify/fsnotify"
+	Runtime "github.com/wailsapp/wails/v2/pkg/runtime"
 )
 
 var (
@@ -60,7 +62,7 @@ type Entry struct {
 	Terminal  bool
 }
 
-func onWrite(event fsnotify.Event) {
+func onWrite(event fsnotify.Event, ctx context.Context) {
 	DesktopEntries = Utils.Filter(DesktopEntries, func(entry *Entry) bool {
 		return entry.Path != event.Name
 	})
@@ -70,24 +72,26 @@ func onWrite(event fsnotify.Event) {
 		return
 	}
 	DesktopEntries = append(DesktopEntries, newEntries...)
+	Runtime.EventsEmit(ctx, "desktop-entries-changed")
 }
 
-func onDelete(event fsnotify.Event) {
+func onDelete(event fsnotify.Event, ctx context.Context) {
 	path := event.Name
 	DesktopEntries = Utils.Filter(DesktopEntries, func(entry *Entry) bool {
 		return entry.Path != path
 	})
 	RemoveMruEntry(path)
+	Runtime.EventsEmit(ctx, "desktop-entries-changed")
 }
 
-func InitDesktopEntries() []*Entry {
+func InitDesktopEntries(ctx context.Context) []*Entry {
 	dataDirs := desktop.DataDirs()
 	var wg sync.WaitGroup
 	wg.Add(len(dataDirs))
 	for _, dir := range dataDirs {
 		go func(directory string) {
 			defer wg.Done()
-			ObserveDirectory(directory, onWrite, onDelete)
+			ObserveDirectory(ctx, directory, onWrite, onDelete)
 		}(dir)
 	}
 	desktopEntries := getDesktopEntriesOfDirs(dataDirs)

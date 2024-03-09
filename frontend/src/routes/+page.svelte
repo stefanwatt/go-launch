@@ -1,6 +1,7 @@
 <script>
 	import { flip } from 'svelte/animate';
 	import { FuzzyFindDesktopEntry } from '$lib/wailsjs/go/main/App';
+	import { EventsOn } from '$lib/wailsjs/runtime/runtime';
 	import DesktopEntryComponent from './DesktopEntry.svelte';
 	import { setupResizeObserver } from './resize-observer';
 	import { onKeyPress } from './keyboard';
@@ -19,6 +20,10 @@
 	onMount(async () => {
 		const results = await FuzzyFindDesktopEntry('');
 		searchResults.set(results);
+		EventsOn('desktop-entries-changed', async () => {
+			const results = await FuzzyFindDesktopEntry('');
+			searchResults.set(results);
+		});
 	});
 
 	searchResults.subscribe(

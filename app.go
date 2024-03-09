@@ -19,6 +19,6 @@ func NewApp() *App {
 func (a *App) Startup(ctx context.Context) {
 	a.ctx = ctx
 	Desktop.InitMru()
-	Desktop.DesktopEntries = Desktop.InitDesktopEntries()
+	Desktop.DesktopEntries = Desktop.InitDesktopEntries(a.ctx)
 	Desktop.MruDesktopEntries = Desktop.GetMruDesktopEntries()
 }
