@@ -13,6 +13,7 @@ import (
 //go:embed all:frontend/build
 var assets embed.FS
 
+// TODO: use AssetServer to server icons and also the .svelte file from .config
 func main() {
 	// Create an instance of the app structure
 	Log.InitLogger()

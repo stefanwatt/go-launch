@@ -6,6 +6,8 @@ export function FuzzyFindDesktopEntry(arg1:string):Promise<Array<any>>;
 
 export function GetDesktopEntries():Promise<Array<desktop_entries.Entry>>;
 
+export function GetExternalUiPath():Promise<string>;
+
 export function HideLauncher():Promise<void>;
 
 export function LaunchApp(arg1:string):Promise<void>;

@@ -1,8 +1,7 @@
 <script>
 	import { flip } from 'svelte/animate';
-	import { FuzzyFindDesktopEntry } from '$lib/wailsjs/go/main/App';
+	import { FuzzyFindDesktopEntry, GetExternalUiPath } from '$lib/wailsjs/go/main/App';
 	import { EventsOn } from '$lib/wailsjs/runtime/runtime';
-	import DesktopEntryComponent from './DesktopEntry.svelte';
 	import { setupResizeObserver } from './resize-observer';
 	import { onKeyPress } from './keyboard';
 	import {
@@ -12,6 +11,7 @@
 		searchTerm,
 		searchResults
 	} from './store';
+	import DesktopEntryComponent from './DesktopEntry.svelte';
 	import SearchIcon from './SearchIcon.svelte';
 	import { slide, fade } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
@@ -111,10 +111,13 @@
 										}}
 										class={`m-4 h-32 w-56 col-start-${col} row-start-${row} col-span-1 row-span-1 m-1`}
 									>
-										<DesktopEntryComponent
-											selected={desktopEntry.Id === $selectedEntry?.Id}
-											{desktopEntry}
-										></DesktopEntryComponent>
+										{#if DesktopEntryComponent}
+											<svelte:component
+												this={DesktopEntryComponent}
+												selected={desktopEntry.Id === $selectedEntry?.Id}
+												{desktopEntry}
+											></svelte:component>
+										{/if}
 									</div>
 								</div>
 							{/each}

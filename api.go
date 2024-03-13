@@ -45,6 +45,10 @@ func (a *App) GetDesktopEntries() []*Desktop.Entry {
 	return Desktop.DesktopEntries
 }
 
+func (a *App) GetExternalUiPath() string {
+	return "config/DesktopEntry.svelte"
+}
+
 func (a *App) FuzzyFindDesktopEntry(searchTerm string) [][]*Desktop.Entry {
 	Log.Print("searchTerm = " + searchTerm)
 	var searchResultEntries []*Desktop.Entry

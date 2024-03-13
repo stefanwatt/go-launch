@@ -10,6 +10,10 @@ export function GetDesktopEntries() {
   return window['go']['main']['App']['GetDesktopEntries']();
 }
 
+export function GetExternalUiPath() {
+  return window['go']['main']['App']['GetExternalUiPath']();
+}
+
 export function HideLauncher() {
   return window['go']['main']['App']['HideLauncher']();
 }
