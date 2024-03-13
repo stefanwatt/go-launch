@@ -1,14 +1,3 @@
-<style>
-  .tech-logo {
-    max-height: 7rem;
-    max-width: 7rem;
-    padding: 0px 1rem;
-  }
-  .plus-icon {
-    height: 3rem;
-  }
-</style>
-
 # 🚀 go-launch - A Highly Customizable App Launcher
 
 <div style="display:flex; justify-content:center; width:100%; align-items:center;'>
