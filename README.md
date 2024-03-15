@@ -1,6 +1,6 @@
 # 🚀 go-launch - A Highly Customizable App Launcher
 
-<img style="width: 100%; margin: 2rem 0px; border-radius: 1rem;" src="https://i.imgur.com/HnWx6vz.png" alt="go-launch.png">
+<img style="width: 100%; margin: 2rem 0px; border-radius: 1rem;" src="https://i.imgur.com/dn17g0Q.png" alt="go-launch.png">
 
 ## Table of Contents
 
