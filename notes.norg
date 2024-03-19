@@ -1,0 +1,10 @@
+* go-launch
+
+** ( ) lua config
+   - ( ) mvp -> change window size through lua
+** ( ) external ui
+   - (x) mvp -> display iframe from vite dev server inside prod app
+   - ( ) map wails lib/runtime to window.postMessage stuff
+   -- ( ) generate js file for iframe -> send events to wails
+   -- ( ) generate js file for wails -> send events to iframe
+

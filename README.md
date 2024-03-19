@@ -1,60 +1,126 @@
-# 🚀 go-launch - A Highly Customizable App Launcher
+# 🚀 go!launch - a highly customizable app launcher
 
-<img style="width: 100%; margin: 2rem 0px; border-radius: 1rem;" src="https://i.imgur.com/dn17g0Q.png" alt="go-launch.png">
+![Banner](assets/banner.svg)
 
-## Table of Contents
+## ✨ Features
 
-- [Features](#features)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Customization](#customization)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
-- [License](#license)
+### 📜 Configurable/Scriptable with lua
 
-## Features
+- Set options via the config object as [described here](#configuration)
+- Hook into the api to add custom functionalty (e.g. [Calculator](#calculator))
 
-- **Fuzzy-Finding:** Quickly find and launch your applications with fuzzy-finding
-- **Keyboard Navigation:** Navigate the search results with the arrow keys like in rofi
-- **Highly Customizable UI:** Thanks to web technologies, tweak the UI to your heart's content
+### 🖥 Fully customzable UI (yes FULLY)
 
-<img style="width: 100%; border-radius: 1rem; " src="https://i.imgur.com/2ezvb22.gif" alt="go-launch.gif">
+Run your own frontend on the specified port and it will be embedded via iframe.
 
-## Getting Started
+```lua
+  local config = require("go-launch.config").generate()
+  config.frontend.port = 6969
+  return config
+```
 
-### Prerequisites
+This means you can:
 
-- [wails-cli](https://wails.io/docs/gettingstarted/installation)
-- Ensure `gtk-launch` is installed on your system, typically available through the `gtk3` package.
+- bring your own frame work
+- get hot reload for free (with `vite dev` or similar)
 
-### Installation
+Get access to the backend via `app.iframe` module.
+Minimal example:
 
-1. Clone the repository:
-   ```bash
-   git clone [your-repo-link]
-   ```
-2. Navigate to the project directory and build the project:
-   ```bash
-   cd your-app-launcher
-   go build
-   ```
+```svelte
+<script>
+  import { LaunchApp, FuzzyFindDesktopEntry } from '$lib/go-launch/app.iframe';
+  let apps = [], searchTerm = ""
+  onMount(async ()=>{
+    apps = await FuzzyFindDesktopEntry("")
+  })
 
-## Customization
+  $:{
+    apps = await FuzzyFindDesktopEntry(searchTerm)
+  }
 
-- The UI, powered by Svelte, is designed for easy customization. Dive into the UI code and make it truly yours.
-- Encouraged to compile the project yourself to replace the existing UI with your creative touch.
+</script>
 
-## Roadmap
+<input bind:value={searchTerm} type="text" placeholder="Search for an app" />
+<div>
+  {#each apps as app}
+    <div>
+      <button on:click={()=>{LaunchApp(app.id)}}>
+        {app.name}
+      </button>
+    </div>
+  {/each}
+</div>
+```
 
-- [ ] Lua-based configuration for ultimate flexibility.
-- [ ] Plugin API to extend functionality with Lua scripts.
-- [ ] Introduction of basic applets, like a calculator and a customizable command list.
+This is great for developing your frontend and immediately seeing the changes, but once you're stable
+you probably want to switch to a static build.
 
-## Contributing
+```lua
+local config = require("go-launch.config").generate()
+config.frontend.dist = "~/.config/go-launch/frontend/dist"
+return config
+```
 
-We welcome contributions of all forms. Check out our contributing guidelines for more information.
+A server running on config.frontend.port has higher priority than the static build.
+If no server is running on the specified port or if `config.frontend.static` is set to true, the static build will be used.
 
-## License
+## 🔧 Configuration
 
-Distribrted under the MIT License. See `LICENSE` for more information.
+You can configure all kinds of things. Here are some examples:
+
+```lua
+local my_config = require("go-launch.config").generate()
+local keymap = require("go-launch.keymap")
+local api = require("go-launch.api")
+config.window.max_height = 600
+config.window.max_width = 800
+config.keymaps = {
+  keymap("<C-Space>", function() api.search("foo") end),
+  keymap("<C-S-Space>", function() api.search("bar") end),
+}
+return my_config
+```
+
+## 🧩 Applets
+
+You can add applets via the `config.applets` array.
+To trigger them you can specify a prefix, a pattern and/or a keymap.
+
+```lua
+local config = require("go-launch.config").generate()
+local applet = require("go-launch.applet")
+local calculator = require("go-launch.builtin.applets").calculator
+-- these are the default value
+calculator.prefix = "+"
+calculator.pattern = [[^(-?\d+(\.\d+)?)(\+|-|\*|\/)(\d+(\.\d+)?|\(-\d+(\.\d+)?\))$]]
+calculator.keymap = "<C-c>"
+config.applets = {calculator}
+return config
+```
+
+### 📝 Examples
+
+#### 🧮 Calculator
+
+```lua
+local config = require("go-launch.config").generate()
+local applet = require("go-launch.applet")
+local calculator = applet("Calculator",{})
+config.applets = {calculator}
+return config
+```
+
+## 🛣 Roadmap
+
+### 🏁 Goals
+
+- define and implement lua API for configuration
+- add some applet examples (Calculator, List of arbitrary commands, etc.)
+- finish the example UI
+
+### 🚫 Non-Goals
+
+- implement any non-core-functionality in Go
+- implement any UI once the example UI is finshed
+- Windows support

@@ -1,19 +1,20 @@
-// See https://kit.svelte.dev/docs/types#app
-// for information about these interfaces
-declare global {
-	namespace App {
-		// interface Error {}
-		// interface Locals {}
-		// interface PageData {}
-		// interface PageState {}
-		// interface Platform {}
-		interface DesktopEntry {
-			Id: string;
-			Name: string;
-			Exec: string;
-			Icon: string;
-		}
-	}
-}
+export declare namespace GoLaunch {
+  type GoMethod = "FuzzyFindDesktopEntry" | "LaunchApp";
+  interface DesktopEntry {
+    Id: string;
+    Name: string;
+    Exec: string;
+    Icon: string;
+  }
 
-export {};
+  interface GoMethodResponse {
+    result: any;
+    messageId: string;
+  }
+
+  interface GoMethodRequest {
+    method: GoMethod;
+    args: string; // adapt if they get more complex
+    messageId: string;
+  }
+}
