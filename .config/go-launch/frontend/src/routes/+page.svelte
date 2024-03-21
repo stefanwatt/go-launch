@@ -1,0 +1,145 @@
+<script>
+	import { flip } from 'svelte/animate';
+	import { FuzzyFindDesktopEntry } from '$lib/go-launch/app.iframe';
+	// import { EventsOn } from '$lib/wailsjs/runtime/runtime';
+	import { setupResizeObserver } from './resize-observer';
+	import { onKeyPress } from './keyboard';
+	import {
+		promptInput,
+		selectionPosition,
+		selectedEntry,
+		searchTerm,
+		searchResults
+	} from './store';
+	import DesktopEntryComponent from './DesktopEntry.svelte';
+	import SearchIcon from './SearchIcon.svelte';
+	import { slide, fade } from 'svelte/transition';
+	import { quintOut } from 'svelte/easing';
+	import { onMount } from 'svelte';
+
+	onMount(async () => {
+		const results = await FuzzyFindDesktopEntry('');
+		searchResults.set(results);
+		// EventsOn('desktop-entries-changed', async () => {
+		// 	const results = await FuzzyFindDesktopEntry('');
+		// 	searchResults.set(results);
+		// });
+
+		window.addEventListener('message', async(event) =>{
+			if (event.origin !== "http://localhost:6969") return;
+			if (event.data.type === 'query') {
+				const results = await FuzzyFindDesktopEntry(event.data.query);
+				searchResults.set(results);
+			}
+					
+		})
+	});
+
+	searchResults.subscribe(
+		/** @param {App.DesktopEntry[][]} newSearchResults*/ (newSearchResults) => {
+			const noResults = newSearchResults.every((row) => row.length === 0);
+			const promptInputFocused = document?.activeElement === $promptInput;
+			if ($promptInput && !promptInputFocused && noResults) {
+				return $promptInput.focus();
+			} else if (
+				$searchResults?.length &&
+				$searchResults[0].filter(/** @param {App.DesktopEntry} entry*/ (entry) => !!entry)
+					.length === 1
+			) {
+				selectionPosition.set({ row: 0, col: 0 });
+			}
+		}
+	);
+
+	let lastSearchTerm = '';
+	/** @type {number} */
+	let debounceTimer;
+
+	searchTerm.subscribe(
+		/** @param {string} value */ async (value) => {
+			if (value === lastSearchTerm) return;
+			lastSearchTerm = value;
+
+			if (debounceTimer) clearTimeout(debounceTimer);
+
+			debounceTimer = setTimeout(async () => {
+				const entries = await FuzzyFindDesktopEntry(value);
+				/**@type {App.DesktopEntry[]} */
+				searchResults.set(entries);
+				selectionPosition.set({ row: 0, col: 0 });
+			}, 130);
+		}
+	);
+
+	/**@param{KeyboardEvent} event*/
+	function disableArrowKeys(event) {
+		if (event.key === 'ArrowUp' || event.key === 'ArrowDown') {
+			event.preventDefault();
+		}
+	}
+</script>
+
+<div use:setupResizeObserver class="h-full">
+	<div id="input-container" class="flex flex-row justify-center bg-transparent px-12">
+		<!-- svelte-ignore a11y-autofocus -->
+		<div class="flex w-full">
+			<div class="mr-4 flex h-full w-8 items-center text-slate-100">
+				<SearchIcon></SearchIcon>
+			</div>
+			<input
+				bind:this={$promptInput}
+				autofocus
+				on:keyup={onKeyPress}
+				on:keydown={disableArrowKeys}
+				bind:value={$searchTerm}
+				class="h-20 w-full border-none bg-transparent text-2xl text-slate-100 outline-none active:border-none"
+				placeholder="Search...."
+				type="text"
+			/>
+		</div>
+	</div>
+	{#if $searchResults.some(/** @param {App.DesktopEntry[]} row */ (row) => row.length !== 0)}
+		<div class="mt-2 flex h-full w-full justify-center py-2">
+			<div class="h-full w-full rounded-3xl bg-transparent p-2">
+				{#each $searchResults as _, row}
+					{#if $searchResults[row]?.some(/** @param {App.DesktopEntry} entry */ (entry) => !!entry)}
+						<div transition:slide={{ delay: 50, duration: 300, easing: quintOut }} class="flex">
+							{#each $searchResults[row].filter(/**@param {App.DesktopEntry} entry*/ (entry) => !!entry) as desktopEntry, col (desktopEntry.Id)}
+								<div
+									class="w-1/4"
+									in:fade={{ delay: 0, duration: 500, easing: quintOut }}
+									animate:flip={{ duration: 500, easing: quintOut }}
+								>
+									<!-- svelte-ignore a11y-no-static-element-interactions -->
+									<div
+										on:mouseenter={() => {
+											$selectionPosition = { row, col };
+										}}
+										on:mouseleave={() => {
+											$selectionPosition = null;
+										}}
+										class={`m-4 h-32 w-56 col-start-${col} row-start-${row} col-span-1 row-span-1 m-1`}
+									>
+										{#if DesktopEntryComponent}
+											<svelte:component
+												this={DesktopEntryComponent}
+												selected={desktopEntry.Id === $selectedEntry?.Id}
+												{desktopEntry}
+											></svelte:component>
+										{/if}
+									</div>
+								</div>
+							{/each}
+						</div>
+					{/if}
+				{/each}
+			</div>
+		</div>
+	{/if}
+</div>
+
+<style>
+	#input-container {
+		border-bottom: solid 2px hsl(233deg 25% 40% / 20%);
+	}
+</style>

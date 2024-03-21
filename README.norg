@@ -1,6 +1,6 @@
 * 🚀 go!launch - a highly customizable app launcher
 
-  .banner ./assets/banner.svg
+  .banner assets/banner.svg
 ** ✨ Features
 ***  📜 Configurable/Scriptable with lua 
      - Set options via the config object as {** Configuration}[described here]
